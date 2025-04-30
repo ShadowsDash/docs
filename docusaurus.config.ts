@@ -29,15 +29,11 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/shadowsdash/docs",
           docItemComponent: "@theme/ApiItem", // Derived from docusaurus-theme-openapi
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
           onInlineAuthors: "ignore",
           onUntruncatedBlogPosts: "ignore",
         },
@@ -89,10 +85,6 @@ const config: Config = {
               {
                 label: "Admin docs",
                 to: "/docs/admin",
-              },
-              {
-                label: "API docs",
-                to: "/docs/api",
               },
             ],
           },
@@ -234,25 +226,25 @@ const config: Config = {
       ],
     } satisfies Preset.ThemeConfig,
 
-  //plugins: [
-  //  [
-  //    "docusaurus-plugin-openapi-docs",
-  //    {
-  //      id: "openapi",
-  //      docsPluginId: "classic",
-  //      config: {
-  //        petstore: {
-  //          specPath: "schemas/shadowsdash.json",
-  //          outputDir: "docs/shadowsdash",
-  //          sidebarOptions: {
-  //            groupPathsBy: "tag",
-  //            categoryLinkSource: "tag",
-  //          },
-  //        } satisfies OpenApiPlugin.Options,
-  //      } satisfies Plugin.PluginOptions,
-  //    },
-  //  ],
-  //],
+  plugins: [
+    [
+      "docusaurus-plugin-openapi-docs",
+      {
+        id: "openapi",
+        docsPluginId: "classic",
+        config: {
+          petstore: {
+            specPath: "schemas/shadowsdash.json",
+            outputDir: "docs/api",
+            sidebarOptions: {
+              groupPathsBy: "tag",
+              categoryLinkSource: "tag",
+            },
+          } satisfies OpenApiPlugin.Options,
+        } satisfies Plugin.PluginOptions,
+      },
+    ],
+  ],
 
   themes: ["docusaurus-theme-openapi-docs"],
 };

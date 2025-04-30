@@ -1,0 +1,71 @@
+---
+id: post-api-server-by-id-disable-automatic-renewal
+title: "Disable automatic renewal for a server"
+description: "This endpoint disables the automatic renewal for a server. It supports both Stripe and PayPal subscriptions. The user must be authorized and either own the server or have admin privileges."
+sidebar_label: "Disable automatic renewal for a server"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVMFu20YQ/ZXBXJoAhKTYTg+8sXFdCG0UwVJQFI4PI+5I3Jrc3ewO5SgC/73YXdmW4ziBj+WFxC5n5s3Me2+P1rEn0dZMFZbobJDK6QX7LfvfdlN1rgOtWq56sR2Jri/Z8C21WKDiUHvtYiiWuGx0ADbKWW0EVI4KIA0D3cWCz8Gwth4IQioygqlA6J2zXgKsrDSwEK8dAxkFc9rNqYXQr+6LhREsG4Y+sIeuDwKrVKKxXn9llaJYS8Me7K1JAHIhsB4a2jKQ6rQB5/VWt7zhMMICPQdnTeCA5R5PJpP4qq0RNhI/yblW12lM439DbHiP/IU61+aI0Nc1h/S5pbbndCYkfXhnFWN5MpkU2HEItGEs8TBU9XQ0WCB7bz2Wpm/bIT0Fnk3evBBQbx5G8iyqs8mbY1Qzez/HlBgaJsX+ARJ+PM76AO70heDW1q+0Umx+gOz0GNk/tgfyDMYKUNvaW1YgFigNHSRSz3Owva/5CO3FfZk7qG9fvthEnd9zxmfAvn283KkR9oZayCKCHPwA6/v3wx1GR546FvYBy6s9hrrhjmJJ2bmYPojXZoNDgTrqzpE0WKChLl5qlbj8udc+7l18z8N1BCeNvZM3FjmoxDE5Pc4djvdaDWP1fbGPscDAde+17BYRz4Fjgf3S3rCp+pjuHmEj4mJE+hNLXDH5RKNvHYMhX4HELGDXQDD7cPm++mu8WFYXF+Pq/P10lpQ+wiF1vLapkJY2Zl40pOztLwHOKTRQzadPivxdXc6msz9KSP6kbN13bCTTWwcIotsWdLaJjm602YxgYTuGWMp3+cdOb5pkM9rUNlJDOJrJrbdmM/pkPpmUXGe3q+bT5G+PsWkThEydzWbLPmR4p6PT0cnZr/DqT+tJXsetxhV1lIh4WOrBLX7io9+2fkTz/7s5H3gl/EXGriVt4px638YmM5WvkJxOLD2MokxKeIbPWCBeF9hEMZRXuN+vKPBH3w5DPP7cs99heXVd4Ja8jgmSEg/JFJZragP/YNyvLg8KfA3PoT8cktlFPmRXQSzwhndZxsP1UODBgGP1fFHVNTs5CnniX4/kPv+wWOIw/AcYA8LQ
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Disable automatic renewal for a server"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/server/{id}/disableAutomaticRenewal/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint disables the automatic renewal for a server. It supports both Stripe and PayPal subscriptions. The user must be authorized and either own the server or have admin privileges.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"id","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Disabled automatic renewal","error":null}}}}}},"401":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":401,"message":"No authorization header","error":"Unauthorized"}}}}}},"403":{"content":{"application/json":{"examples":{"forbidden":{"value":{"statusCode":403,"message":"You are not allowed to access this resource","error":"Forbidden"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal Server Error","error":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

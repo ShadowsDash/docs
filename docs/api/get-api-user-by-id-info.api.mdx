@@ -1,0 +1,71 @@
+---
+id: get-api-user-by-id-info
+title: "Get user information"
+description: "This endpoint retrieves information about a user by their ID. If the request includes a valid authorization token, additional details may be included for authorized users."
+sidebar_label: "Get user information"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVU1v2zgQ/SvEXLYFCElJXBfgzd00gbGtt4gT7CENirE4triRSJUc2XUN/fcFKaW1m22BPa4vHo3m88280QFcSx7ZODvXoGBDPGvNXSD/Zj/Xc7t2IEFTKL1poxEouK1MEGR164xl4Ym9oS0FYeza+SaFErhyHQsUXSAvVnvBFRkv5peZmK/jg/D0uaPAwtiy7jQFgWKLtdECO66cN1+HOOweyUqBWpv4jLXQxGjqIBrcixU9+Wuxdv6bL+mUOGQgwVNonQ0UQB3gvCjiX+ksk+UoYtvWpkzJ8r9D7O8A9AWbth48QleWFJK4xbqjpGPkLvzuNIE6LwoJDYWAGwIFETixdp3VIIG8dx6U7epagkbG6GwiyrG6TybaRMliQ6MyiRJwi4z+ztegRvlT52uQsMIabUmgzmLe0hkbQL0qJHi0jzH/8u0NSFgbH/id2xgL6mz6+vzVxVkqtMbAS6JROz17PS2KfvhJmBST/wiOdXyVev0ZOpNi8gwd6/hHhGBxpDsBqjiFyDp+MjuGqGJug8rzMM1Msym1zTRt8wvc7TbZjlbtMXDfYfslaidgPWHUS2jRY0NMPoC6P0AoK2pSubxvY4WBvbEb6CXEKNAiVyBhLD9NPG6+8aRBse+of4gAceVG8oEcfBTk2Jo89p4fjO7zyK4cJAQqO294v4yZhzFEo9tIlFkXPb/VEmGJHskSFKwIPfl/4TOJ4dVAN+HWAsXiz5v3s3f58nZ2dZXPLt/PF4lTGfSpt7VLiQzXMfKyQu12vwVxiaESsw/zZ0n+mt0s5otrJdL10K7sGrI8kNwEEdjUtTA23YYGH43dZGLpGjq5Ko3ZVDyy3sUtZBLOi513dpN9tB9tCm5CijL7ME9H4bQ2YwPHRUi3YUs+DOVdZBfZ+WQqXvzhPPLLOL/WBW4w7fw4vmvi4aAd1fRjo0f8+Z8dynFpmL5w3tZobAQhXh11GFfyHrA1IyFBgkrrbIZPBDxIqFzgaHU4rDDQna/7Pqo/d+T3oO4fJGzRG1zFlbk/gDYhyhrUGutAvwDyxc3ImZfiZ4WOSrT7ONfhFgFIeKT9QLz+oZdQEWryKfvwYlaW1PKRy7OTd0LQ67e30Pf/AJcsczg=
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get user information"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/user/{id}/info/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves information about a user by their ID. If the request includes a valid authorization token, additional details may be included for authorized users.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"id","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"User found","error":null,"data":{"id":"user_id","username":"username","avatarUrl":"avatar_url","balance":100,"coins":50,"rank":"USER","firstLogin":1672531200,"lastSeen":1672617600}}}}}}},"404":{"content":{"application/json":{"examples":{"notFound":{"value":{"statusCode":404,"message":"User not found","error":"Not found","data":{"id":"0","username":"notfound","avatarUrl":"https://s6.imgcdn.dev/3awwg.webp","balance":0,"coins":0,"rank":"USER","firstLogin":0,"lastSeen":0}}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

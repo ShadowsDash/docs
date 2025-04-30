@@ -1,0 +1,63 @@
+---
+id: get-api-eggs
+title: "Get all eggs"
+description: "This endpoint retrieves all eggs from the database, including the number of servers associated with each egg. The eggs are sorted by the number of servers in descending order."
+sidebar_label: "Get all eggs"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVEtv00AQ/iujuQCSlaThcfDNglJFQEFNKIcQVZv11F5q75rZcUoV+b+jWadVS+mBI77s7nje832zx9ARG3HBL0rMsSIpOndcVREzLCladp3+xBxXtYtAvuyC8wJMwo52FME0DVBVRbjk0ILUBKURszWRMnDeNn3pfJXkvm+3xBAuIRLviCOYGIN1RqiEayc1kLG1OpvAqqbRq2GCGFhVtjdPuHEeNFfyKVTgkniCGTLFLvhIEfM9zmczPWzwQl70arqucTbVPv0RtcY90i/Tds1oEXtrKabrzjQ9JZkY6ePbUBLm89ksw5ZiNBVhjsepB6H3JWZIzIEx933TZKh1YL7e44XTHn/e/iAri6RWVZgfZegpSro4m3qtx0XPDWbo2tF9Og8ya4SqwDeY310vvGnp0czuvS6EfglmmPRyjXxrwvSzd0zlst/eaWu+GO8JjjB78J7jJkPyu3PDqUPnxdkR5mOjVPe8OJvfvuc4ZHiYFeZHs2EzpC/D1/8+lOTmeGzvE4N5/XAwCy/E3jSwTLYwGt/N6In/w22OLUkdDtzADDsjNeY4NZ2b6mCn2hiyPTu5Wdqa2jHPPhKvwhX5olf9PcpNp8nUIp1aJE3McUuGif9CNoLxF4h6UbQbOP189qn4OF2uivfvp8W7T4tT0DgT1DydvwwpkJNGPS9rU4brZxHemVhD8WXxKMi34ux0cXqSQ6J2GWzfkpfUe3ARorimUW4p6Vpz5Xw1gWVoCTQUt6Ni66paYKtCG3RMQhAYrjn4avLdf/fJuYvJS/FlAZeB4WFuzkcx3lJU0ipIxvReTl5O5q/ewPMPgY28UBB1IUprEigOOD4hudtAfxZ4D1j/4fY6AEZpO+0a47w2QPmf7w8gXKPpHB72S4bKyDroIlnjfq8lfOVmGFT8syfdFutNhjvDzmwVIevNkGFNpiRO2+mKdKEU1lKnQD9Q6zEjh809Upwcr3AYfgPMnynv
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get all eggs"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/eggs/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves all eggs from the database, including the number of servers associated with each egg. The eggs are sorted by the number of servers in descending order.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Eggs found","error":null,"eggs":[{"_id":"ObjectId","egg":1,"nest":1,"icon":"icon_url","image":"image_url","category":"category_name","description":"description_text","name":"egg_name","requiredSubscriptions":["subscription1","subscription2"],"envVars":{"VAR1":"value1","VAR2":"value2"},"servers":10}]}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal Server Error","error":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

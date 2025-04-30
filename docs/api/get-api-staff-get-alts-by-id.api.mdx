@@ -1,0 +1,71 @@
+---
+id: get-api-staff-get-alts-by-id
+title: "Get possible alt accounts for a user"
+description: "This endpoint retrieves possible alternate accounts for a given user ID. It requires the requester to have ADMIN or STAFF privileges. Optionally, it can trigger an alt detection action."
+sidebar_label: "Get possible alt accounts for a user"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVld9v2zYQx/+Vw72sBQQ7SNw96M1dmsDY4gb5gWFIg+IsnSUuFKmSJ6eeof99OMpNlLYJlsf5xRTF4314/N5XO/QtBxLj3aLEHCuWeWsuhdbrU5a5lfh+uygxw5JjEUyrCzHHq9pEYFe23jiBwBIMbzhC62M0K8tAVjg4EgYqCt85ibD2AQgqs2EHXeQAi+MJLDT6S2cCR5Ca0wNH4QDioaYNw/z4bLEEH+Dyan5yAm0wG2O54jiBjwmHrN1mYAQKciDBVBUHIKcIULJwoYuA0t8EMwwcW+8iR8x3eHhwoH+Fd8JOdEhta02RKjL9O+ppd8hfqWntEBG7ouCYhhuyHac5Ienib75kzA8PDjIkKxHzmx1+NlpVsvJZj6xPGerIUcOjF+kxQ27I2P30MO5vM+QQfMDcddb26Zfh7NXYjYnRuOqcAjXPw88UvuEYqVK8syEIWo1i4RDxAQffUwkXw3XhI9fRK7k6R53UPph/uHwB62iMtXAbsqYE8XfsRkTX470UZ+3DypQlu/+681++AwoMzguQtf6eNYtqmKMK1EQIHH0XCh7lPXlI81iH2WvrEDksvZz4zr1Uh9mY9lq7SFHXKeoRaOkFhp2+Ab17vc45bDh8GHZ8hufdU7ksXGp6C0MsJJwMipqLu9TdJQsZGycj1J/GJL9JSzHHhPAtdH+gPsORJrXRYlFzQwoo21ZhogTjKuwzNOpYLUmNGe77LvXh3nhKzCV0rJ3WsNR+b4OYDTE5Tqk106iWOK0GT5zuTNlPMcPIRReMbC81++NFXqkw551GP/DUIq1GpJWY44opcPiJszIMrwZ5g18DwfLjxdn8j2mywOngiJpnklRu3NqnREas7nxZU+nvf4lwTLGG+fnihyR/zi+Wi+VpDsnHS190DTtJWgATIYqxFoxLd9bQnXHVBC59w6CpQjMsbExVC6x0svAqG2G16fvgXTX55D65tLkZfH1+vkgfgKdsxkUhV3BSxIZDHPCOJkeTw9mv8OZ3H0je6h22PkpDSaT7KzxlefK5+f5Do/X5/uCjBvhff8L2khL+KtPWknFaoi5YPeEg2huk1qjcVLaY4V64mGGetI+3GdY+iq7c7VYU+TrYvtfpLx2HLeY3txluKBhaqahudliaqOMS8zXZyC+U9s3FvrPewnOw+0lyW735wVsQM7zj7dCe/W2fYc1UckjZhxfzouBWRiE/uNiTNj79cIV9/y9TgRNG
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get possible alt accounts for a user"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/staff/getAlts/{id}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves possible alternate accounts for a given user ID. It requires the requester to have ADMIN or STAFF privileges. Optionally, it can trigger an alt detection action.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"id","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"alts":[{"_id":"alt_user_id","username":"alt_username","email":"alt_email"}],"error":null}}}}}},"400":{"content":{"application/json":{"examples":{"missingParams":{"value":{"statusCode":400,"message":"Missing parameters","error":"Bad Request"}}}}}},"403":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":403,"message":"Invalid token","error":"Unauthorized"}},"forbidden":{"value":{"statusCode":403,"message":"You are not allowed to access this resource","error":"Forbidden"}}}}}},"404":{"content":{"application/json":{"examples":{"userNotFound":{"value":{"statusCode":404,"message":"User not found","error":"Not Found"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error, check the details.","error":"Internal server error","details":"Error details"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-api-eggs-by-id
+title: "Get egg by ID"
+description: "This endpoint retrieves an egg by its ID. The ID is passed as a parameter in the URL."
+sidebar_label: "Get egg by ID"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VE1v2zgQ/SuDuWwLCLbjunvQTVsngbCtW9hu9uAGAS2NJTYSqZIjt4ag/14M5bhO0xToYXUhNZyPx3nD16FtyCnW1qQ5xlgQJ42+LAr/zyHNMcKcfOZ0Iw4Y47rUHsjkjdWGwRE7TXvyoAxQUcD2AJo9pPMRrEuCdA7aQ6O8pxyUBwWNcqomJgfaAJcEH5dvRxihI99Y48lj3OF0MpEls4bJsGxV01Q6CyjHn70g6ZC+qbqphgjfZhn5sN2rqqVgY8Wtf2Nzwng6mURYk/eqIIzxsihgZ1sj9yPnrMPYtFUVIRWFhN5pacX77WfKODQh2C8iNOQ5bHQW2iHLXesqjFDXQ+6wHm2ZYiqsO2B82t4ZVdOTtgqgc0uEwW04OEY4+tJqR/mq3Z4cPcYb9GeGC4we/U/xNkIy+xvlQndukuUFxkOTxPcmWU4f/qfYR+jJ7Ul8Lyb98EU4m8z+kA9j+Sr09zlCZpPZOSELyz8TcmZ7wPH6z+ci3OZyyPgMlNePZyM1TM6oCoZYGOD8gPXr81OvTgMu1HTos5JqJSX50Eh6z06bQjqthfhGcfmDbZ2f8Ywxu5b6WwHHpT0+ToyGmBjHqtFjKgo/7nTej4V4ylqn+bCSokMDWk9ube/JJK0EnWCUzI1EBE+McUvKkfvFcycYjoAlC9gdKFi8X75L3o5X6+TqapzM36ULkDoj7MO1djYU0lxJ5lWpcvv1Lw9z5UtIPqRPivyXLBfp4jqGIC65zdqaDAdSRT4866p6kIta3WtTjGBlawIp5erBsdZFybAVY2aFfyawDr46a4rRJ/PJhOTahyzJhxR21sFjbNp4ViYjL4Ikj2CA92r0ajSd/Q0v/rVO8UuhrrGeaxWm7cjcNfGDAKbzn294NrL/m4AeeWX6xuOmUtoITlGhuDsOzAZVowct8xhhHIZN5KG0Imob7Lqt8vTRVX0v5i8tiXJtbiPcK6fVVujcdJhrL/sc452qPP3mri+Wx1F+Cc8hPBqVOUjPh+eJGOE9HYb30N/2EZakcnKh+nCQZBk1fBbyRAgevZvryzX2/Xc5vVZn
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get egg by ID"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/eggs/{id}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves an egg by its ID. The ID is passed as a parameter in the URL.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"id","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Egg found","error":null,"egg":{"_id":"ObjectId","egg":1,"nest":1,"icon":"icon_url","image":"image_url","category":"category_name","description":"Egg description","name":"Egg name","requiredSubscriptions":["subscription1","subscription2"],"envVars":{"VAR1":"value1","VAR2":"value2"},"servers":10}}}}}}},"404":{"content":{"application/json":{"examples":{"notFound":{"value":{"statusCode":404,"message":"Not found","error":"Not found"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error","error":"Internal server error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

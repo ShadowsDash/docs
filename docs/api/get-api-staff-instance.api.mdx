@@ -1,0 +1,63 @@
+---
+id: get-api-staff-instance
+title: "Get application settings"
+description: "This endpoint retrieves application settings. Only accessible by users with ADMIN rank."
+sidebar_label: "Get application settings"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VE1v2kAQ/SujubSVLEwg6cE3q/kQakOiQFRVhMNiD3jLetedHZNQxH+v1gZEmkRqDvXFu+uZec/z3uwGXUWsRDs7yDHBBUla6ZGo+XxgvSibEUaYk89YVyEKExwX2gPZvHLaCjAJa1qRB1VVRmdNLfAkou3Cd+DGmjWoLCPv9cwQzNZQe2IPj1oKSM+vB0NgZZcdjJDJV8568phssNfthlfmrJCVsDwCiH/6wGWD9KTKyrQZvm5gwnKlTE3NmSip/ReXEya9bjdCYnaMia2NiXBPM0QuaX2CSZt5glHY9/b7Hm7bJ8LTbv+dtGqraikc69+Uv8nttNs/cMP744wIS/JeLQgTHNiVMjoHcUuyGOjMHc90npP9t8qXh/Djsj9cDYoJrBNQxrhHChA71UCC3kze1ZwR7vtw9n55iFfEFy2TN8ieHUmEAyvEVhkYNZnQpj7vx2sRB61KksLtbI0RVkoKTDBWlY59sHisdx6PMXghq1nLepQVVO6U88Tj0Oq0DpkblHUVYAuRKmQ0kZjgjBQTvzIoBO2nVjBwc1AwvLm7Tr/Fo3F6eRm3/g84nUZObeeuAdJiQuVRoXL3+MHDufIFpLeDFyDf07vhYHiVQDOWucvqkqy0U6g9eNHGgLYgBUGpltouOjByJUGA4rINLPWiEJiFw8wFwYTAMTyys4vOg32wTXHtmyrp7QDmjuE5t30rfRjkFbFv6fU7/U7v9DN8/OpYySfcRlg5L6Vq7GFV078rkldvj79/9shu//EW2oks9CRxZZS2gXTNJuC3FpqgqnQwQDARBtUOVyVOIyyclxC02cyUp3s22204/lUTrzGZTCNcKdZqFhSeTLcRFqRyYkwmzS2ECaZZRlWw7G5IXs7Wdnpk76uLMW63fwBPCQGB
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get application settings"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/staff/instance/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves application settings. Only accessible by users with ADMIN rank.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"error":null,"settings":{"key1":"value1","key2":"value2"}}}}}}},"403":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":403,"error":"Unauthorized","message":"Invalid token"}},"forbidden":{"value":{"statusCode":403,"error":"Forbidden","message":"You are not allowed to access this resource"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"error":"Internal Server Error","message":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

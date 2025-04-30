@@ -1,0 +1,71 @@
+---
+id: delete-api-staff-by-collection-by-id-delete
+title: "Delete a specific document from a collection"
+description: "This endpoint allows an admin to delete a specific document from a collection by its ID. STAFF users have limited access to certain collections (invoices, itemNotes). ADMINS have access to every collection."
+sidebar_label: "Delete a specific document from a collection"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVcFuGzcQ/ZXBXGoDC61gOz3sTYnsQmiiBpaDonB8GC1nvay55IbkylGF/fdiuLIkx3EQXXqoLktwOG8eh2+eNuha9hS1szOFBSo2HHnS6kWkqnq7fueM4VLCb9czNU1RzFBxKL1uZR8LvKl1ALaqddpGIGPcYwCyQKrRFqKDARUIQsulrnQJypVdwzZC5V0DBOWuDizXoGOA2XQEi5vJ1RV0gX2AmlYMRjc6sgIqSw5BoEv2kbQ9AAhwou3K6ZJDBjpyM3eRw+kIJtMPs/liANoD8Ir9+iB9hBl6Dq2zgQMWGzwbj+VTOhvZRllS2xpdpqblfwdpwQb5KzWtGTJCl9BluSLTcdqLFLvwzinG4mw8zrDhEOiescArzUZte6SkPHvvPBa2MybDSqJYDF9QHEmbgH36ZXgxPj+SXGepi7Xz+h9WrzK8GJ/vaOCnw4xD4jO7IqMVRPfAFoVO5fxSK8X255CvdscPYf9yHZBnsG4rJpYSuycTsXkOrvMlH/Th4sg+WBevXGd/1IOLPdO5izAcf/lywrNKsSc2b46XDPsV+8uh2iuE3ohsngjNbGRvycAiZcKQ+vx1vneif+LYkqeGI/uAxe0GQ1lzQ1IyrltJD9Fre499hlpmvKVYY4aWGgnuxyVNy5dOe1FT9B332bFgWr0EuZObxNrtPQmzIa3AnFqdB/GnfLMn0ucbrfp8OJxjhoHLzuu4XgiZrfYD+xsR66QTpB29OsZWMtJJLHDJ5Nl/x+cYhtAgeXAVEMz/uP4weZ8nr8qTxyTHGqWB0LZyqZCORpAXNSn3+EuAKYUaJh9nL4r8Obmez+a/FZBc9cknk3JABwhRGwNiqzVDQw/a3o9g4RoGKeWb4WCj7+sIS9ksnYgsMjgPj97Z+9Fn+9kmcB0SyuTjDCrn4Tk3bUMkW3IQR1qxDwO989H56OziVzj53XmKp/KkrQuxoSTp7YtOj/D7bxtwMDb/vz+Wrd4if415a0hb6V/njVx7UPctUqtFi6JvzLB41qkizcpuIPAuw9qFKGmbzZICf/Km72X7S8d+jcXtXYYr8pqWIr/bDSodZK2wqMgE/kHzT663I3kKrzHfbpJdi0YGz0LM8IHXz01CTOE/rKwV9nd9hjWTYp/uPQQmZcltPEh54cvPnGd6+f7y5hL7/l9RBCet
+sidebar_class_name: "delete api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete a specific document from a collection"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/api/staff/{collection}/{id}/delete/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows an admin to delete a specific document from a collection by its ID. STAFF users have limited access to certain collections (invoices, itemNotes). ADMINS have access to every collection.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"collection","required":true},{"schema":{"type":"string"},"in":"path","name":"id","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Field deleted.","error":null,"field":"field details"}}}}}},"403":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":403,"error":"Unauthorized","message":"Invalid token"}},"forbidden":{"value":{"statusCode":403,"error":"Forbidden","message":"You are not allowed to access this resource"}}}}}},"404":{"content":{"application/json":{"examples":{"notFound":{"value":{"statusCode":404,"error":"Not Found","message":"Field not found"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"error":"Internal Server Error","message":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

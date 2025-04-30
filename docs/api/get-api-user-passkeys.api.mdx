@@ -1,0 +1,63 @@
+---
+id: get-api-user-passkeys
+title: "Get user passkeys"
+description: "This endpoint retrieves a list of passkeys associated with the authenticated user. The passkeys are sorted by their creation date in descending order."
+sidebar_label: "Get user passkeys"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNlE1v00AQhv/KaC6AZCWhFA6+WXxUEbRUNBVCbYQ29jReau+amXFKiPzf0axTCF8Hbvhie3Zn9tnZ990dxo7YqY9hXmGOa9Ki85dCfO5EbmkrmGFFUrLvbBLmuKi9AIWqiz4oMCl72pCAg8aLQryBbp8KTiSW3ilVcOe1Bq0JXK81BfVlCvdCPIFFTQdJTCCRbXS1tRTPUDIlRqicEvgAhkSh8mENkSviCWbIJF0MQoL5Do9mM3uVMSgFtU/XdY2t6mOYfhLbyg7pi2u7ZsyQvixJ0ufGNT2lmDrt5XmsCPOj2SzDe0rMr3borWP7yEdfYYaJk6pCMZ9l2DjRS6Eq/QTXEuZ4uoV9Z3FYDunJ8Hj2+B9h+2B9jOy/Wvm/EB/PHmdIzJExx8vDjAxbEnFrI/oQ+9TzEBWauF5TBT7gPdrTf+8j8Yb45bjsX8ieWi9/IMyDEgfXwJgLI/MP9j+PD/eMLWkd9+pFOyOtMcep6/zU9DW9P7QpZihU9ux1e1HW1O57KcSLeEuh6C1xh7rtjKpW7SwjzcQcV+SY+A9+IBiHQK2KOcDB2dt3p8Wb6cWiePVqWrw4nZ+NWkcD9uEmpoW8Nlb5onZVvHsg8MJJDcX5/LdF3hfvzuZnJzkk91Wx7FsKOnrCC4j6pjFfmMNad+vDegIXsTWv3ERux4mtX9cKKwuW0c5LCSLDHcewnlyH65CKe0lVivM53ESGn9l8EHWhJDHDbYhlxHsyeTI5On4GD19HdvoIhwy7KNq6pI699E9IUw++W/3XXR7I7P+9ZfbiUPqi065xZpUMe24Mf1TeFbrOY5Z0hQdXRoa4zLCOojZnt1s5oUtuhsHCn3viLeZXyww3jr1bmTCulkOGNbmKOF04dmvkWJQldSb0vbV+d+SwPDDFycsFDsM3F3EPeA==
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get user passkeys"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/user/passkeys/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves a list of passkeys associated with the authenticated user. The passkeys are sorted by their creation date in descending order.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"passkeys":[{"id":"passkey_id","createdAt":0,"lastUsed":0,"name":"My Passkey"}]}}}}}},"401":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":401,"error":"Unauthorized","message":"You are not logged in"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error","error":"Internal server error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

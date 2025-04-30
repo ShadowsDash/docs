@@ -1,0 +1,71 @@
+---
+id: post-api-staff-queues-by-id-clear
+title: "Clear server queue"
+description: "This endpoint allows an admin to clear the server queue for a specific location. The user must have an ADMIN rank to access this resource."
+sidebar_label: "Clear server queue"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVMFuGzcQ/ZXBXJoAC61gOz3sTU3qQEjjuJaCIlB8GO2OtIx3SZpDylGF/fdiuHJiN3HR3LKXJUjOmzec9+aAznOgaJydN1ihdxJn3iwibTZ/Jk4sv+3nzcuOKWCBDUsdjNfbWOGyNQJsG++MjUBd5+4EyAI1vbEQHdQaBrFlEA47DnCriLBxAQjEc202pobO1Tn/BJYtQxIO0CeJ0NKOFW726u38AgLZG8WkumYRiJo7sLgUap5ggYHFOyssWB3wZDrVX+1sZBt1Sd53ZsxTfhKlf0D+TL3vxghJGVeXO+oS571IMclL1zBWJ9PpkL8Cz6anPwieLKXYumD+5ubJDGfT0wI5BBewwvcPIwrsWYS2jBXO7Y4600B0N2xR6WxcWJumYfv/kM+/XH8I+8EloMBg3bGR3Dz12Hj/Di9+/JGzCn4fmTxB9sV0+rjeyMFSd6+gsYyv5Xz/fLjn6ClQz5GDYLU6oNQt96Qp494rvMRg7BaHAo0q2lNssUBLvR6aJuvqNpmgfYsh8XCt5GLr7r2CxRhUYUnelKK+KbPMpTyYZiizB0osULhOwcT9QjkcdSEcltrIWVKIL6zaGL1G5JtY4Zop8Pf8xzAejXIAtwGCi3dXb2d/lIvl7Py8HL2jeSZZLMZuXE5kYqfIi5Yad/eLwCuSFmaX82+S/DW7uphfvK4gu71xderZxtxjMAISTdeB2r1l6OnG2O0EFq5n0FShHy/2ZttGWOtm7VQOkcEFuAvObicf7UebwY1klNnlPI+Ix9yMlUi2ZlGz7zjISO90cjo5OfsVnr1xgeJz7aS2pacsvmMj8/h6NIP+XeYDGf9cY+2oiMifY+k7MlYrTKFTyqPwVkjeqFpUeljgKD4ssMr6rY+jG68LbFWw1QoPhzUJvw/dMOj2beKwx2p1XeCOgqG1SmN1wMaIrhusNtQJ/8eTPbs6uuQ5PMX5uEl2r/0bnY9Y4A3vR6sN10OBLVPDIWcfD2Z1zT4+CPlmxjyy5OW7xRKH4R8+VFt3
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Clear server queue"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/staff/queues/{id}/clear/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows an admin to clear the server queue for a specific location. The user must have an ADMIN rank to access this resource.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"id","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200}}}}}},"403":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":403,"error":"Unauthorized","message":"Invalid token"}},"forbidden":{"value":{"statusCode":403,"error":"Forbidden","message":"You are not allowed to access this resource"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error","error":"Internal server error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,65 @@
+---
+id: get-api-shop-listing
+title: "Get shop listing"
+description: "This endpoint retrieves a list of shop items. The items are sorted by their creation date in descending order."
+sidebar_label: "Get shop listing"
+hide_title: true
+hide_table_of_contents: true
+api: eJzlVEtvGzcQ/iuDuTQBWGktywmyN8GJDaGJa8QyelCEguKOtIy5JEvOyhGE/e/B7MqPwO6h5+oi7pCcGc73OGCIlDTb4OcVlrglnkV7U4f42Wa2fosKK8om2ShnsMRFbTOQr2KwniERJ0s7yqDB2cwQNpDrEMEyNXkEi5qGJehEkENiqmC9B67JJjCJ+tJQaSawHqQU+cr6LYRUURp989/8IkAmgiYkgiqYtiHPw7U3OksmWFvnrN+e740jCOvvZBgau60ZfGBYEyTSzu3BONLprYKdpfv+4mIfKUMm06cLG2B53S9FRqgwUY7BZ8pYHnBSFPJngmfyLEsdo7OmPz3+nmVKB6QfuoluuJFbYyj3y512LfUx1tzm81ARlpOiUNhQznpLWOJx8rAJra9QIaUUEpa+dU6hO8JSLg+om9B6njkX7qm6pnTeZg4NJSxPFP5tBc930/X7zamZ0HRdbM70STUxpzTdnKFCrxup9mloFOZMzetg2wzaw/FBT+jKYGKyhrA8KUYfPijkfZSMld1a1g4V2mZ4Uc0cczkeH3OMTGjG/d4o9gxrgufa7bHcaJdJ4XM8M5bL30/UdFKo90WxEjA83eu1Iyw5tSRNhKo1fP4ESENNSHvpazJVaGKL5URhZfMdlmdFp9D6nc22z3EsqXfaOsk691gWz75vPVvXhzIHcydJC4WxTabWPSNOCoVGM237ko/zPH8IKYxO8yak5tnu9UOoW3X9T+G0mP5HXvnAFz1H/o1Y02L6SB+8CvxIqSey3WZKvUqGre6hm4a4DkdHkCdorrHEsY52LAwYH3k4RoWZTJss729MTc3QWZspLcId+Vkr9w4P1BAiyI3+JJa4Jp0ovUI7gmELWLKIMjVc/fn1y+zz+GYxu7gYzz5+mV+B1Blh1yO6CX0hy4Iq3tS6Cve/Zfiocw2z6/mLIn/Nvl7Nry5LWLzQvFA+s3VOPEl8otF31m9HcBMa8SlBbjg4uMxagiYIMEwQEtyn4LeDeR0VJFlm13PYhAS/9mZ9Zu0NZRHUjlIe2jsdnY4m03fw5o+QNL/FTmEMmRvd0+Ao3kviQZDudbd+Rqf/pXEfacf0g8fRaetljG1yMpmB0kvU0Qol6yDMfJojrhTWIbMcORzWOtNtcl0n4X9aEqkvVwp3OtnBi5arTmFNuhL/XR7wjsQNZsZQFAEd9flS093qmdguPy2w634C+NicxQ==
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get shop listing"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/shop/listing/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves a list of shop items. The items are sorted by their creation date in descending order.
+
+To see more documentation (as the billingCycle object might not be really clear), view the Types section of this documentation.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Listing found","error":null,"listing":[{"amountAllowedPerCustomer":1,"_id":"64b7f3c2e4b0f5a1d2c3e4f5","name":"Example Item","description":"This is an example shop item.","price":10.99,"type":"digital","image":"https://example.com/image.png","monthly":false,"billingCycles":[-1,420,700],"renewable":true,"productContent":{"memory":1024,"cpu":2,"disk":50},"invisible":false,"availableIn":0,"availableUntil":0,"stock":100,"purchases":10,"category":"Example Category","platform":"Example Platform"}]}}}}}},"404":{"content":{"application/json":{"examples":{"notFound":{"value":{"statusCode":404,"error":"Not found","message":"User not found"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

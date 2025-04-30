@@ -1,0 +1,71 @@
+---
+id: post-api-staff-ban
+title: "Ban a user"
+description: "This endpoint allows an admin or staff member to ban a user from the platform. It requires a valid authorization token and the user must have the appropriate permissions."
+sidebar_label: "Ban a user"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV99v20YM/lcIvmwDVNtI0j3ozWmawdjiBHGCYXDzQEu0dY10p9xRaVPD//vAkxUrP9Fg6MOA+sWHuyP5kfzIo9ZYk6eKhX3AdH6VoKvZkxhnJzmmWLsg49rMhJbLQ7KYYM4h86bWG5jiRWECsM1rZ6wAlaX7EoAsUF4ZC85DUEmouFqwB3Gw0ENoAntYeleBFAx1SbJ0vhrARMDzTWM8ByC4pdLkQI0UzptvERSIu2YLZPMoGfVUTRAo6JbjFtW1d7U3JAw1+8qEYJwNA0zQc6idDRwwXePeaKR/mbPCVnRJdV2aLJoZfg7q3hr5K1V12UqEJss4xOUtlQ3HPSFpwgeXM6Z7o1GCFYdAK8YUD8laziNENc7eO4+pbcpyE38JHrwZQvTGrs56OXsBzMFDMCetIPSyfQ8JDymHc75pOAgqLmNj5I+algjfa2PSikHeyb1kofN+/43eN7bjAuevgNp/DlTkTQ/RZV+Xwlk6vzB5zq+5+0DzP64B8gzWbYnPagUokgREC8NzcI3PuGf3+N6MGo1lckh2LMJVLf/RdKytbe29YLIL/cFbQx/YT50cu8a+FvqDPspLLU6FuIxSO0BTJ9Bq6gC9f3sxsr9l/7HV+AKe94/5KewtldDKQoSTQFZwdh1bR85Cpgy9an1eJnbBeBVTjBA60a1DG+01ke2HLr/7Ds9CVnBFupK7WrG6xWfOBBPUZsZezC4N+v+4CTOcRoFJDm6564wtJ9Sfrdog3tgVRny0tf1UV3sGS+dV3Grf6FQ+qyvvNYqn2rrTDpmy1FgoXOPDAC4DwyiaotiuybKVR6hto68HdmE1Xst/3gbj3pMejCu9WTWlmJq8DPVpeZeT0M9I/5BIC3+VYV2S+UnlHxHgSGaWwnXzmIaSpMAUh1SbYZywhguyQ0wwcNZ4I3czzcIu0Bf6+o0bFbrPSyFSq0S8iSkumDz7ZyY8hvZoO3u5JRBMT89Pxn8NZxfj4+Ph+OhkMt3GVNFqVzvf9b+PbdveJb2L9y51u51dAkZxElm6CNmIKsBZQbn78kuAIwoFjM8mT+D+PT6fTqZ/pBAn09xlTcVW2qyZAEFMWWrONH0VXRu7GsDMVQxqylftxcqsCoGFbmZOsQvrLPvFO7safLKfbFRuQtQyPpvEpD/EZmwQshnH1+SWfWjh7Q/2B3sHv8OvfzpP8ptSTlNaUWScpWo7OW5n5Mfu9R6S/9foveVcr1VsEmx8qS61ZJ4j1Ub5qKgxwUX82sCrBAvlfDrH9XpBgS99udno9k3D/q79Zrklb2ihDJlfbRIsmHLl2XyN13yHKX5og/buQlEk3bDw7BOxSTqhcZZxLb3rTx7uzVWvMs9OZxcKe/vgV3EC0amyinqT3VJBbjb/Am6Yra8=
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Ban a user"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/staff/ban/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows an admin or staff member to ban a user from the platform. It requires a valid authorization token and the user must have the appropriate permissions.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"user":{"description":"The ObjectId of the user to ban.","type":"string"},"reason":{"description":"The reason for banning the user.","type":"string"},"duration":{"description":"The duration of the ban in hours. Use 0 for a permanent ban.","type":"number"}},"required":["user","reason","duration"]}},"multipart/form-data":{"schema":{"type":"object","properties":{"user":{"description":"The ObjectId of the user to ban.","type":"string"},"reason":{"description":"The reason for banning the user.","type":"string"},"duration":{"description":"The duration of the ban in hours. Use 0 for a permanent ban.","type":"number"}},"required":["user","reason","duration"]}},"text/plain":{"schema":{"type":"object","properties":{"user":{"description":"The ObjectId of the user to ban.","type":"string"},"reason":{"description":"The reason for banning the user.","type":"string"},"duration":{"description":"The duration of the ban in hours. Use 0 for a permanent ban.","type":"number"}},"required":["user","reason","duration"]}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Banned user.","error":null}}}}}},"400":{"content":{"application/json":{"examples":{"missingParameters":{"value":{"statusCode":400,"message":"Missing parameters","error":"Bad Request"}},"invalidDuration":{"value":{"statusCode":400,"message":"Invalid duration","error":"Bad Request"}}}}}},"403":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":403,"message":"Invalid token","error":"Unauthorized"}},"forbidden":{"value":{"statusCode":403,"message":"You are not allowed to access this resource","error":"Forbidden"}},"adminBanAttempt":{"value":{"statusCode":403,"message":"You are not allowed to ban an admin","error":"Forbidden"}}}}}},"404":{"content":{"application/json":{"examples":{"userNotFound":{"value":{"statusCode":404,"message":"User not found","error":"Not Found"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error, check the details.","error":"Internal server error","details":"Error details"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

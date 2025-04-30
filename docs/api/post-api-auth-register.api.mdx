@@ -1,0 +1,73 @@
+---
+id: post-api-auth-register
+title: "Register a new user"
+description: "This endpoint allows a user to register a new account using a username, email, and password."
+sidebar_label: "Register a new user"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV91vGzcM/1cIvawFLnaWpMVwb27aDMaWNEhS7CENClqifWp00lXi2TUC/+8Ddf5M3GLB9rb4xfoi9SP5I496UA1GrIkpJlXe3hUqNBSRbfBDo0rVhMSDxg5arq5oYhNTVIUylHS0jZxSpbqpbALypgnWM6BzYZYAoU0UgQPEpRwgeJoBah1az9Am6yfLYx5rKoBqtK4A9AYaTGkWoul99p/9X4Ori+HF7yXsXqQr0vcJ7Bi4ou42ESOT56cutGbsMBLctNEnto5AV+gc+QkVMKusrkCj94FhRIDTYA0ZUTcPLVQ43dHBax3kceTI9FShIqUm+ERJlQ/q6PBQ/nTwTJ5liE3jrM6+7H9N4qoHRd+xblwnkVqtKeXhFF1LeY2R23QaDKny6PCwUDWlhBNSpfokFupIyGRUoSjGEFXpW+cKZSVW4oIvVvYwK74J9yTx6WZfOE8X+Veok2fDtX6Kzpqhb1r+IeaTXczDTgZsFlqDVu/QQKRvLSXeQnT8TETjEEfWGPI/gXO8DedsLbCBchGWnCWzhvLm+bGkOKX4odP5AzBvHvuGhfkOOlnIgIqO1pnChhitS70tsHtlckLmo6pUry6ZYjCoee667ddl97/St7RyIfzNEXgXzPwfmJt0RTXKiOeNGBBGX0lLVJsoRYNt54pVQsv4caEQo5KNZNZpD+MQs7VbtaEH523KWXl88OtbydqIWioUuCA1wxsQrGg9BO/m4IhltwDf1qM8aCjaYFJXTFpvKCYdImVfLtEnjtZP1KJQue7sR5u3AI2JlNLPoSJ0VO9ExiHWyHuvW9W2pzdeLncS1CulDI4wMfz22As9eHTaeu1asyUSPEHbNBQ1Jlr6qMirQvanq8ZOLHcek2lqSFt0m3v3GLPkkARUlbebyK98umXsnRyuW8e2wch98c+BQcYXZr0w6z9gFtN37jcO7UupeiHUvydULlbEVVj1wHmfK1WqPja2jy1X/VVj21eFSqTbaHl+LczbkCu3YNI8b3GxYm5EIp9UpRoRxr1dNUG3BblzgzAGhIuPV+eDP/vXN4Ozs/7g/fnwItOzlw2UL/XV5pv+oetPdom+csiaS5uFTbS3KGD9OGTwlkWVuq7QhNkvCd5jqmBwOXwCfLddN0G3NXnOvQTYBNJFO7A+07PGeysEuQ41gVwlVJSDtZ1UmVbW6yBWMEGIMIvCJ3kUZOU2ZS2Dy2Em/C426xOj110mTSmmDt5x77h3dPIWXv0RIvLrTPOQuMZcOZZOutp9s4j7Htu51S/9f19AS0pvVd9FodqYS1SXL7cKGytPEkkCycH1I1LdFaqS1Cpv1cPDCBN9im6xkOVvLcV59xydYrRyncwWhaoIDUVV3j6oe5qrUp12QTi4ESTFqvHe22ksipXQQGtqeOv4k353cbdVAC4/Xt+oQo2WfXKdu3l5fdRZb7EZCsjF4m+0XmSi
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Register a new user"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/auth/register/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows a user to register a new account using a username, email, and password.
+
+WARNING: This endpoint checks if the user passed the Cloudflare Turnstile challenge, which cannot be avoided if you have Cloudflare turnstile enabled.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"username":{"description":"The desired username for the new account. Must be 3-16 characters long and contain only letters, numbers, periods, and underscores.","type":"string"},"email":{"description":"The email address for the new account. Must be a valid email format.","type":"string"},"password":{"description":"Passwords must be at least 8 characters long. Passwords must include at least one uppercase letter, one lowercase letter, one digit, and one special character.","type":"string"}},"required":["username","email","password"]}},"multipart/form-data":{"schema":{"type":"object","properties":{"username":{"description":"The desired username for the new account. Must be 3-16 characters long and contain only letters, numbers, periods, and underscores.","type":"string"},"email":{"description":"The email address for the new account. Must be a valid email format.","type":"string"},"password":{"description":"Passwords must be at least 8 characters long. Passwords must include at least one uppercase letter, one lowercase letter, one digit, and one special character.","type":"string"}},"required":["username","email","password"]}},"text/plain":{"schema":{"type":"object","properties":{"username":{"description":"The desired username for the new account. Must be 3-16 characters long and contain only letters, numbers, periods, and underscores.","type":"string"},"email":{"description":"The email address for the new account. Must be a valid email format.","type":"string"},"password":{"description":"Passwords must be at least 8 characters long. Passwords must include at least one uppercase letter, one lowercase letter, one digit, and one special character.","type":"string"}},"required":["username","email","password"]}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"User created","error":null,"id":"user_id","accessToken":"access_token"}}}}}},"400":{"content":{"application/json":{"examples":{"invalidInput":{"value":{"statusCode":400,"message":"Invalid input","error":"Bad request"}}}}}},"403":{"content":{"application/json":{"examples":{"forbidden":{"value":{"statusCode":403,"message":"Forbidden","error":"Not allowed"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error, check the details.","error":"Internal server error","details":"(Pterodactyl error): error details"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

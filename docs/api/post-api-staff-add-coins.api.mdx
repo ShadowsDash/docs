@@ -1,0 +1,78 @@
+---
+id: post-api-staff-add-coins
+title: "Add coins to a user's account"
+description: "This endpoint allows an admin to add coins to a user's account."
+sidebar_label: "Add coins to a user's account"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV91P20gQ/1dG+wJFboIKvQe/BQin6I4UkXCnE0Vi4p3EW+xdd3dMmovyv59mHRNTyqn0mbzE8c7Hb+fzl7Wq0GNJTD6o9OY2Ua4ij2ycHWmVqsoFHlRmwjifD7Q+dcYGlShNIfOmEjGVqmluApDVlTOWAYvCLQOgBdSlscAOUGvIRDX+gDqQ3wuAWeZqy73P9u/B1Xg0/j2Fp5ZC7upCw3j41/AKZiR6GpwFzgmywpCIGE09GDHkGMA68Mj0vjCl4ZCA84B2BVlO2X2IUqh12CJBq4Fz5L0AhnswzckTmGgkVJQZLKBwC5PBjHJjdRQazWHl6j0RtEyeApMGY6HEe2MXcubBLW30AITeytuwCkxlIqftjUxZFVQK/keVGWb3ZDUsDecdQxE6zGjuvNxf7HE3Rr3P9rM9ODgbXl4NTwfT4dnBARzsL01RSMA8le6hgYgwr7kWI5VGpncHKVwHgrs+VqYfJL39deaKgjJJ6qa/NnrTJ234DowNTKhhP2K7k+yFO8DQ5OFR510vFkblKUMmrVL2NSXKU6icDRRUulYfDg/lK3OWybI8YlUVJosF1/8SpJzWir6hBChqhDrLKMTHByxqiu8YuQ6nTpNKPxweJqqkEHBBKlUDralTa4JVYJH3zqvU1kWxiZ9EHb8airEPWBg9slXNL+I5fornwoSYtE6XPaJRJ6jhir7WFFgJpK2Dpsl+0sGo0WmLupSOetFFe/OjV968tlhz7rz5V/L6IrCjHwFjd0+2g+i6a0vgzJ2fGa3J/qzlf1wN6Ams2w4b0nGuxEJp2sNTcLXPqOP3/NHNLg7Hr41DID92fO5q+39xOO6ivQ7kI9R51NoBGjuGxlIL6OPru4P8A/lhY/EFPB+/Lxgmb7GASdSFRnkH68fnmxajb4rpxOnVT2ANWU4lyhOvKvHuZl8okwKtvCwaNrvAyvf3e4VgdAZuHieNyEiel7krt+XezjmUru/BRR04/oSm9C6cXbizE/gUnY60TIItjsDe2IXaJCpru+25b1uXM/Lif7e8dKy1Fk9niz3z3mh3fDYvVBtF46WZbpq7tzhu5bSsCzYVeu7PnS/fa2R8C+avBpPpG/erAs1bQf5iDGNJEueuJYQSLeRcparDHnDLDvsqUYGy2hteTSTau4BOZRUMatF8jH/OXIlGlFSpmhH66P757ZujZqFIDBDGn64uBn/2J9PB+Xl/cHYxGm83vkCWGXS1m1bDZmzuktuG/DHih3EFz11EZ1hk1SRH7ZZ7Ac4w5DC4HD1D9pS7apfVQuziGBQ6GVhKwjSkteGJPZi4UiikdHcjWJpFHnNlbOYEJpOw16V3dhEpXjRuGso1uBzB3Hl4ik1YGtqMgiT4gXxo4B31jnofjn+D/T+cR34nBSYpLDG2g8Vyy5pe5uff37gz9N+Y/xvzb5n/tp8743aTqNoXUjDNtLhRWBnpdfGpEoW7/5PqNlG5TJb0Rq3XMwx07YvNRl5/rcmvmr+mD+gNzqQvb243icoJtTTyzVrd00ql6rSpy/dTgZK0bOiH63STtEqDLKOKO+LPeMzmtjP/Lj9NpipRsy3/KSPFEg5bRrvJ7lFAbjb/AYwbVcU=
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add coins to a user's account"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/staff/addCoins/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+:::caution deprecated
+
+This endpoint has been deprecated and may be replaced or removed in future versions of the API.
+
+:::
+
+This endpoint allows an admin to add coins to a user's account.
+WARNING: This endpoint should NEVER be used on the client side. It has no rate-limits, or any checks. It adds coins and that's it. There is no special logic behind it. If you're interested in making your own coin earning system, you should implement your own backend with your own checks before using this endpoint.
+
+**DEPRECATED** *(will be removed in a future update)*: Use `/api/staff/{collection}/{id}/edit` instead (with `users` as the collection).
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"user":{"description":"The ID of the user to whom coins will be added. Must be a valid MongoDB ObjectId.","type":"string"},"coins":{"description":"The number of coins to add to the user's account. Must be a valid number.","type":"number"}},"required":["user","coins"]}},"multipart/form-data":{"schema":{"type":"object","properties":{"user":{"description":"The ID of the user to whom coins will be added. Must be a valid MongoDB ObjectId.","type":"string"},"coins":{"description":"The number of coins to add to the user's account. Must be a valid number.","type":"number"}},"required":["user","coins"]}},"text/plain":{"schema":{"type":"object","properties":{"user":{"description":"The ID of the user to whom coins will be added. Must be a valid MongoDB ObjectId.","type":"string"},"coins":{"description":"The number of coins to add to the user's account. Must be a valid number.","type":"number"}},"required":["user","coins"]}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Added coins to user.","error":null}}}}}},"400":{"content":{"application/json":{"examples":{"invalidInput":{"value":{"statusCode":400,"message":"Missing parameters","error":"Bad Request"}},"invalidCoins":{"value":{"statusCode":400,"message":"Invalid coins amount","error":"Bad Request"}}}}}},"403":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":403,"message":"Invalid token","error":"Unauthorized"}},"forbidden":{"value":{"statusCode":403,"message":"You are not allowed to access this resource","error":"Forbidden"}}}}}},"404":{"content":{"application/json":{"examples":{"userNotFound":{"value":{"statusCode":404,"message":"User not found","error":"Not Found"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal Server Error","error":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

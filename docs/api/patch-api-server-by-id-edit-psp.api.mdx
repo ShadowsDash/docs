@@ -1,0 +1,71 @@
+---
+id: patch-api-server-by-id-edit-psp
+title: "Edit server details"
+description: "This endpoint allows a user to edit the details of a server, including its name and plan. The user must be authorized to make changes to the server. If you are using an ADMIN bearer token, you can edit any server without owning it."
+sidebar_label: "Edit server details"
+hide_title: true
+hide_table_of_contents: true
+api: eJzlV0tPI0cQ/iulvmRXmrURsDnMzbwSK1mCwKsoYjmUp8ueXnq6h37gdaz571F1j429BhTOcGHs6frq66+eXokWHTYUyHlR3q6Er2pqUJQrEZYtiVL44JSZi64QyohStBhqUQiDDb9UUhTC0UNUjqQog4vU3RXCtuQwKGvGMptU9ahVN+QeyZ0sx/JcqnDlW1EISb5yquWzohSTWnkgI1urTADU2i48IERPDoIFkipAqAkkBVTag50Bgk+wBShT6SiVmYMKHpggoJHQajQDmNSUYZroA0wJMIbaOvUvSUZu8J6gqtHMyfNndpJxBzCewdJGQMcIDI8GRmdfxpcwJXSJ2T2ZIh2q0GSWaJY9ACxUqG0MYBcmkxskzXxrjSfPSh8eHPC/yppAJvAjtq1WVZJw+N2zNitBP7BpdbbwsarIp8dH1JHSdwFD9KdWkigPDw4K0ZD3OOcwZeUhthIDSeitZ1HrpSgEOWedKE3Uukt/hTh+MyNlHlErOTZtDC/SOt6lNc420OJSW5SgkvGGkDhBCdf0EMkH0aUETOevNJo3u2Cbl5GNNROHxs/IOZxqeouLlLQca1URJ4CxKcHCGi9nWM4oTRUHIOXki3TWITh6YwiieUrqV8gfPadPyuEtRl+3sZjOzLqpkpJek2UH+Z++ZliOVMlZB0ypB4FFc+RtdBVt+b3YuFnr8PntxZGy/TwjvkD2824MRwaiuTd2YSAxAVtVMYVuUStNUDnCwNW73RiuNKHnQC8B56gMaAzktuM6NoGcQQ19AWZO3fpqLof8xMrl/7jiXme20+9Ucb20jhtuUPn6uTWv9lorgaFF7osz67ZvIor9Zt/2FbCPMj7jvht6PD6X4uq9mpufeuc+cLc9Lm4z197ZHb9sog6qRReGM+uaTxIDvpu7B/oRhq1G9V7CnQJOobabLYFf8oJRiiG2aphxhysluyHlnWEoCuGpik6F5Q1L1Pc+T27CPWwU2XwjWh0CrxlJTP6cR/YziwftTPO8WVz+df1l9OfwZjK6uBjmkc9+BuleXJbXTwV8nhvQU0TWGqy13VmkZjZxVEGn8VyjtItfPJyhr2F0Nd7j9/fo+nJ8+VsJadhIW8WGTEj9AXj6BKU1KJOC0eC9MvMB3NiGgF25Jh9s1LxOo0mZyjLZQGAdLJw188E3880kcOUTyuhqnPJml5syPqCpyHOsH8n5TO9ocDQ4PP4VPvxhHYaPKaGsD03OqV4PXvrWO1G/wP18z60e+I52wT5Vt8q/K0R0mvXI1XArsFUp8RlFFKJMizdt1mhxV4ja+sBHV6spevrqdNfx1w+R3FKUt3eFeESneLtJi75Unp+lKGeoPb0SiQ/XfQl/hJfY9l+i4X2yH7hCFOKelvlXQnfXFaImlOSS9/ziNPv4NGHzJ8PnhkBXrI1GVUVt2Dq+Nyz5J8imr1yNJqe/i0JM+ynbpPnP+0yTgIunx/KWm9J/LE+Gfw==
+sidebar_class_name: "patch api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Edit server details"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"patch"}
+  path={"/api/server/{id}/editPsp/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows a user to edit the details of a server, including its name and plan. The user must be authorized to make changes to the server. If you are using an ADMIN bearer token, you can edit any server without owning it.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"id","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"name":{"description":"The new name for the server.","type":"string"},"plan":{"description":"The ID of the new plan to assign to the server.","type":"string"}},"required":["name","plan"]}},"multipart/form-data":{"schema":{"type":"object","properties":{"name":{"description":"The new name for the server.","type":"string"},"plan":{"description":"The ID of the new plan to assign to the server.","type":"string"}},"required":["name","plan"]}},"text/plain":{"schema":{"type":"object","properties":{"name":{"description":"The new name for the server.","type":"string"},"plan":{"description":"The ID of the new plan to assign to the server.","type":"string"}},"required":["name","plan"]}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Server updated successfully","error":null}}}}}},"400":{"content":{"application/json":{"examples":{"invalidInput":{"value":{"statusCode":400,"message":"Invalid payload input","error":"Bad Request"}},"invalidPlan":{"value":{"statusCode":400,"message":"Invalid plan","error":"Bad Request"}},"nonTransferrablePlan":{"value":{"statusCode":400,"message":"This service cannot be transferred to the selected plan.","error":"Bad Request"}}}}}},"403":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":403,"message":"Invalid token","error":"Unauthorized"}},"forbidden":{"value":{"statusCode":403,"message":"You are not allowed to access this resource","error":"Forbidden"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"An unknown error occurred while creating the server. Please try again later.","error":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

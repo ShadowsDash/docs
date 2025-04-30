@@ -1,0 +1,71 @@
+---
+id: post-api-earn-jfr-order
+title: "Create a JFR activation invoice"
+description: "This endpoint allows a user to create an invoice for activating JFR (Join For Rewards) for a specified number of members and coins in a Discord server."
+sidebar_label: "Create a JFR activation invoice"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVlFv20YM/isEX9YCqu2maR/05jbJ4GxNAyfFMLjBQEu0dYl0p/JOTjND/33gyUqUJt2ahwJ7qF98OB15H8mPx2+LNQlVHFg8pouLBF3NQsE4O8sxxdr5MK3NIYk9XskHyVkwwZx9JqbWU5jieWE8sM1rZ2wAKkt37YGg8SwQHGTCFBjIgrEbZzKGlROgLJgNBWPXcHw0h2fHzlg4cgJzvibJ/fPuFPiaM7MynINtqiULuBVUrCsPZHPInLEejAWCA+MzJzl4lg3LCBMU9rWznj2mW9ybTPQvczawDbqkui5NFoMdX3qNZYv8haq67Cx8k2Xs43JDZcNxL1Bo/DuXM6Z7k0mCFXtPa8YU38VA8z5MTJBFnGBqm7JMsN9O+9VfJsc2/hLcfzI4YzdUmnxm6yZ8E+H+fYSzzgZMNLrFh28phzl/btiHAaKXT0TUWGpC4cT8zfm/IHo5RPSna4CEwboApVuvY/oGyD4OffbQXj+9kpESh53TbyB7/XWuAoulckcn6BDdIXv8e9tjlC6db11+8x1YfVZwRboKN7Xe7paXnGmJatGGDOa26CZE5F+3IN/SvzsDpbFX4AQyl3cdFwoetMbuHh/E2DW2Gnlsqsd9P+y94PoW5uhZm3jlhq47G3Ude/S/HHeN/P1udzk2omRb9Jm5i6O/9kJPVk0ZTE0Sxisn1YucAv1M+49Pe+AvYVyXZH6S/IdnO9KcQ+H6sa15pVBgimOqzZhJ7PhyJWOnQ3yMCXrOGjHh5kzrsnvCPcu5u2I7bdTytlJFCLVaxJOY4pJJHlUCDN0nCOpFQyY4+TB/P/19fHY+PToaTw/ez06iNhjF8PQFnN+9lYfdoz2kQV++QfUmt+metDpYVy5iNUEt8ayg3F3/4uGAfAHT09kDnH9M5yezk19TiNIld1lTsQ3xSQbjwQdTlqoptDgVXRm7HsGZqxj0Kqm6g5VZFwGWupk5BR1YqXgtzq5Hn+wnG50bH71MT2eRn/exGesD2Yy9ln7D4jt4r0avRnv7b+DZb04oPFd2aUErim1kqbpTG0CRPb2acnagPu7FPBhB/2PBtqPb4N1oE2ykVPwdmRdItdExTKI64XKlLHQ7XYoXCRZK/XSB2+2SPH+Usm11+3PDctMp3A2JoaVSZXHRJlgwqXW62OIV32hmu0S9OFcwSS8WHp0hbdIbTbOM6zA4/mDMtxeDBj39cHaOCS538qCKCgTVcfSb3C0VZNv+Aw1+CcA=
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create a JFR activation invoice"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/earn/jfr/order/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows a user to create an invoice for activating JFR (Join For Rewards) for a specified number of members and coins in a Discord server.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"invite":{"description":"The Discord invite link or code for the server.","type":"string"},"members":{"description":"The number of members to activate the JFR for.","type":"number"},"coins":{"description":"The number of coins to activate the JFR for.","type":"number"}},"required":["invite","members","coins"]}},"multipart/form-data":{"schema":{"type":"object","properties":{"invite":{"description":"The Discord invite link or code for the server.","type":"string"},"members":{"description":"The number of members to activate the JFR for.","type":"number"},"coins":{"description":"The number of coins to activate the JFR for.","type":"number"}},"required":["invite","members","coins"]}},"text/plain":{"schema":{"type":"object","properties":{"invite":{"description":"The Discord invite link or code for the server.","type":"string"},"members":{"description":"The number of members to activate the JFR for.","type":"number"},"coins":{"description":"The number of coins to activate the JFR for.","type":"number"}},"required":["invite","members","coins"]}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Created invoice","error":null,"invoice":"invoice_id"}}}}}},"400":{"content":{"application/json":{"examples":{"invalidInput":{"value":{"statusCode":400,"message":"Invalid input","error":"Bad Request"}}}}}},"401":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":401,"message":"You are not logged in","error":"Unauthorized"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error","error":"Internal server error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

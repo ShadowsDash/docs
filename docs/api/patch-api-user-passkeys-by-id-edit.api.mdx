@@ -1,0 +1,71 @@
+---
+id: patch-api-user-passkeys-by-id-edit
+title: "Edit a passkey"
+description: "This endpoint allows a user to edit the name of an existing passkey. The user must be authenticated and the passkey must belong to the user."
+sidebar_label: "Edit a passkey"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVk1vGzcQ/SuDuTQB1lrFcXrYm+LYrdDaNWwZRaH4QC1HWsa7JEPO2laE/e/FcFeWEsdBfWt00YKcjzfDeY/coFdBNcQUIhbzDcayokZhsUFee8ICIwdjV9hlaCwW6BVXmKFVjWwajRkG+tyaQBoLDi11Nxk6T0GxcXaqe5eymnhzHSlcqBhvaR3fr6f6RBvGDDXFMhgv5ljgrDIRyGrvjGVQde3uIyhoIwVgB6QNA1cEAgDcEpQFejCRjV2B74OPYFZR79G0kWFBoFquyLIpFZMGZXWKMdhvrWpnV5KDB+9Rqi16ZyNF6cjheCx/pbNMluVTeV9LUONs/ilKARukB9X4uveIbVlSTJ93qm4prbHiNh47TVgcjsdd+mV49OLgjYnR2NWpoVo/n+JoPM6woRjVSk7srHeCZe+1y/7mhdlbK011wXyRk382+ZsMKQQXsMDrfY99TP+4FlQgsI6hdqsVaTB2D9rRC6FZx6eutT+CdbSDde4Ylsl8H9MwqAlTv7vF8+7lU0DhjsJJn+8ZSO+2k9D1hKLI751e/4dMTxjrFp+oFGb5IERkM3QlUXbzhG8Elu57Pi1d2CfGCM62/AHr7AE1ntfQC4KQ4xuF6PalYN7nu5HVpq3ZeBU4X7rQHGjF6ucAzvTAua+V+SkanVpNXLlH0RVootcF5sqbXEQtH1LGfGN0l4ue5phhpLINhtdXUuNA8Ehh5m7JTloJ8Vh1xezFI1ligQtSgcJ3hJyg3wKWKEms4fyvy7PJn/nVbHJ6mk8+nE3PB6kV8DLRl7vZP+kptGvpV3fR0iVMhsUCryql3f0vET6oWMHkYvoEz9+Ty/Pp+W8FpBtGu7JtyHKiEpgIkU1dg7HpWBp1K52HK9cQSKrQ9IaNWVXpnIwtnYBjAhfgPji7Gn20H20KbmKKMrmYpoP+GpuxkZUtKcrB3lGIPby3o7ejw6Nf4dUfLih+LTV6F7lRdq9+uTFBbafm2xL3lOL/do0Oo7PHpy7DNtQCup/QOSpvMEtTl8a2n1LMsEiPDOofC3iTYeUii8Nms1CRrkPddbL8uaWwxmJ+k+GdCkYtZDDmG9QmyrfGYqnqSD9o2qvLgVWv4TnMw6Ky0v1ByBEzlONIz6HupsuwIqUppOz9xnGf42Am7jvH7wljl22dJmVJnvfMn6i/vLUeGX8xmR3/jhkuhmujSfcKSuQUONt9FnORi38Bh9p2Og==
+sidebar_class_name: "patch api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Edit a passkey"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"patch"}
+  path={"/api/user/passkeys/{id}/edit/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows a user to edit the name of an existing passkey. The user must be authenticated and the passkey must belong to the user.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"id","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"name":{"description":"The new name for the passkey. Must be a non-empty string.","type":"string"}},"required":["name"]}},"multipart/form-data":{"schema":{"type":"object","properties":{"name":{"description":"The new name for the passkey. Must be a non-empty string.","type":"string"}},"required":["name"]}},"text/plain":{"schema":{"type":"object","properties":{"name":{"description":"The new name for the passkey. Must be a non-empty string.","type":"string"}},"required":["name"]}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200}}}}}},"400":{"content":{"application/json":{"examples":{"missingFields":{"value":{"statusCode":400,"message":"Missing fields"}}}}}},"401":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":401,"error":"Unauthorized","message":"You are not logged in"}}}}}},"404":{"content":{"application/json":{"examples":{"notFound":{"value":{"statusCode":404,"error":"Not found","message":"Passkey not found"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

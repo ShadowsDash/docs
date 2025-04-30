@@ -1,0 +1,71 @@
+---
+id: delete-api-server-queue-by-id-delete
+title: "Delete a queued server"
+description: "This endpoint allows the owner of a queued server or an admin to delete the server from the queue."
+sidebar_label: "Delete a queued server"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9lFFv2zYQx7/K4V7WAoLlJuke9KYtyWCs9bokxTCkeTiLZ4uLRDJHKqlr6LsPJJXESZcCeZlfLJG8ux/1/9/t0DoWCtqahcIKFXccuHb6nOWW5c+BB/5lu1DHaR0LVOwb0S4GYIUXrfbARjmrTQDqOnvnIbQM9s6wgF0DwU3MocCnhGAFyACpXhsIFnK9FDIdWIvt03uKm2GBwt5Z49ljtcOD+Tz+NdYENiE+knOdbtIVyn98xNohf6XedTnCD03DPj3eUjdwWgsUBv+rVYzVwXxeYM/e04axwnzxCUxhgSxiBSszdN2YfgUezd+9EmIwNITWiv7G6kWSo/m7fZKlhfuglBhaJsXyiISf97M+wh2+Em5tZaWVYvMDssN9sr/tACQMxk6is4piUvrQEKIphL0dpOE92tOHMveo718vZlLnJGd8Afb9U0EXJrAY6mBSNgc/Yv33/njP6Eio58DisbrcoW9a7imWDFsX0/sg2mxwLFDHjnAUWizQUB83tUr+vRm0RN2DDDxeRbjQ2sd2wyKHVViS02W+Y5n8X+60Gst8rMQCPTeD6LA9jxiTtTzLhb1mUw8xxwNYG4KLEekkVrhikuSe5y3MkLcgxCy5aZd/nH2sP5TnF/XpaVkff1wsIdaZ4ZguurapkA5dapmWlL37ycMx+RbqT4vvivxVny0Xy98qSAND2Wbo2YTsau3BB911ECdCy9DTtTabGZzbniGWkj4f7PWmDbCKi42Njggcx8mdWLOZfTFfTEqu8wCqPy1gbQWesmnjA5mGfZwrtyw+4x3ODmcHRz/Dm9+tUHgbxXTWh56S/yYt8wh8PtCeX3XPzf/PdJzUDvw1lK4jbSL9IF1Eya66RHI6eWcCTrFYYJXs+eBBvCqwtT7EiN1uRZ4/SzeOcflmYNlidXlV4C2JplXU/XKHSvv4rLBaU+f5B9/izdnUBW/hJehpkcw2ipM7G7HAa97mVhqvxgKnIRir5426adiFvZDvZsiTljs++XBycYLj+C++pGjW
+sidebar_class_name: "delete api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete a queued server"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/api/server/queue/{id}/delete/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows the owner of a queued server or an admin to delete the server from the queue.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"id","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Server deleted","error":null}}}}}},"401":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":401,"message":"No authorization header","error":"Unauthorized"}}}}}},"403":{"content":{"application/json":{"examples":{"forbidden":{"value":{"statusCode":403,"message":"You are not allowed to access this resource","error":"Forbidden"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal Server Error","error":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

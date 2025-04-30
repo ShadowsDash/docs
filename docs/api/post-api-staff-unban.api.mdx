@@ -1,0 +1,71 @@
+---
+id: post-api-staff-unban
+title: "Unban a user"
+description: "This endpoint allows an admin or staff member to unban a user by providing their user ID."
+sidebar_label: "Unban a user"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVlk1v20gMhv8Kwcu2gGoHSboH3ZymKYzdfCBOsFi4OVAa2ppGmlFnKKdew/99wZEdO21aNIce6ouF0Qz5kPOS1ApbCtSwcIiYT+8y9C0HEuvd2GCOrY8yau1EaDa7dQU5zNBwLINtdQ/meFPZCOxM660ToLr2DxHIAZnGOvABop6FhpuCA4iHTs0AQRc5QLGENviFNdbNQSq2oV8fnw4ww8Cx9S5yxHyFhwcH+ld6J+xEH6lta1sm2OGnqDQr5C/UtHV/InZlyTE9LqjuOK0JSRffecOYHx4cZNhwjDRnzDHF59gkAnXPIfiAuevqep1+GR6/GKIgc82fO47yXY7jpxznNkZNx97NPLLgCRnY2ttBHb0QqnPUSeWD/Y/ND7CO9rHGbkG1NSD+nt0e0e2+LcWZ+VBYY9j9rOV/fQcUGJzfCIjVC1C6PRAVWODou1Dynt+zRze7PBy/MA/Oy5nv3I9ycPxEIqpNxZylUzuYCy/QW9rCvH25XDksOLzvLX6H5+1TqYydcHBUQ38WEk4GZcXlvZYTGBayddxT8/NnUlmnrZjjqyvh4A2Vsqz716/z/n9rbxPlWks0afHEm+VPhBvLihvSJ1m2GoAvPnEpmGEbtPGI3egzcsrB162GYXwKfpZCS31i208GcN5FgYKBoJfpuXdzf3oCl8nD2GgKNk6jBOvmuMW3QYtg2ju909Wmq8W2FGQ486F5Y0joN6IX/iLDtib7+6Q8JZ2l8tuZo3gkFeY4pNYO0wwZJrdDzDBy2QUry4nGtsO/0c406vTYY7SVSKsn0k7MsWAKHJ6ZYgz9q76/acQEF5fX56O/h5Ob0dnZcHR6Pr7YzAblVU1f79T/vq/kXSofY87QuplPTFZ0B04qMv7hjwinFCsYXY2/4flndH0xvviQQxqvxpddw05SMYGNEMXWNViXbqWhe+vmA5j4hkFdhabf2Nh5lS7IutIrnLAO5Ifg3Xzw0X10ybiNycroagwzH+Apm3VRyJWcOsiCQ+zxjgZHg8PjP+HVXz6QvNYY9dYaSpJz1DzO082g/zrAvU7xS78gNirYK4l1hl2olaAX2BSptaoQdYIZdpuvHLzLsFIl5lNcrQqKfBvq9VqXP3cclv3X0oKCpUIvdXq3zrBiMnr30xXe8xJzfNdH+eZGObJtT3+2wayz7aFRWXIre9u/aaXru716ubqc3GCGxaYFN2lQ6BRukt1s96iQ6/X/QXpw0g==
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Unban a user"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/staff/unban/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows an admin or staff member to unban a user by providing their user ID.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"user":{"description":"The ID of the user to unban. Must be a valid MongoDB ObjectId.","type":"string"}},"required":["user"]}},"multipart/form-data":{"schema":{"type":"object","properties":{"user":{"description":"The ID of the user to unban. Must be a valid MongoDB ObjectId.","type":"string"}},"required":["user"]}},"text/plain":{"schema":{"type":"object","properties":{"user":{"description":"The ID of the user to unban. Must be a valid MongoDB ObjectId.","type":"string"}},"required":["user"]}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Unbanned user.","error":null}}}}}},"400":{"content":{"application/json":{"examples":{"badRequest":{"value":{"statusCode":400,"message":"Missing parameters","error":"Bad Request"}}}}}},"403":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":403,"message":"Invalid token","error":"Unauthorized"}},"forbidden":{"value":{"statusCode":403,"message":"You are not allowed to access this resource","error":"Forbidden"}}}}}},"404":{"content":{"application/json":{"examples":{"notFound":{"value":{"statusCode":404,"message":"User not found","error":"Not Found"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error, check the details.","error":"Internal server error","details":"(Pterodactyl error): error details"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,63 @@
+---
+id: get-api-articles
+title: "Get articles"
+description: "This endpoint returns the articles stored on this instance."
+sidebar_label: "Get articles"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVN9v2kAM/ldOflkrZZACCTRv0fpDaGtXFao9UDSZxJBbk7vszqFFKP/7dAmsdKwPW15y8tnnz/4+ewu6JIMstRqnEMGKOC5lbFgmOVnwICWbGFk6B4hgmkkrSKWlloqFIa6MsoIzErgLEZa1oVRoJdg5S2UZVUId8MCQLbWyZCHaQs/33S/RikmxO2JZ5jJpsHR/WJdvC/SCRZm3EQu0MnGHNeYVuYNl5Mp+0ilB1PN9D8gYbSBSVZ57sIcE0WwL36UrLxz56Zm/DM8TDNOBv0zOe8FilPjgAUvOyZVIlvfVgAc2r1YQAZPlj69WWeDKOYP3WkDbHGkFqoN4rDhzkCAMkyUG/iIYoT/oB6Mw6I0GIfbFCSpRWTKi0GqlhUxPwYOyWuTSZpRCdDYcBOEoHA4HwXDgAaWSj8z1vG4+D4K2rW9pGysmozAXEzJrMuKyaZP3L81/cAiVZrHUlUrfZSE4YOGdtPUeakGc6Z3oXMnIGUTQxVJ299R1HQOUVEbyZpJkVLRgXLum+olUXLmYLfCmdHRkzKWLaDwhggWhIfMXFZNorwS7V4ReChS3X+9v4i/dyTS+uurGFzfj24aWDjisUi11k2inkkmGqX7+YMUF2kzEd+OjJN/i+9vx7XUkGlmkOqkKUtw02InEssxzIVUzPAU+SbXqiIkuSLhUpmgdC7nKWCycMdGOCyahjXg2Wq06j+pR7TXnXonvxmKpjXiLbT+A1k3gmoxt4fU7/U5vEIqTz9ogn0LtQaktF9gwr7Dp3zX9HoWjXbD9U/n/vRZ25DG9cLfMUSoHpjK5y9GKYgZYSjiYaA9g7kGmLbvL7XaBlh5MXtfO/LMis4FoNvdgjUbiwjE2m9ceZIQpmWYfPNEGIoiThEonvp2Yj8egnh8I9fpyCnX9CwMIwIw=
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get articles"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/articles/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint returns the articles stored on this instance.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"basic":{"value":{"statusCode":200,"error":null,"articles":[{"_id":"680d10f69ca6d40fc925b8c0","title":"Test article","slug":"test-article","image":"","content":"This is an article","author":"66cfa50b58a04358652846a3 (an user mongo id)","published":1745686774574,"edited":1745686774574}]}}}}}},"500":{"description":"Internal Server Error","content":{"application/json":{"examples":{"User not found":{"value":{"statusCode":500,"error":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

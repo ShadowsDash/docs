@@ -1,0 +1,71 @@
+---
+id: post-api-staff-update-loc-coin-renewal-rules
+title: "Update location coin renewal rules"
+description: "This endpoint updates the coin renewal rules for a specific location. It requires the location ID and ensures that the requester has the appropriate permissions (ADMIN or STAFF)."
+sidebar_label: "Update location coin renewal rules"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVk1vGzkM/SsCL9sCU9tI3D3MzU2ahbGJG9gJFgs3B3qG9qiZkVSJk9Rr+L8vKNnxpEmK5hhfLIz48Ug+ktqAQ48NMfkA+fwmA+vII2trxiXk4GzgkdMzxuXy2pXIdG6LE6vNlAzdYz1tawqQQUmh8NqJHuRwVemgyJTOasOqjXpBcUWqsNoon3SVF2W1tF6hCo4KvdSFqm0R3ffUmJWn7632O939jRqfKjSlIhPadIccBUSaApNXFSYVdM5b5zUyKUe+0SFoa4J6Nzq9GE+U9Wp2NTo7e9+DDDwFZ02gAPkGjgYD+SusYTIsR3Su1glA/1uQMDdAP7BxddIIbVFQiMc7rFuK3xi5DSe2JMiPBoNt/GUwfLXxCNysLju1esHNcDDIgLy3HnL4hKWapqRABg2FgCuCHC6SOdWp/QHb8SuxtQZbrqzX/1H5C1jHB1jXXY0urrG5w1qXiu0tGRA4S+sXuizJ/J7lswfxrtl/bavQkzKWFda1vSdxoTAWTLGQ1VOwrS+ok4fhK/NgLJ/Z1vwqB8MD0olllcS7SM/3FBeoy3i9B/Tx9Ywkf0f+c3L4AqaPQpduAZi8wVolXRXRZqqoqLiNDVUSo66D9Ms+kmd1drC30laRf59suf4N/KGoqEE58doJIrv4RoWwVxqZPOsU234WyPnn2UMyIOzy8cy4r2x4dvwIMdiqBe3mVCmx7ZwH9tqsYB+G9sLw+cH5jdw0bc3aoef+0vrmQ4mMbzQSph/cdzXqt1mKWAziyu4Xl0BFriCHPjrdD7LE+u1LW6wPGQQqWq95PZPYd+MtkL+SeTRqxdRDNipmJxpREnJYEHryz6xCUukqTTXJBqrJl+nF6Lwfl08/7SLx04vxSS9MD13zObX041Q/5CMDbZY24tIsUjCrsLT3fwR1iqFSo8vxE0z/jKaT8eSvXMU9XdqibchwKo4OKrCua6VNrFqDt9qsempmG1LiyjdJsNGriqVW2hRWADLJPr331qx6X81XE43rtIdHl+O45x9j0yYwmoLiOLkjHxK8495x72j4p3r3t/XI7yVGqWaDkWIGY7rTY+RAqqd0+jnszux5mw+UHfE6XbrNoPW1hJZ4Pgd0WkgpTIcMXuQ6ZAA3GVTSJPkcNpsFBrr29XYrn7+35NfpNXiHXuNCeDW/2WZQEZbkIZ9v4JbWkMNJSumHK8GW7XfMszNxm+2VRkVBjjviTzbB9qbTypdfZleQwWK3QZq4uORl0ES72eEoILfb/wE+z8ta
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update location coin renewal rules"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/staff/updateLocCoinRenewalRules/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint updates the coin renewal rules for a specific location. It requires the location ID and ensures that the requester has the appropriate permissions (ADMIN or STAFF).
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"location":{"description":"The ID of the location whose coin renewal rules are to be updated.","type":"string"}},"required":["location"]}},"multipart/form-data":{"schema":{"type":"object","properties":{"location":{"description":"The ID of the location whose coin renewal rules are to be updated.","type":"string"}},"required":["location"]}},"text/plain":{"schema":{"type":"object","properties":{"location":{"description":"The ID of the location whose coin renewal rules are to be updated.","type":"string"}},"required":["location"]}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200}}}}}},"400":{"content":{"application/json":{"examples":{"missingParameters":{"value":{"statusCode":400,"error":"Bad Request","message":"Missing parameters"}}}}}},"403":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":403,"error":"Unauthorized","message":"Invalid token"}},"forbidden":{"value":{"statusCode":403,"error":"Forbidden","message":"You are not allowed to access this resource"}}}}}},"404":{"content":{"application/json":{"examples":{"notFound":{"value":{"statusCode":404,"error":"Not Found","message":"Location not found"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error, check the details.","error":"Internal server error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

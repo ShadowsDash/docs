@@ -1,0 +1,71 @@
+---
+id: delete-api-server-by-id-delete
+title: "Delete a server"
+description: "This endpoint allows a user to delete a server by its ID. The user must be authorized and either own the server or have admin privileges."
+sidebar_label: "Delete a server"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNlE1v2zgQhv/KYC5tAcFyk7QH3dQ6KYxtvUXiYrFIcxiLY4uNRKrkyKnX0H9fkFRip90UyG19sUDOxzOcd2aPtmNHoq2ZKyxQccPCZaev2G3ZvdvN1SweYYaKfeV0F2yxwGWtPbBRndVGgJrG3nkg6D07EAspEBD4GAhWO9DiYT6bwLLmZNb2XmDFQL3U1ul/WAEZBaylZgf2zoDUfB/AOqhpy0Cq1QY6p7e64Q37CWbo2HfWePZY7PFkOg1/lTXCRsIndV2jq1hk/s0H+j3yD2q7Jnn4vqrYx88tNT3HMyHp/XurGIuT6TTDlr2nDWOB6WnGChVmyM5Zh4Xpm2aIvwzPpq+fCdGbwzM8SXI2fX1MsrAPbxcDQ82k2B2Q8Mtx1APc6TPh1tattFJsfkN2ekz2t+2BHIOxozZYBVVQfGiQoB3H3vau4iPai4c096hvnt/M2J3zFPEJ2DePGzo3ws5QA2Nnk/MB67/vh3vGjhy1LOw8Ftd79FXNLYWUsutCeC9Omw0OGeowOB1JjRkaasOlVlG/33vtQt/F9TzcBDip7WEgMUtuBebU6TzVmO+1GvJkkGOGnqveadldBYBRVJ7d0t6yKfvg/YBUi3TBI1pigSsmF3Xz84wzpCuQEAXsGggWf15+Kj/mV8vy4iIvZ5/mizjOExxiiWsbE2lp4rDUpOzdCw8z8jWUn+e/JPmrvFzMFx8KiBtF2apv2UjSs/bgRTcN6LQLWrrVZjOBK9syhFSuTYat3tRxl2hT2aAF4bAx7pw1m8lX89XE4NrHKOXnOaytg8ds2nghU6WNsmXnE97p5HRycvYWXv5hHcmr0MbOemkpKm/s4uzxtvu5xiMB/6/25qgG4R+Sdw1pE6rrXROIk96ukTodtTXWVUTBPqgSbzKsrZdgud+vyPMX1wxDOP7es9thcX2T4ZacplXQw/UelfbhW2Gxpsbzb57q5eU4F6/gKdjxkMwuNC3NOmKGt7xLwzXcDBmOazFkTxdlVXEnRy6/bJVHQzg7/3i+PMdh+BezZ3rP
+sidebar_class_name: "delete api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete a server"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/api/server/{id}/delete/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows a user to delete a server by its ID. The user must be authorized and either own the server or have admin privileges.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"id","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Server deleted","error":null}}}}}},"401":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":401,"message":"No authorization header","error":"Unauthorized"}}}}}},"403":{"content":{"application/json":{"examples":{"forbidden":{"value":{"statusCode":403,"message":"You are not allowed to access this resource","error":"Forbidden"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal Server Error","error":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

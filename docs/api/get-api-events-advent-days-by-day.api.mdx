@@ -1,0 +1,71 @@
+---
+id: get-api-events-advent-days-by-day
+title: "Check Advent Calendar Claim Status"
+description: "This endpoint checks if a user has claimed a specific day in the advent calendar. The user must provide a valid authorization token and a valid day parameter (1-24)."
+sidebar_label: "Check Advent Calendar Claim Status"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVE1z20YM/SsYXGrPsKK/0gNvjO2kmjZqRlKmB8cHmAuJW5O79GIph9Xwv3d2SdlyEnvi3KoLV4sF8AA8vC3ahh15bc1UYYZr9nmjLzdsvOQqfC6ok7fdBXWYoGIpnG7Ca8xwWWoBNqqx2ngoSi5uBfQKCFphByUJFBXpmhUQSMOFXukCFHWgDfiSgWICKKhio8hNYFny4Fu34qFxdqMVA8GGKq2AWl9ap/+NaMHbWzZARj3YQ+SGHNXs2cHB8a8nZ4cTTNCxNNYIC2ZbPDk6Cp/CGs/GhyM1TaWLGDT9R0JlW+QvVDfV4CFtUbDE44aqluOdJ9/KuVWM2cnRUYIlyflQK2betZygog6z45D9nlxo7TweQLEnXQn28Zfg2asBaRPrDSN5DtNZwMTOWYcZviUFc75rWTwmWLMIrRkznJqHvu2hOX4lGmPz1pe/Myl2L+A5fsTzyewmyeoJoJn9asblEPUR3OnPtWoZuPICuNMfALfrVuTdA6Q3r6cTuw27yyHdM4jehPHtp/bsDFUw+MKA9RHz9+39DuPDTghmV1uUouSaQkrfNSG8eKfNGvsEdVjrhnyJCRqqg1HFxXd812q3I3d/HdD50o6KgcnglGFKjU45qkc6bHeqqJN0q6jrU0xQuGid9t0igBgaEhY+DijwaA9W6X0TPOJLzPCGybH7jgoxDKZREmxQoNlf8w/5n+limb97l+YXH6azKCwT7GOZKxsTaV+FyIuSlL3/ReCCpIT84/SbJH/n89l09j6DqHnKFm3Nxg8k1QLidVXtVK2mW23WE1jYmiGkcvXwsNbr0sNNuCxs4INnsA7unTXryWfz2cTgWmKU/OMUVtbBU2zaiCdTsARd27CTAd7p5HRycvYbHPxhHfnDMMrGiq8psm+c5HkQaBhEHc5HzYWoWrCI5Pu67D1e/2/EfiSP5y8+bSrSJjSjdVWoZiDpFVKjw/ZEmmKCAzKMkh3+ZwPn8TrB0ooPHtvtDQl/clXfh+u7ll2H2dV1ghtymm4Cja62qLSEs8JsRZXwC+08mI8bdQjPgR4vyQQwo0wgJnjL3biX/XWf4KiRIf1gyYuCG7/n840iPdnf95dL7Pv/ADxzxDY=
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Check Advent Calendar Claim Status"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/events/advent/days/{day}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint checks if a user has claimed a specific day in the advent calendar. The user must provide a valid authorization token and a valid day parameter (1-24).
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"day","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"hasClaimed":true,"day":1,"reward":"Reward details"}}}}}},"400":{"content":{"application/json":{"examples":{"invalidDay":{"value":{"statusCode":400,"error":"Bad Request","message":"Invalid day"}}}}}},"401":{"content":{"application/json":{"examples":{"noAuthHeader":{"value":{"statusCode":401,"error":"Unauthorized","message":"No authorization header"}}}}}},"403":{"content":{"application/json":{"examples":{"invalidToken":{"value":{"statusCode":403,"error":"Unauthorized","message":"Invalid token"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error","error":"Internal server error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

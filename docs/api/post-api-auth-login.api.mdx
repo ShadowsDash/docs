@@ -1,0 +1,71 @@
+---
+id: post-api-auth-login
+title: "Authenticate user with email and password"
+description: "This endpoint authenticates a user using their email and password. If 2FA is enabled, it will indicate that 2FA is required."
+sidebar_label: "Authenticate user with email and password"
+hide_title: true
+hide_table_of_contents: true
+api: eJzlV0tv20YQ/iuLubQFGEm10x54KhPbhdBEMSynReH4MOKOxI3JXWZ3aFkQ+N+LWepBS47rAAV6iC4id2dmv292XlxDjR4rYvIB0pvbBFxNHtk4O9aQQu0CZ7XJGi7euYWxkICmkHtTiwikcF2YoMjq2hnLChsuyLLJkSkoVE0gr5pg7EJxQcYrqtCUCq1WNYawdF4P1HiuTi4yFe3grCSdKMNqacpSGaujLcUF8lbK05fGeNIDSMBTqJ0NFCBdw8loJH+5s0yW5RHruhQDxtnh5yCA10APWNVlp8FLN8ecnd/alMXHBKdNnlMI86ZUpXggghckfRj3WDYkuoGRm/DWaYL0ZDRKoKIQcEGQQl8HEiDvnYfUNmWZAMYzrt0d2e2SEfdH/1XOLpwyOtKN+uHkIoOUfUNtm0DYIbQubryYgnX8zTSy3hU/z6NDz/HlJXzmWIZIyNh7LI3OPWk5CctwzGncyWwCyvl9PH2Nx+vRzzu0z6vvyT4jJkBnaC1pIXUM8KNQNUF1Ms+gOt2junB+ZrSO/tqD+Ns1Cj31LM3QnhGj6RzjCWNow1V8UHPnRRZagXhf21np8runQnsLsUtQVH9eTiJH7x5W/wXgA7u4tSy4tAkx12NAHkM7F4cPLzfe3oStCWqr9jJ4E8cKy9ItY6TuAf679e52tcQnBT7G9wa12mwq3ZBipyoTIt9vicjRHmvP4iOs/fWY7eTvyW+0jrOCyVssVSelothXz/+lf/6TqgfJ8IREovKC8jsp70p3MSnei78uvynwG6dXL6jMIS+owliXV7Wc6GafKRd31F7aEpuuakcPy8Pc+QoZ0s3KYW8675qN1p5CUG4eQcZsTbYnBPbGLqBNYHtbx07dxcmzFtpdNdOQ3uwQ7czeikTVlGxq9DwU6K80Mn4fxJkeeFiXaL6Li45XTVy47QgV97mAFIZYm6GMScNYdYYgGZ033vBqKl7piMvJsYtKt+35qWCuRSNKQgozQh8xHg5lpLqtrv0KIVSTD1fvs3fD6XV2cTHMzt6PJ5FhV+wkB6/22XreDUm9S4iYftsMT4PcVX3Off8aO3cRsmExANMCtVv+ENQZhkJll+MjuH9lV5Px5PdUxWFSu7ypyHKsDVKVA3ejYLyTCu+MXQzU1FWk5CgJDBGszKJgNZPF3AlGJinCS+/sYvDJfrLRuAnRSnY5jm3yMTZjA6PNKcSKST508E4Hp4OT17+qH/9wHvmnGEMucIUxli1Wh2NRN/YuDRdPzLuH7HtV8f8epjdB1svVNoHGxwzswvcGsDaQgECDBMrNJwHcJlBImKc3sF7PMNBHX7atLH9pyK+6L4t79EYgyVubQEGoZXC6WcMdrSCFt50fXl0LjF3LerJmtslWKctzqrknftRY2tteMl5+mF7LALVpSFXsg7G8RLvJ/lFAtu0/pUqMBw==
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Authenticate user with email and password"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/auth/login/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint authenticates a user using their email and password. If 2FA is enabled, it will indicate that 2FA is required.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"email":{"format":"email","description":"Email address of the user","type":"string"},"password":{"description":"Password of the user","type":"string"}},"required":["email","password"]}},"multipart/form-data":{"schema":{"type":"object","properties":{"email":{"format":"email","description":"Email address of the user","type":"string"},"password":{"description":"Password of the user","type":"string"}},"required":["email","password"]}},"text/plain":{"schema":{"type":"object","properties":{"email":{"format":"email","description":"Email address of the user","type":"string"},"password":{"description":"Password of the user","type":"string"}},"required":["email","password"]}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"twofactorrequired":{"description":"Successful login and 2FA required.","value":{"statusCode":200,"message":"2FA required","error":null,"accessToken":null,"id":"user mongo id","requires2FA":true}},"successfulno2FA":{"description":"Successful login and 2FA not required.","value":{"statusCode":200,"message":"Authenticated","error":null,"accessToken":"user token","id":"user mongo id","requires2FA":false}},"invalidcredentials":{"description":"Invalid email or password.","value":{"statusCode":401,"error":"Invalid email or password.","message":"Invalid email or password."}},"banneduser":{"description":"User is banned.","value":{"statusCode":403,"error":"Forbidden","message":"You are banned.","banDetails":{"reason":"Reason for ban"}}},"vpnblocked":{"description":"User is using a VPN or proxy.","value":{"statusCode":403,"error":"Forbidden","message":"You are using a VPN or a proxy."}},"disabledlogin":{"description":"Email/Password login is disabled.","value":{"statusCode":403,"error":"Not allowed","message":"Email/Password login is disabled."}},"badrequest":{"description":"Bad request due to missing email or password.","value":{"statusCode":400,"error":"Bad request","message":"Bad request"}},"servererror":{"description":"Internal server error.","value":{"statusCode":500,"error":"Internal server error","message":"Internal server error, check the details."}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,63 @@
+---
+id: get-api-earn-top
+title: "Get leaderboard"
+description: "This endpoint retrieves the top 10 users based on their earnings today. It returns their username, coins, earnings today, avatar URL, and last seen timestamp."
+sidebar_label: "Get leaderboard"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVMFu3DYQ/ZXBXNoChCTbsdPyJjSOsajjBt41enAWAVcarxhLJEuONl4s9O/FUOvWcdBDb9VFxAwfZ+bxPR7QB4qGrXeLFjVuietgL010Kx9QYUupiTZIHjWuOpuAXBu8dQyROFraUQLuCNgHOKlgTBQTbEyiFryTjI1AJjrrtgnYt2ZfwCKDx+jScYOgnBlIQeOtS+oVQoHZGTYR7m6vFRjXQm8SQyJywHagxGYIBSqMlIJ3iRLqA55Wlfwa75gcy9KE0NsmT1t+STLSAenJDKGfEWlsGkp5uTP9SDnGhsf0q28J9WlVKRwoJbMl1HhNpqW48Sa28OBH16JCitFH1G7se4X9PxtQ3x/wsxWOZVhZKXweG/VzG58lhAozDahPpKBwQe1KiEB9XimcybiLPWrsmEPSZXnEF40fyjlffAlbVChMLYkc6pOLX35+e3H+5uy0qqppPeVP4fl/p4nijuLlPOm/UHX+LVULxzJqDzMWZpr+pgtrB6Ojp0ANUztnwTfNGCO1OD23OhB3/ihTVBgMd6ixNMGWQlLJPpSoMFEzRsv7ZdPRMLcstK78I7l6FMwBeR/oSJ8g8k7UuCET8wW8Fj7BnAKWU8A/gIGb328/1NflclW/f1/W7z4sbrKQC5RerXvwuZDlXk5edqb1X39I8M6kDuqPi++K/FHf3ixurjRkm7W+GQdynK8BbILEtu/BZk/BYB6t2xaw9AOBlIrDvHGw245hI8HGy40xgY/wNXq3LT65Ty4fbmfP1h8X8OAjfNubdYmNayiJo3YU09zeWXFWnL65gB9/89HwTzgpDD7xYLI+jjK+IoaXqn814wuZ/f8fk6NEmJ64DL2xTkYexXWHo/Tu0QSLs0MFkJ9MXCvsfGJJHw7S/F3sp0nCf44U96jv1wp3JlqzEWXcryeFXeYsPxKPtBdDNA0FEfnRXd+bclq/MMTV5Qqn6S9nLP+M
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get leaderboard"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/earn/top/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves the top 10 users based on their earnings today. It returns their username, coins, earnings today, avatar URL, and last seen timestamp.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Leaderboard found","error":null,"leaderboard":[{"_id":"user_id","username":"example_user","coins":100,"earnedToday":50,"avatarUrl":"https://example.com/avatar.jpg","lastSeen":1698765432000}]}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error","error":"An unexpected error occurred"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: post-api-user-verify-by-code
+title: "Verify user email"
+description: "This endpoint verifies a user's email address using a verification code sent to their email. If successful, the user's account is marked as verified."
+sidebar_label: "Verify user email"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVlkuP2zgMgP8KwUtbwI0H03QPvmXaziLYbTqYpLuHNAfGZmJ1bMkjyWmNwP+9oJTXPLFz2+YSQRLJjxQf3mJDlmr2bB1m8y26vOSaMNui7xrGDJ23Sq+xT1BpzLAhX2KCmmo5zE3BmKDl21ZZLjDztuV+kaBp2JJXRo8LETLOjxr11bH9h61adRfdhyhZsMutauQmZjgrlQPWRWOU9rCRq4odELSO7SsHXJOqgIrCsnPQOqXXQLt7eTAHQgSOtQdvwJesbJQawHgFrs1zdm7VVomc7dVSnptWe1AOarI3XAC5vfViEPxzjdGOncTl/OxM/nKjPWsvS2qaamc//e7Eky3yT6qbKkrszMpyQ1XLYc+Tb12IQnZ+dpZgzc7RWoI6PVBW3QEDOtPaPSkmyNYai5luq6oPvwSHLwZTekOVKmbmhvWTdMO7dOMoczfqPmg4UOEFFXDNty07j0e84Qvx5Hkmxl+aVhfP4A1P8STHQBsPqyB1RJoc9vZA71/+kGw3bD9FjU/wvL8fLs9WUwXTIAtR+Ij1+Hm/Z7QxiBem6P4D64PiNcvvnEu6NFYq0qvoRyjbbPug+vj5Wnq0DKU+7rWK/rQjzKO1hezWbeVVQ9anK2PrtwV5+h2wPf/0aVOR+g2CHMLMvjT7vitc0rMzTKlRqWhPA0CXbkWoTzFBx3lrle+m4tux+EJjGLUiffC29L4RiXATM1wyWbaPtHKGeBSbA5gVEEy+XH8e/Z1OZ6PLy3T08fN4EtwdBHcki6+P+f4pFt4xlHdG0coEJuWr0DJLKsyPVw4+kithdDV+wPPv6HoynvyZQZgxhcnbmrWPT6AcOK+qCpQOL1DTjdLrAUxNzSCmbB0v1mpdeljKZm4EzjMYCz+s0evBN/1NB+XKBS2jqzGsjIW7bEo7Tzrn8KQbti7ivRu8G5wP/4DXfxlL/o34KI9XU0i53bSNszNELKbHfS9PGsT/dpbu0uikpvoEW1sJfUzUOVKjMAkZGIOkVh0mmO2+NnCRYCmZnc1xu12S46+26nvZvm3ZdpjNFwluyCpaSnbMt1goJ+sCsxVVjp8J2+vrXVG9gadgd5ukBWo3AxATvOFu/0nUL/oES6aCbbAfjz5EK29nouAo+lhX7JO90CjPufEn1x80fvneOpT81ZfpDBNc7gZGHStHFAe9yXGZzaVd/ALxj3qz
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Verify user email"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/user/verify/{code}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint verifies a user's email address using a verification code sent to their email. If successful, the user's account is marked as verified.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"code","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"code":{"description":"The verification code sent to the user's email address.","type":"string"}},"required":["code"]}},"multipart/form-data":{"schema":{"type":"object","properties":{"code":{"description":"The verification code sent to the user's email address.","type":"string"}},"required":["code"]}},"text/plain":{"schema":{"type":"object","properties":{"code":{"description":"The verification code sent to the user's email address.","type":"string"}},"required":["code"]}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Successfully verified your account","error":null}}}}}},"400":{"content":{"application/json":{"examples":{"invalidToken":{"value":{"statusCode":400,"message":"Invalid verification token","error":"Bad Request"}}}}}},"404":{"content":{"application/json":{"examples":{"userNotFound":{"value":{"statusCode":404,"message":"User not found","error":"Not found"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal Server Error","error":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

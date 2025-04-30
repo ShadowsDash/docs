@@ -1,0 +1,71 @@
+---
+id: post-api-staff-migration-psp
+title: "Migrate to per-server plans"
+description: "This endpoint migrates the system to per-server plans. It converts user plans and coins to balance, sets expiration for servers, and optionally deletes or unlists plans."
+sidebar_label: "Migrate to per-server plans"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV8FuGzcQ/ZUBL22BjSTYTg97k+O4EFo7gqUiKBQfRrsjL2MuyZCztgVB/x4MKdmqLAf1IYcC9sULkjPzSL43elwpjwFbYgpRlbPrQjlPAVk7O6pVqbyLPPR6wrhYXOibPDOOXhWqplgF7WVAlWra6Ahka++0ZWjTUorADUFcRqYW2IGn8C5SuKMA3qCNPRgxVM7eUeAIXdyOA9oaKqdtlKg5GrQVFRCJI9CD1xkGLFyAnC4WKcQlNGjMEmoyJABcgM4aHTluSqpCBYre2UhRlSt1NBjIv8pZJsvyid4bXaUS/a9RdrdS9ICtNzkidlVFMX3eoekojTFyFz+4mlR5NBgUqqUY8YZUqUY2suCH1tUEna+RqYZNkkVnzFIwUQguqNJ2xqzTX6FOXo1M2zs0uh5Z3/GL8E724aUY8Lg0DmvQKfgRkDrFGq7oW0eR1ROy41ciW7gw13VN9gewjndh/eM6wEBgHQMa4+6pFi5gOjVgYVug6LpQ0Q7Y88cyW6jvX3+9iVEfc8YXwL7fP0OmYNFs2AgZzhOsx/lJns/J11uMIR/vqauX/wFrrBpqUb546aW6m3+lSq7MBxEv67wPofs46Iqm7jQr6EoSydS+dAmSouSAN2pMYgEv4bsa7MFFFxnmBAiZNrZr5xSEwRs0eUCtC5UEvFucXqxNu6X3hf+qok/t4YwMLg9XrGUKtIVIlbN1KhaJ93sLmu2NxldhyL1nLO3mef3PDXFDQUrmdanMph2e0QI7wwnQAk2knfxz5wyhMDszRgeqVTl78Z4PXsDzA7qWfG1nWHsM3F+40L6rkfGNam9U+xlUY3rgvjeo35rZG8N+AsNSOyNu3Na+CpeQG1WqPnrdj2Jl++3Wy/Z99H1VqEhVFzQvJ0LIzDnxo1N3S3bYSfgjRRtm8b+JumkvhIHCAUdMkKeAJQu4BSBcfrq6GP7Vn0yH5+f94dnF6DL53l46CfmJv3oyAx+zK/kh/weHqTk4QJ7B3mVy6GhdKG0XSUesWWqpSYO1u/8lwhnGBobj0bOdfR5eXY4u/yghmf7aVV1LljPVdITI2hghpJj/Fm+1venBxLUEUiq0eWGrb5rEQW0rJ9tkErN+H5y96X2xX2xKrvMTYjgeJRL/G5veOOtk6oXYGd5x77h3dPI7/PqnC8i/CYmFBy2mjmMxXVp+zNChV8n+fncc2f/qmbOh607DXReqCybxKSliptBrobJoQhXqURWimfTIU9eFakRE5UytVnOM9Hcw67UMf+soLPOb8Q6DxrmwZ3a9LlRDWFNQ5WylbmmpSvUhn9+7qSAqtpb6oOtYF9ugYVWR553lz8zw+npH6uNPk6kq1Hxjotvk0+Xd0aa8xdOngFyvvwOQyEeS
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Migrate to per-server plans"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/staff/migration/psp/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint migrates the system to per-server plans. It converts user plans and coins to balance, sets expiration for servers, and optionally deletes or unlists plans.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"planPriceToBalanceRatio":{"description":"The ratio to convert plan prices to balance. Must be a valid number.","type":"number"},"coinsToBalanceRate":{"description":"The rate to convert coins to balance. Must be a valid number.","type":"number"},"expirationDelay":{"description":"The delay in seconds to set expiration for all servers. Must be a valid number.","type":"number"},"deletePlans":{"description":"Whether to delete all plans. Defaults to false.","type":"boolean"}},"required":["planPriceToBalanceRatio","coinsToBalanceRate","expirationDelay"]}},"multipart/form-data":{"schema":{"type":"object","properties":{"planPriceToBalanceRatio":{"description":"The ratio to convert plan prices to balance. Must be a valid number.","type":"number"},"coinsToBalanceRate":{"description":"The rate to convert coins to balance. Must be a valid number.","type":"number"},"expirationDelay":{"description":"The delay in seconds to set expiration for all servers. Must be a valid number.","type":"number"},"deletePlans":{"description":"Whether to delete all plans. Defaults to false.","type":"boolean"}},"required":["planPriceToBalanceRatio","coinsToBalanceRate","expirationDelay"]}},"text/plain":{"schema":{"type":"object","properties":{"planPriceToBalanceRatio":{"description":"The ratio to convert plan prices to balance. Must be a valid number.","type":"number"},"coinsToBalanceRate":{"description":"The rate to convert coins to balance. Must be a valid number.","type":"number"},"expirationDelay":{"description":"The delay in seconds to set expiration for all servers. Must be a valid number.","type":"number"},"deletePlans":{"description":"Whether to delete all plans. Defaults to false.","type":"boolean"}},"required":["planPriceToBalanceRatio","coinsToBalanceRate","expirationDelay"]}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Instance mode updated successfully.","error":null}}}}}},"400":{"content":{"application/json":{"examples":{"invalidInput":{"value":{"statusCode":400,"message":"Invalid payload input","error":"Bad Request"}}}}}},"403":{"content":{"application/json":{"examples":{"forbidden":{"value":{"statusCode":403,"message":"You are not allowed to access this resource","error":"Forbidden"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error","error":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

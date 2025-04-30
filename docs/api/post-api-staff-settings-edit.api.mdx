@@ -1,0 +1,71 @@
+---
+id: post-api-staff-settings-edit
+title: "Edit instance settings"
+description: "This endpoint allows an admin user to edit instance settings. The settings are provided as an array of objects containing the key and value to update. Use 'REMOVE_FIELD' as the value to remove a field."
+sidebar_label: "Edit instance settings"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVk1v20gM/SsEL9kFVNtI0j3o5jbOwtjmA7G7iyINFrREWdNIM+oM5dQw/N8LjvyV1AW2lx4WzSWyNEO+ee9xyBU25KlmYR8wvX9I0DXsSYyz4xxTbFyQYWMmQkUxYRFj52GUG8EEcw6ZN40uxRSnpQnANm+csQJUVe4pAFmgvDYW2sAexAHnRsDYIGQzhrAJ2INpuf8F5Bka7xYm5xyoi+I9LcEV4GafOJMAmbNCxho7BykZHnkJZHNYUNWyJmqbnIR78D4wnNyNrm7+Hv17OR69uzjRiLplt9Rz7RYMBIXhKu9hgp5D42zggOkKTwcD/acJ2Yo+UtNUJosc9T8FPf0K+QvVTdXtCG2WcYiPMUl8JyRteOtyxvR0MEiw5hBozpjiltYN5oiAvXceU9tW1Tr+JXg+OPtBHIXzM5PnbL+L5Hxwdojkg2sj+dZtFORcCaJ4HBBV2HNwrc94jxEvd2m2UF//OGXsF+xHXcTvgH39nLaxFfaWKpjEvdBt3sM6/n29xej5c8tB3rh8+R+whqzkmvRJlo1mj4bEBI1wHQ7ed/7EBBuvhSSmO98jxywvS6YzriuiITf+P3AvJtuwQbyxc1wne2rILm8KTO+PRbX8tPF34fxh8KMFsa8BXbmrgpepXyaasDwvJHUrmAI2BM6qwxPoR1w/bKk3nnNM7yMx20M9RGHqthLTkJd+4Xz9KiehXwr8VAWEv0i/qcj8sv7PJD6an6V0276rVJKUmGKfGtMP2oP72y7Z11baxwQDZ603spyoTh3l2m2n7pHtsNXtO4VKkUZ3xJWY4ozJsz/Syhm6TyAaRVUiuL65uxq+60+mw8vL/vDianwdu3oPFbfek3f7G3XUXe1Roqj/lsqdiDtuHxI0tnARpZEqNsSScvd0EuCCQgnD2/E3CP8Z3l2Pr/9MIU4ducvamq3EKxtMgCBG5bBRo5oeo/oTVzNoKl93C2szLwVm+jJzClcYnIcn7+y899F+tDG46aaF4e04Guo5tu0kE1TtBfvQwTvrnfVOz/+A3/5ynuR39a7qWVMsKEuR/NHRUejlUQ860/9qxNo48uCqWSfY+kpP3Jn+Hqkx6la1ffT5jiHuBlB8SLDUOknvcbWaUeD3vlqv9fXnlv2ym2cX5I0WpP5aJ1gy5ewPnPm24/fVVBHt/XmsDelF0G0aZhk3crD8m6FBjb2r5tubyRQTnG2GjTrOMzqf1TFusn9UkOv1V/81AOM=
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Edit instance settings"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/staff/settings/edit/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows an admin user to edit instance settings. The settings are provided as an array of objects containing the key and value to update. Use 'REMOVE_FIELD' as the value to remove a field.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"key":{"description":"The key of the setting to update.","type":"string"},"value":{"anyOf":[{"description":"The new value for the setting. Use 'REMOVE_FIELD' to remove the field.","type":"string"},{"description":"Set the value to null if applicable.","type":"null"}]}},"required":["key","value"]}}},"multipart/form-data":{"schema":{"type":"array","items":{"type":"object","properties":{"key":{"description":"The key of the setting to update.","type":"string"},"value":{"anyOf":[{"description":"The new value for the setting. Use 'REMOVE_FIELD' to remove the field.","type":"string"},{"description":"Set the value to null if applicable.","type":"null"}]}},"required":["key","value"]}}},"text/plain":{"schema":{"type":"array","items":{"type":"object","properties":{"key":{"description":"The key of the setting to update.","type":"string"},"value":{"anyOf":[{"description":"The new value for the setting. Use 'REMOVE_FIELD' to remove the field.","type":"string"},{"description":"Set the value to null if applicable.","type":"null"}]}},"required":["key","value"]}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Settings updated.","error":null}}}}}},"403":{"content":{"application/json":{"examples":{"forbidden":{"value":{"statusCode":403,"message":"You are not allowed to access this resource","error":"Forbidden"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal Server Error","error":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

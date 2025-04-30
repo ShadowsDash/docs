@@ -1,0 +1,71 @@
+---
+id: post-api-staff-migration-rs
+title: "Switch instance mode to Resources Splitting"
+description: "This endpoint switches the instance mode to Resources Splitting. It converts user balances to coins, sets expiration for all servers, removes plans, and disables automatic renewals."
+sidebar_label: "Switch instance mode to Resources Splitting"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVk1vGzcQ/SsDXtoCG0mwnR72pthxIbR2DElFUTg+jJYjL2MuyZCzsgVh/3sxXMmWv4L4EqBA9rJckkM+zrzHfRsVMGJDTDGp8vKqUD5QRDbeTbQqVfCJx8HMGJfLM3Pdj0yTKpSmVEUT5FuVal6bBOR08MYxpFvDVU0JuCYwLjG6iqDxmoA9TCn5NlaUYBasYTbuegAThsq7FUVO0CaKsEArUUkiKm9cKiARJ6C7YHoYsPQR0FpIFFcUUwGRGr+iBMGizEenQZuEC0sJsGXfIJsKIjm6RZsGqlCRUvAuUVLlRh2MRvKqvGNyLE0MwZoq7zb8kuSkG0V32ATbR6S2qijl5gptS7mPkdt07DWp8mA0KlRDKeE1qVJNHqWiDRqZNGwXWbbWrgUTxeijKl1rbZefQh29GZlxK7RGT1xo+VV4R0/h5RgIuLYeNZgcfA9IfUANU/raUmL1gOzwjciWPi6M1uS+AetwH9a/vgWMBM6zlNvfkhZSYM4asDAvbim1B/b0fpsd1PdvL28m1sd+xVfAvn+aQ6bo0MIsx0If/ADr5fFuhzH26f3g9fo7sKaqpgalxesgu/vFF6qkZCGKjtn059hqae6PRUhTWUS6n0qYIAurV1zW4iMpgnE7LQ7grE0MCwKE4JNhsyJwbbOgKAzeouk7VFeoB9GekMX1y5trGQLjIFHlnc7KT8TfUPzbYGzTayJpVV6+mJTnSK8krGktm4CRh0sfm3caGX+m/8eln+mOh8Gi+Un6H5b1THvi2u9cgOQXuValGmIwwySOYNjsLMEwpqEqVKKqjYbXM6lRXwZJ5tzfkBu3En1ftZo5SESeqUq1IIwUXzAWBP0QsKwCfgkI55+mZ+O/hrP5+PR0OD45m5znog3yeeV2nD7cox/7C/1VSoxeqNSoK5Rxy0wYNizRalaj9re/JDjBVMP4YvIM6z/j6fnk/I8SshvSvmobctwX0SRIbKyVUosravAm+56Zb4Rjcq/0ExtzXefqGld5Ac4EPsJt9O568Nl9dnlx03ur8cUk0+Mxtp3jyg5HKNPDOxwcDg6Ofodf//QR+TehqBS2wSwrh7kMs2zdvsu0PT3/3u/qf+sHt+Tcu3G6QrXRyul6+l8qDEaIKwJQhbqXgLhJMcbqqlC1CKa8VJvNAhP9HW3XSffXluK6t9krjEaAyFdXqJpQU1Tl5Ubd0FqV6rhP5bu5ACp21uPFP1FX7ILGVUWB96Y/Mw3d1Z6sLz7N5qpQi63ZaLKfEX/W5HWLh6aA7Lr/ANM5Tp8=
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Switch instance mode to Resources Splitting"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/staff/migration/rs/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint switches the instance mode to Resources Splitting. It converts user balances to coins, sets expiration for all servers, removes plans, and disables automatic renewals.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"balanceToCoinsRatio":{"description":"The ratio to convert user balance into coins. Must be a positive number.","type":"number"},"expirationDelay":{"description":"The delay in seconds to set expiration for all servers. Must be a positive number.","type":"number"}},"required":["balanceToCoinsRatio","expirationDelay"]}},"multipart/form-data":{"schema":{"type":"object","properties":{"balanceToCoinsRatio":{"description":"The ratio to convert user balance into coins. Must be a positive number.","type":"number"},"expirationDelay":{"description":"The delay in seconds to set expiration for all servers. Must be a positive number.","type":"number"}},"required":["balanceToCoinsRatio","expirationDelay"]}},"text/plain":{"schema":{"type":"object","properties":{"balanceToCoinsRatio":{"description":"The ratio to convert user balance into coins. Must be a positive number.","type":"number"},"expirationDelay":{"description":"The delay in seconds to set expiration for all servers. Must be a positive number.","type":"number"}},"required":["balanceToCoinsRatio","expirationDelay"]}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Instance mode updated successfully.","error":null}}}}}},"400":{"content":{"application/json":{"examples":{"invalidInput":{"value":{"statusCode":400,"message":"Invalid payload input","error":"Bad Request"}}}}}},"403":{"content":{"application/json":{"examples":{"forbidden":{"value":{"statusCode":403,"message":"You are not allowed to access this resource","error":"Forbidden"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal Server Error","error":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

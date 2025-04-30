@@ -1,0 +1,71 @@
+---
+id: post-api-coupon-by-code-claim
+title: "Claim a coupon"
+description: "This endpoint allows a user to claim a coupon using its code. The user must provide a valid authorization token in the request header."
+sidebar_label: "Claim a coupon"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNlU1vGzkMhv8Kwcu2wMB2EncPc/Omm8LYrRvELorCzYEe0R41M9JEH069xvz3BTVj10k3AXJbXyxIIvmQesnZo23YUdDWTBXm2FgfJo2+tLGx5o/dpVV8WZGuMUPFvnC6kauY46LUHtioxmoTgKrKPnggiJ4dBAuFGAFBkRxB9NpsQAcPhVU8gEXJ3dU6+gCNs1utGAi2VGkFFENpnf4nYUGwd2xAGwglg+P7yD5AyaTYDTBDx76xxrPHfI/no5H8FdYENkGW1DSVLpKn4Xcv6HvkH1Q3VWfhY1GwT8stVZHTXqAQveSO+flolGHN3tOGMUfZBMeKuWaFGVJtowQ6k2vsnHWYm1hVbfplOB6dvRIomkP6rJ6lGo/OTqlm9knNuvLgEQk/n3r9CXfxSri1dSutFJsXyC5Oyb7aCCVtGahyTGp3rB0EEVAnjxPOq2OAn5DjV0IaG65sNC9Vb3zKKGIUWcLORmAT2LEC7UGbJMcTupkNsE6uD3TvXi84dlt2f3YenwF891h0U2EyVEFnCwkng6Lk4i51heJAuvKDE9T/tOmx2wwbclRzYOcxX+7RFyXXJBhh10hIH5w2G2wz1NLtDYUSMzRUy6EUK3XefdROVBpc5PZWkENpD2MEs84sxyE1etg99XAvxu0wzYchZui5iE6H3VwI+g7w7BbS9JMo5kemMoRGLNJNzHHF5JLIn04mhu6oHx12DQSzTzcfJ38P54vJ1dVw8v7jdJYG0ADblOPapkA6VOJ5XpKyD795eE++hMn19JcgXyY3s+nsQw5pDipbxJpN6JpPe/BBV9VhZtV0p81mAHNbM0goV3cXa70pA6xks7AikMBgHTw4azaDb+abSc61T14m11NYWweP2bTxgUzB6e237HyHdzG4GJyPf4c3f1lH4a28ozxJTUmO/TNePprRT1M8EfX/Z9j3Sgj8IwybirSRzKKrBLcT2xKp0ZjhMam8V2vRf8bwNsNS5Jkvcb9fkefPrmpb2b6P7HaYL28z3JLTtBIxLPeotJe1wnxNlecXCvXmpu+Jt/Acbb9JZicv1nU/YoZ3vDu0VnvbZtiPcInfHU2KgptwYvTLpHnUgtef5gts238ByPG5xg==
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Claim a coupon"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/coupon/{code}/claim/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows a user to claim a coupon using its code. The user must provide a valid authorization token in the request header.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"code","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Code redeemed","amount":100,"error":null}}}}}},"401":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":401,"message":"No authorization header","error":"Unauthorized"}}}}}},"403":{"content":{"application/json":{"examples":{"forbidden":{"value":{"statusCode":403,"message":"You have already redeemed this coupon","error":"Forbidden"}}}}}},"404":{"content":{"application/json":{"examples":{"notFound":{"value":{"statusCode":404,"message":"The code you entered is invalid","error":"Not found"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error, check the details.","error":"Internal server error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

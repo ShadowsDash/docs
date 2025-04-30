@@ -1,0 +1,71 @@
+---
+id: get-api-invoices-by-id-download
+title: "Download an invoice PDF"
+description: "This endpoint generates and downloads a PDF for the specified invoice ID. The invoice must exist in the database, and the system will temporarily store the generated PDF for download."
+sidebar_label: "Download an invoice PDF"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVMGO2zgM/RWCl20BIw7adA++uZumCHabHUyy2MN0DhqLibVjS6pIZ8YI/O8LyU46053OfXOJTJF8T+QjT+g8BSXG2bXGAg8kpTdre3SmIv7Yr/XSPdjGKY0ZauIqGB+dscBdbRjIau+MFTiQjXmIQVkNegpiUHC1XMHeBZCagD1VZm9IgxkhYL2cwa6my3fbsQA9GhYwNsVoJepOMWUpc8rSs1ALD6ZpQKj1Lqhgmh5YXKDkcWajL+hnRjPMMBB7Z5kYixO+m8/jX+WskJV4VN43pko1yb3eRxM9qtY3YwB3VUWcjkfVdIQFfjRWhX7EMg1BIB+IyYqxh8Rnet0Mh/jLcDFfvAL6D8cCP0e1Tlaus/oJ7AlZlHT8m9OExWK+yLAlZnWIlKYWgnUC+xSYIYXgAha4udiGic+HV4vwEh+mcKTwacz4E0of5vPnlISCVQ1sUyyMwd9pvXw/nDl6FVRLQoGxuDkhVzW1KkJK72N6lmDsAYcMTZSnV1Jjhla18dLo1PdvnQmksZDQ0XAbyUntJt1jNsYUmCtv8qllnJ+MHvKzfHLMkKnqgpF+GxmM1eiYws7dky27mOHCqRbxMSJ5YoF3pAKFF0aJYLwCiVnA7UHB5s/rL+Uf+XZXrlZ5ufyy3kDEiSKKb9y7BGSkiZm3tdLu4ReGpeIayqv1f0D+Lq83683nAtLgald1LVlJHQbDwBLHaZq5Vt0be5jB1rVRvHsX2tGxNYda4C4aKxfFIAQuwENw9jD7ar/alNxwylJerdPsPedmLIuyFXEcxSMFHum9n72fvVv8Cm9+d0HJ29hH71halaQ3tfG8jEDZy8a4Wq5+fOsTJf+P19SkIaFHyX2jjI016UIT3zcq9QaVNxjFMGoVMyyS0vX3pY23GdaOJXqfTpHhX6EZhmj+1lHosbi5zfCoglF3UUk3J9SG41ljsVcN0yvFfXM9jdRb+BnhyahsH9s9LUzM8J76cS6H2yHDmpSmkNDHi7KqyMuTkB+38rPx/fxph8PwLyQvWS0=
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Download an invoice PDF"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/invoices/{id}/download/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint generates and downloads a PDF for the specified invoice ID. The invoice must exist in the database, and the system will temporarily store the generated PDF for download.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"id","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/pdf":{"examples":{"success":{"value":"Binary PDF file representing the invoice."}}}}},"404":{"content":{"application/json":{"examples":{"notFound":{"value":{"statusCode":404,"message":"Invoice not found","error":"Not found"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal Server Error","error":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

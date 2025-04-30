@@ -1,0 +1,63 @@
+---
+id: post-api-subscription-cancel
+title: "Cancel a subscription"
+description: "This endpoint allows a user to cancel their active subscription. It handles both Stripe and PayPal subscriptions and ensures no further invoices are generated."
+sidebar_label: "Cancel a subscription"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVlU2P2zgMhv8KwctuASMZzKR78M3bdopgt2kwmaIo0jkwFhOrI0uuRGWaDfzfF5LTHadfwBw3lxi0KD4kX9JHdB17Eu3sXGGJnQtSdXoVN6H2ukv2F2RrNlig4v9sWOJtowOwVZ3TVoCMcQ8BCGJgD+Kgzl4gDWsPVIveM4TRrROYCzRkleEAGycNrMTrjoGsgiUdlmTOzof8gm2IngNYB9vopWEP2u6drjkAeYYd25QNqwkW6Dl0zgYOWB7x8uIi/dXOCltJj9R1Rtc59emnkHI6In+htjODR4h1zSE/7slEzjYhieGFU4zl5cVFgS2HQDvGEocyGVZn2NjnX4GzJ8ffkLrhz5GD/BRhlhDYe+exxD9JgT85jME+uOjPmKChAGQ8kzrAhtmemmVYjXCvnogbLUVpnNf/sPoF8NUj8Luxx5h4bvdktAJx9zyu4OyJSNbJtYv2VzizR5yFE9jm499UD5QD65Ja9wwEPlqr7e7HbX7+dJmx37N/NUD8hPP5uM9zK+xtGo/sCYN9zLxyLUuTGB/YCjx4Z3cnwj6dk8Z9nXUssCNpsMQpdXo6zmk6qGKKBQauo9dyWNUNt6d2B/a3qT9VTO5HlEOXYjciXfLIJ7HEDZNn/4PtwTC8GroMbgsEi7c3b6q/p6vb6vp6Wr18M1/kfTLBxK3t1uVAWkzOsiHlHn4L8JJCA9Vy/l2Q99XNYr54XULeVcrVsWUruRWgAwTRxoC2aUlBS/fa7iaQagcplG+Hg63eNQKbZKxd6powOD8UdfLRfrT5ch3yLdVyDlvn4ZxN2yCpliFtpT37MOBdTa4ml7M/4Pe/nCd5hn2RW9JS1oil9nGtAJ3L7ZtMR4L7H+zlk1KEv8i0M6Rtyjx6k/IYxLhG6nRS0XnO9dcvEd4V2CT1lms8HjcU+J03fZ/MnyP7A5bruwL35DVtklbWd32BDZNij+X6iPd8wBKruuYuTcBp5r4f1f5uNC7Lt6tb7Pt/AbHxhmo=
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Cancel a subscription"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/subscription/cancel/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows a user to cancel their active subscription. It handles both Stripe and PayPal subscriptions and ensures no further invoices are generated.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Cancelled subscription"}}}}}},"400":{"content":{"application/json":{"examples":{"badRequest":{"value":{"statusCode":400,"error":"Bad request","message":"Your subscription has already been cancelled"}}}}}},"403":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":403,"error":"Unauthorized","message":"Invalid token"}}}}}},"404":{"content":{"application/json":{"examples":{"notFound":{"value":{"statusCode":404,"error":"Not found","message":"You do not have a running subscription"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"error":"Internal server error","message":"Something went wrong"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

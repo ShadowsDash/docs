@@ -1,0 +1,71 @@
+---
+id: post-api-staff-by-collection-create
+title: "Create a new field in a collection"
+description: "This endpoint allows authorized users to create a new field in a specified collection. Only users with ADMIN rank or STAFF rank (with specific collection access) are allowed."
+sidebar_label: "Create a new field in a collection"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVt9v2zYQ/leIw4Alg2obSboHvbluMxhbkyBOUQxuVtDk2WItkSp5iusa+t+HI23LXpJhRZ8GNC+RSd7dd9/93EAtvayQ0AfIpxsIqsBKQr4BWtcIOQTyxi6gzcBYyKGWVEAGVlZ8qVxZoiLjLGTg8XNjPGrIyTfY3mfgavSSb8eaRV2gYW0mJOfzV+vRXnTkURJCBhqD8qaO6nK4K0wQaHXtjCUhy9KtgpANFc6br6hFE9AHQU6oKC+ksLgSc4OlFsYKKUKNyswNatHB7IlrW663sitDhRi+fju+El7apXBeTO6Gl5fp10m83ipRBzqEVApDOBXSY8KFuhf9D7WzAQOzdzYY8D/lLKEl/pR1XRoV6eh/CuziBvCLrOoySYQmquXPB1k2GM9IUhNGTiPkZ4NBBhWGIBdM/WV0NPkezaP3zkNum7LMINIQraqldasS9WIXGA5kQE+oY1Qsrj7G1x+Nhjb9ZXAxOP9G+HPnZ0ZrtM86cDE4P3TgT9dEBq2jHYsczUSuII6+x+Aar7DzDi73ZnZQX3470+gf0L9JGp8B+/KY7bEl9FaWYhJlRRLuYD19v6eTSwMDvXJ6/R+wPqpBN/uEiiCD2nNJkUl+HFRfvnlUPSi4SIWbCyrwMH1XBXqMh13BrExZihke5tOj+teS5NOG+IZjN0Oxyy1hLLlo5Mky7PR3vkliDm+OXPzrpPfL6U+QbzoeU4uZHveeiO2en1RNSaaWnvpz56sXO9A/OP0OTgm/UL8upfmRnt9HZUxQpMLt5mFSXEAOfVmbfuDZ2N90sm0/udyHDAKqxhtaT5j/ZJ/n2J1boh02rGQfkYKoZon4EnKYofTonxixKNKVINbC0ZDi6vr27fCPfhyF/TQe2U4PGD33qNuum71JbfWf4d6FZR+VNu4PcxcxGmIJmBRSu9XPQbyWoRDDm/EjfO+Ht1fjq99yEXcB7VRToaXYLIUJIhCnhbExjpVcGrvoiYmrOMxc/OlhZRYFpdgrx2AJedKvvLOL3gf7wUblJkQtw5uxmPMecITN2EDSKgycGA/oQ4J33jvvnV38Kk5+d17SKSchx7SSMeG3K9Lome3kOD8O3T6YD/+/JWibgAcdo82g8SW7lTJ9CrI2nJyc65BBfsSE2i2DcJ9BwRWST2GzmcmA73zZtnz8uUG/hnx6n8GD9EbOOJ2mG9Am8LeGfC7LgP9C68nttlJPxXOYt4fSrjnmaUUAyGCJ6+PFt71vMyhQavQRRXowSrZe3LGaTsFT06nNdkJDpbCmg+ePtgPeqvcN5OZ6cgcZzLZbRRUXF17Eqqg36z7zKTefvwFvGCZd
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create a new field in a collection"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/staff/{collection}/create/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows authorized users to create a new field in a specified collection. Only users with ADMIN rank or STAFF rank (with specific collection access) are allowed.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"collection","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"collection":{"description":"The name of the collection where the new field will be created.","type":"string"},"data":{"description":"The data to be inserted into the specified collection.","type":"object","patternProperties":{"^(.*)$":{}}}},"required":["collection","data"]}},"multipart/form-data":{"schema":{"type":"object","properties":{"collection":{"description":"The name of the collection where the new field will be created.","type":"string"},"data":{"description":"The data to be inserted into the specified collection.","type":"object","patternProperties":{"^(.*)$":{}}}},"required":["collection","data"]}},"text/plain":{"schema":{"type":"object","properties":{"collection":{"description":"The name of the collection where the new field will be created.","type":"string"},"data":{"description":"The data to be inserted into the specified collection.","type":"object","patternProperties":{"^(.*)$":{}}}},"required":["collection","data"]}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Field created.","error":null,"field":{"acknowledged":true,"insertedId":"new_field_id"}}}}}}},"403":{"content":{"application/json":{"examples":{"forbidden":{"value":{"statusCode":403,"message":"You are not allowed to access this resource","error":"Forbidden"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal Server Error","error":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-api-user-by-id-permissions
+title: "Get user permissions"
+description: "This endpoint retrieves the permissions of a user based on their ID. It checks the user's rank and first login date to determine their permissions."
+sidebar_label: "Get user permissions"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVE1v2zgQ/SuDubQFBMtI3R50U5smEHbrBrGLHtIcaHFscS2R7HDk1DD03wtS3tTZrIHNbXURQc7He+R7c0DniZUYZyuNBW5ISm++BuIP+0rfEHcmBONswAw1hZqNj7FY4LIxAchq74wVYBI2tKMA0hD433ng1qCgD8SwUoE0OBtDDEN1OYFKoG6o3o5pMepVAFZ2C8pqWBsOAq3bGAtaCYE40CSxuKVjlZNWE8yQKXhnAwUsDngxncZf7ayQlbhU3remTnTzv0LkcUD6qTrfjhmhr2sKablTbU9pT5T04aPThMXFdJphRyGoDWGB8Z5g7XqrMUNidoyF7ds2wxNYCYKyH5mU0C1poi4WC1gI95Thg2nbD1SuWlq6Z0GljBWH8ctwNp29kJN1cpUgniM1m86ekbJO/kkM5497f4N59/ILJt4RfxornsHz7uklV1aIrWphkXJhTP4N69z5f3qCtWrDC99gyNArVl0UYsDi7oChbqhTsYnsfYQchI3d4JChiVbxShrM0KouHhqddPqjN0x6FMFwHwlL444WjOhjToG58iaPvsgPRg/5CaccMwxU92xkv4gAxguOsUu3JVv2scAjpEbEx4wUiQWuSDHxv7iaYDwCiVVG+86/3H4u/8wXy/LqKi8vP1fz5NUJDoni2qVGRtpYedEo7R5eBbhUoYHypnrW5Ft5O6/m1wWkGaJd3XdkJYkGTIAgpm3BpDkBndoau5nAwnUEsRV3Y2BnNo3AKm7WLupLCBzDAzu7mXy3320qbsbJUt5UsHYMT7EZG0TZmtLk2BGHEd7bydvJxew9vP7DsZI38Rm9C9KppObjK16TjFPNn5+RJ874n47LoziEfkruW2VsJNtzG7GPCrxD5Q1mSVeYYZHU+5Qz3mfYuCAx+HCIsL9yOwxx+0dPvMfi7j7DnWKjVlEhdwfUJsS1fjTg2Xt7fXt0yhs4h/e4qew+PuM4URAz3NJ+tNtwP2TYkNLEqft4UNY1eTlJeTa7ntjy+tMSh+EX28J/lQ==
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get user permissions"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/user/{id}/permissions/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves the permissions of a user based on their ID. It checks the user's rank and first login date to determine their permissions.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"id","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"User found","error":null,"permissions":{"canCreateRedeemCodes":true,"willBeAbleToCreateRedeemCodesAt":null}}}}}}},"404":{"content":{"application/json":{"examples":{"notFound":{"value":{"statusCode":404,"message":"User not found","error":"Not found"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal Server Error","error":"Internal Server Error","permissions":{"canCreateRedeemCodes":false,"willBeAbleToCreateRedeemCodesAt":null}}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

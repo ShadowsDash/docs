@@ -1,0 +1,63 @@
+---
+id: get-api-staff-advent-calendar-stats
+title: "Get Advent Calendar Stats"
+description: "This endpoint retrieves statistics for the advent calendar, including the number of openings by day, reward repartition per day, and openings by hour."
+sidebar_label: "Get Advent Calendar Stats"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVMFu40YM/RWCl7aA1lacpAff1M0mNdpNF+ssiiJrFLREW9NIMyqHctY1/O8FR07WQRKge6svFmb4Hjnk49th6FhIXfCzCqe4Zi06N1darYpqw17fUsO+IpkracQMK46luM4AOMWb2kVgX3XBeQVhFccbjhCV1EV1ZYRVENCagRIdlAe+DJwvm75yfp2ufd8uWSCsIHTsnV9HWG6hom0GwvckFQh3JOosM3Qswx356gmgDr2MMEPh2AUfOeJ0h5M8t78yeGWv9kld17gyPXv8V7Sn7JC/UNs1AyL2ZckxfW6o6TmdKWkf34aKcTrJ8wxZJAhOfd80KWHfaEI81PPT9oK2OL3d4Z/OejvJJ6dvTiZv8hPMsAy9lXKS5/uFoe2JRy/sWKrXwUN4TNfDt40uNNVX4vN8vzDmr8X8HHpJiET8lNDaNtDVKQrz4xKNaT/8MjzLT7+xmb2nXusg7h+uXu3oWX762FH8dIzIsOUYac04xZnfUOMq0HDHHq2cVZClqyr2/4358jH8mPaP0AMJgw8K1DThni0FUBIBqIlcOIZeSsaHPpx/u6hYNizvhkpeKfb8SFg488riqYF5QsIAfdqPlyIeZ9Wy1uGw1phhR1rjFMfUuXG0FR/T8x0fY4aRy16cbudlze1hiJHlxrpe9EayQ912VkGt2hkiReIUl0zC8oJRMAxXw+xs0Qmuf/v4vvh1PL8pLi/HxcX72TVYnlGarPOrkBI5bYx5XlMV7r+LcEGxhuLD7FmS34uP17PrqykkW6pC2bfsNQ0EnJmSaxpwPvlNS3fOr0cwDy2DpZJ2CGzdulZY2mEZbHbKEATuJfj16LP/7BO5i4ml+DBLBve0Nuejki85mhNtWOJQ3unodDQ5+xG+/yUI6Q+4z7ALUVtKSvGU+nfFCoPzwsNY4EXvPZLe/9eGDyJR/qLjriHn7dG9NFb+oMZbpM6ZgEyPmOELisQMcWEeFdXid7slRf4kzX5vx3/3LGaUiww3JI6WJpbbxT7DmqniwfLu2CyvKEvubBEOq/d8Y80xH5fm6t0N7vf/Almaddo=
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Advent Calendar Stats"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/staff/adventCalendarStats/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves statistics for the advent calendar, including the number of openings by day, reward repartition per day, and openings by hour.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"error":null,"results":{"openingsByDay":[{"_id":"2023-12-01","count":100}],"rewardrepartitionperday":[{"_id":"2023-12-01","rewards":[{"reward":"gold","count":50}]}],"openingsByHour":[{"day":"2023-12-01","hours":[{"hour":"0","count":10}]}]}}}}}}},"403":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":403,"error":"Unauthorized","message":"Invalid token"}},"forbidden":{"value":{"statusCode":403,"error":"Forbidden","message":"You are not allowed to access this resource"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"error":"Internal Server Error","message":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

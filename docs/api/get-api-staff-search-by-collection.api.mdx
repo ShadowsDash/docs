@@ -1,0 +1,77 @@
+---
+id: get-api-staff-search-by-collection
+title: "Search in a collection"
+description: "This endpoint allows staff or admin users to search within a specified collection. The search can be filtered by key and query parameters."
+sidebar_label: "Search in a collection"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVU1v40YM/SsEL00A1Q6SbA+6eT+yMNpNF3GKokiCmh7R1jSjGYVDJTEM//diRooTYzcL5FrUF48o8vGJQz5uMLQspDb4aYUlrlgnrZ0pLZczJjH1+/WH4Byb5IEFVhyN2DY/lXhZ2wjsqzZYr0DOhYcIMQVDEKCqsR66yBJBA8SMBw9Wa+uBILZs7NJyBWaXYQSXNT95GvKwYFhapyxcwWINt7wG8hXcdSxraEmoYWWJo2v/M8xveT0vM8LSsqteJF2s4YBHq1EB879tNS9gLrxkEZZ0JufmBbCa0WEPdDfA9GnuyXWcwBpSUwOtyPqooInp7htued3HBqlYhvgYRCEbICxzgHDsnEY4mFM0c1imMkXDvrJ+VcA8lbe3plNvHjg521gdcBt6tE3XgO+aRY/9hKsBhLUT3wfpuuUhJh2TpwlNS2Jj8LuSrLTPuRImZQGtyaesWKBwbIOPHLHc4PHRUfozwSt7TUdqW2dNbp/xPzH1xAb5kZrW9RGxM4ZjPuYqZpuSdvFDqBjL46OjAhuOkVaMJc4G9wJZJAiWvnMuk+icYnl1s82/Ak/fzGRB1QXfdRz1VTKn+2TeUwUyhOwI7Vmf2Zy8kc0yyMJWFfsfkDl5SeZsF/BM5a/QAQmDD8PscW55yjUETbMpHEMnhndU3739ClnuWT71OV8h+26/clOvLJ4c9LHQE34m/v332yeOz2ON5dUGo6m5oZQytTCWGFWsX+G2QJtEqCWtsUBPTXppXqpVuigrXGGp0vH2JpHUOgxCh0UfW+KYWjvOujXuBWO8ecbZjrHAyKYTq+tZItMXJgnbZbhlP+kSyI5erdqmiOyJJS6YhOU72snQvwJNKGk2Cc5/v/gy+W08u5ycnY0nH79Mz7OAjnCbP3cZciKrLo9LTVV4+CnCR4o1TL5Ov0ny5+TifHr+OSmAjVAF0zXsNV822CTV1jmwPktTQ7fWr0YwCw1DSiVN79jYVa1Jia1P4uFYOcn7gwS/Gl37a5/Bbcwok6/TrCX73JJgkjccR1jgPUvs6Z2MTkbHp7/Awa9BSA/TlbYhakO5C4cb7fcQ5J1hXt1FL3r6/7X0n19Lw6gpP+q4dWR9ap1OXOqDfqavkFqbxjBdex7gVHEssNzrIbwpsA5pKVzhZrOgyH+I226TOVc5LZ0C70ksLdLMXW2wsjGdKyyX5CL/oA8PLgb9OYTXOA9G8us0GL22IhZ4y+t9MdvebAusmSqWzKJ3mBjDrb4I/UbN90Tv86dL3G7/BZGhc/I=
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Search in a collection"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/staff/search/{collection}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows staff or admin users to search within a specified collection. The search can be filtered by key and query parameters.
+- `key`: The field to search by (e.g., `_id`, `referrer`, `all`, etc.).
+- `q`: The query value to match against the specified key.
+- `order`: The sort order of the results (`asc` for ascending, `desc` for descending).
+- `limit`: The maximum number of results to return.
+- `type`: The type of comparison (e.g., `gt` for greater than).
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"collection","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Success","error":null,"result":[]}}}}}},"400":{"content":{"application/json":{"examples":{"badRequest":{"value":{"statusCode":400,"message":"Bad request","error":"Bad request"}}}}}},"403":{"content":{"application/json":{"examples":{"forbidden":{"value":{"statusCode":403,"message":"Forbidden","error":"You are not allowed to access this resource"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error","error":"Internal server error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

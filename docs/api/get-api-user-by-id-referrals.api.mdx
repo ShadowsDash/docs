@@ -1,0 +1,71 @@
+---
+id: get-api-user-by-id-referrals
+title: "Get user referrals"
+description: "This endpoint retrieves the referrals of a user by their ID. It also calculates the total purchases made by the referrals. If not authenticated, it will just return the number of referrals."
+sidebar_label: "Get user referrals"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVE1v2zgQ/SvEXLYFBMmbOHvQad1NEwi79RaJgz2kwWIsjS0mEqmSQ6eGof9eDCV/pG0W6HF9MTmcGT69eXw7sB05ZG1NUUEOa+JZp+88uXfborqhFTmHjYcEKvKl051kQg6LWntFpuqsNqwcsdO0Ia+4JuX2VcquFKrgyanlVo60U8VlqgpW2HirSmzK0CCPdWwZG9UFV9boyasWKxoLjz1TVayUsawwcE2GdYlMVaI0q2fdNOox+IgnOBMLTWiX5ATJsQUk4Mh31njykO/gbDKRv9IaJsOyxK5rpLO2Jnv08sU7oC/Yds1Q4UNZko/LDTaBYoyRg//DVgT52WSSQEve45oghwOPamWDqSABcs46yE1oGgGzpzm/34HwZbCVuv3BvxKTqhZ1E+NpmmLz+wgpLW0LCeAGGd2dk4yaufN5lp1kZMN5+titIYEDzZCfn+wWMgPIf72Y9A8J8Lh7kS5EBaHpPAFsh6XkJ1DGbz+ijvs+/hKYTqY/SbKxfBXpeo3l6WR6yrKoNkrjG5JhfojtwVz8/MTJbci9Hzq+gufi5dQLwzLJRg21aoBzhPXj836PsUOHLTG5QRa+rKlFuZK3nbT37LRZQ5+AlhfZIdeQwKgcXUWRfw7aUQU5u0Ay0Ja4tuM7FxFITQ4ZdjoTiWU7XfXZQY4ZJOCpDE7z9lauH6iQzIV9IjMLUn4AJJqTipgJOSwJXZTtt9ZBajhSLF0Gl5j/ffNh9ld2u5hdXWWzyw/FPBpHCn38wJWNF2lupPNtjZV9/sWrS/S1mn0svrvkn9nNvJhf5yoaVWXL0JLhOF6lvfIsXqEHi2jxSZt1qm5tS0qucu2Q2Op1zWopwdKKEpiUderZWbNOP5lPJjbXg3vNPhZqZZ16iU0bz2hKiqazIecHeOfpeXo2/U29+dM65LcyxM56bjHqbpzhNfFgnu41Gz5R8P/ekUcRMX3hrGtQGyEliJntRp3eA3YaEhjNMB81fuQGHhKorWdJ3e2W6OnONX0v4c+B3Bby+4cENug0LkVH9zuotJd1BfkKG0//we+bm/E1vVWvoR2DaLYy7MEhABJ4ou3wJPuHPoGasCIXbx8OZmVJHZ+UfOdFL57u9fsF9P1XOHOrMA==
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get user referrals"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/user/{id}/referrals/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves the referrals of a user by their ID. It also calculates the total purchases made by the referrals. If not authenticated, it will just return the number of referrals.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"id","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Referrals found","error":null,"referrals":[{"username":"referral_user","email":"re...al@example.com","avatarUrl":"https://example.com/avatar.jpg","purchases":3,"purchasesTotal":150}],"total":1,"purchases":{"count":3,"amount":150},"code":"referral_code"}}}}}},"404":{"content":{"application/json":{"examples":{"notFound":{"value":{"statusCode":404,"message":"User not found","error":"Not found"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error","error":"Internal server error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

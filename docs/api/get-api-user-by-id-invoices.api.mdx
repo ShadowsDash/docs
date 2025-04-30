@@ -1,0 +1,71 @@
+---
+id: get-api-user-by-id-invoices
+title: "Get user invoices"
+description: "This endpoint retrieves invoices for a specific user. The user must provide a valid authorization token. Optionally, older invoices can be included by setting the `showOlderInvoices` query parameter to `true`."
+sidebar_label: "Get user invoices"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVU1vGzcQ/SuDuTQBFpJsy06xN7WJDaGNHNgOisIx4tFypGXNJTfkrBxV2P9ekLv6yIcOvlYXkbOcmceZN48bdDV7Eu3sVGGOS5ZJrT8G9r+tp2pqV04XHDBDxaHwuo4HMce7Ugdgq2qnrYBn8ZpXHED3DrBwHghCzYVe6AKawH4AdyWnFVRNEKi9W2nFQLAioxVQI6Xz+t8EBsQ9sR3AdcpIxqwzcEax36coyMKcQdvCNIoVzNcQWETbJUjJ8BhK93wdXba3eIQvDfs11OSpYmEP4uBRfMOPA8zQc6idDRww3+DpaBT/CmeFrcQl1bXRRQI3/CfEKmyQv1JVm84jNEXBIS1XZBpONiFpwu9OMeano1GGFYdAS8Ycp/tKNVZhhuy985jbxpgMt5fE/H6Dn3XsTG+KmwybZIq17PaWqoOgMIvbDGuKx+IFM1QNKxLG/OTizen52UmCEw/srRcnby6itfBMwqozjsfjX6ORKtfEQpzEjRauMMdb9qtv0q1rMtdesce83312cduBpEL0qqNah3OHTYeii97d3nPBepUQbFHW5EWTwXxBJnCGzuultmQmh7BIhIqSVcSVMIS0iNnbhzb9MhyPzl7Y2YXzc60U26O9HY/ODnv7t2uAPIN1AmSMe2YVqUaJICBxdjwH1/iC943Hy12aPdTxC6FaJ5eJT8eRjg+RxkFPML9jIc52ti2Y85dPRKr+uy7iETzn30+FsLdkoGshdM57WD//3m4x7ia7G5xQlFxRTCnrOoYP4rVdYhsHLFFUyv3wJI56/tJoz/3YtA8RnJSul8ZEcikxxyHVehjnb7jRqh1u53WIGQYuGq9lfRuzd5WIB++ioE2a6L3DU4rU0SOdxBznTJ79T9SWofvUySK4BRDMrm/eT/4c3t5NLi+Hk7fvp7NOZrFN91u4lEiLiZFvS1Lu+ZcAbymUMPkw/SHJX5Ob2XR2lUPSduWKpmIrnRjrAEG0MaBt0taKnrRdDuDWVVGAF85X3cFKL0vpVdlFIgiD8/DsnV0OPtlPNgXXIUWZfJimd+JbbNoGIVtwiJq8Yh86eGeDs8Hp+AJe/eE8yevYw9oFqSjRrm/hFUv3wOgjD9cBf/+Xb1jPK+GvMqwNaRvr1HgTb94x9x6p1vEFCYloeWL9QbnwIcPSBYknN5s5Bf7oTdtGc8qM+f1DhivymuaRWfebKN9xrXbifLTkr2768XoNx8D2RrLr2P5OMhAzfOJ1N6PtQ5thyZRemftN/2FSFFzLgcsP4vTNLF+9u8O2/Q+/sBqP
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get user invoices"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/user/{id}/invoices/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves invoices for a specific user. The user must provide a valid authorization token. Optionally, older invoices can be included by setting the `showOlderInvoices` query parameter to `true`.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"id","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Invoices found","error":null,"invoices":[{"_id":"invoice_id","uid":"user_id","name":"Invoice Name","paid":true,"duedate":1672531200,"paiddate":1672617600,"created":1672444800,"amount":100,"item":"Service Name","paypalOrder":"paypal_order_id","activationInvoice":true,"discount":null,"received":100,"paidpartial":false,"originalAmount":100,"attachedServer":"server_id"}]}}}}}},"403":{"content":{"application/json":{"examples":{"forbidden":{"value":{"statusCode":403,"message":"You are not allowed to access this resource","error":"Forbidden"}}}}}},"404":{"content":{"application/json":{"examples":{"notFound":{"value":{"statusCode":404,"message":"User not found","error":"Not found"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal Server Error","error":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

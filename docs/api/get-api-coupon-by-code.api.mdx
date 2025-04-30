@@ -1,0 +1,73 @@
+---
+id: get-api-coupon-by-code
+title: "Get coupon details"
+description: "This endpoint retrieves the details of a coupon by its code. If the coupon is not found, a 404 error is returned."
+sidebar_label: "Get coupon details"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVFFvGzcM/isEX9YCB9tN3QK7t2vSBMZWr0g8DIWbB/lE+7TcSarEc2MY998HSuc0WZsBfdy9WBZF8uNH8jui8xQUG2cXGkvcEVfenLveO/vucO40YYGaYh2Ml0dY4qoxEchq74xlCMTB0J4icEOgiZVpI7gtKKhTFNgcwHCE2mmawGKb3o0mE8E6hq3rrS5AwXw2BwrBBbEE4j5Y0pPP9rP9q7peLpZXJVQn38a1WqIaGyfwyfXQmV3DsCFonbszdgdbF+DCxNr1luMECwwUvbORIpZHPJvN5Kd2lsmyHJX3rakTF9O/o9R6RLpXnW+zR+zrmmI67lXbU7pjxX1MPJVns1mBHcWodoQlZhJzcVhghp1TyutT6JHjVAiWr1IMdX/eKtOl/wXSvTdBILx6++v4FVgHUkz63QFLVLozNtWniTrSWK6xjxSM5B0Pt0OBiVosbd+2Q/oKnM/mP8mCdXyZSnqOhvls/piGVWq3Jji4HsgyBdLSXmP3qk0IR1i4PI0CntC9+fkeUdhTeJ8jPgPwzdM+LQSTVS1k3zyAj2D92D6cMHoVVEdMIWK5PmKsG+qUpOSDl/CRg7E7HAo0sj1ecYMFWtWJsc7ND/SlN0Eax6Gn4VbgcePGhcQie5U4Vd5M8yBNj+I7TLHASHUfDB9uJHWmQZq+cndkq14cH8A0zF480ksscUMqUPjBihNkE7BEyfu8/OP6Q/X79GZVXV5Oq4sPiyVIngkOqbitS4kMtxL5plHaff0lwoWKDVQfF98leVjpJCja1X1HllNrZT4im7YFY5NedEo2egI3riOQVKHLDx+W3tjayRQwgQvwNTi7S8KRgpusTtXHRRKFp9iMjaxsTUki9hRihvd68npyNn8LL35zQfFLaaB3kTuVZm7s3xXxSY9G6ft3mY+m93+snOP4MN3z1LfKWKGjD63Ul2dzjcqbbzJXYDnONt4W2LjI8uR43KhIf4Z2GOT6S0/hgOX6tsC9CkZtZHLWR9QmylljuVVtpP9g9MX1uDkv4TmU46WyB2lv1gPEAu/ocFrAQcSxIaUppPzZVNU1eX7k9J32PFnUq/crHIZ/AHwYf8Q=
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get coupon details"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/coupon/{code}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves the details of a coupon by its code. If the coupon is not found, a 404 error is returned.
+
+WARNING: A coupon holds coins. You might be looking for Discounts.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"code","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Coupon found","coupon":{"code":"exampleCode","coins":100,"maxClaims":10,"expires":1699999999,"createdBy":"admin","redeemed":["userid","userid"]},"error":null}}}}}},"404":{"content":{"application/json":{"examples":{"notFound":{"value":{"statusCode":404,"message":"The code you entered is invalid","error":"Not found"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error","error":"Internal server error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,63 @@
+---
+id: delete-api-user-delete
+title: "Delete user account"
+description: "This endpoint allows a user to delete their account. The user must provide a valid authorization token."
+sidebar_label: "Delete user account"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9lMFu2zAMhl+F4GUbYMRB0+7gm7GkQ7A2K5oUO6Q5KDYTa5UlTaLTZYHffZCUou3aHnqZL7Ylkvr066cOaCw5wdLoaY0F1qSIqbTyxpMbxx/MsCZfOWlDFBa4aKQH0rU1UjMIpcy9BwGdJwdsIJUAbkg6EFVlOs0DWDSUItrOM1hndrImELATStYgOm6Mk38iCLC5Iz3ADB15a7Qnj8UBT4bD8KqMZtIcPoW1SlYxJ//pA9sB6bdorUoZvqsq8vFzJ1RHcYwFd/6LqQmLk+Eww5a8F1vCAsvEetxADcf0TafUPtCQc8ZhoTul+vhkeDocvZOp0w97pfpNsNPh6CnYVCeVoi6PIHjztNYD0tn7ZSK3IzdJRd8gOnsu1VQzOS0UzGMupORHstfn+wfGlrgxj3bDDK3gBgvMhZV5sEmeZnLM0FPVOcn7edVQexTRk1sEMcoupB2Q9zZgNcw2ZMRILHBNwpF7xcAEaSpJCmYDAmbfry/Li3y+KM/P83J8OZ1Fww4wEEu9MXEhySpUnjeiNvcfPIyFb6C8mr5Y5Ed5PZvOvhYQ26U2VdeS5mRw6cGzVAqkDn0CrbiTejuAuWkJwlKuTYGt3DYM6zBYmXBgTGAc3Dujt4NbfatjceljlfJqChvj4Dmb1J6FrsgHC+/I+YQ3GowGJ6ef4eM34wR/wj5Dazy3ItpDi6hfugBS3x47+d99PnHaf7wYjufN9Jtzq4TUgb9zKvAkKy1RWIlZtEpkPhoNVxk2xnOIOBzWwtONU30fhn915PZYLFcZ7oSTYh1OernqM2xI1OSwWB7wjvbpqiAbtDg2y8se61dPbD6eXEwWE+z7v73l4xg=
+sidebar_class_name: "delete api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete user account"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/api/user/delete/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows a user to delete their account. The user must provide a valid authorization token.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Account deleted successfully.","error":null}}}}}},"403":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":403,"message":"Invalid token","error":"Unauthorized"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal Server Error","error":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-api-user-by-id-servers
+title: "Get user servers"
+description: "This endpoint retrieves the servers and servers queue associated with a specific user ID. The user ID is passed as a parameter in the URL."
+sidebar_label: "Get user servers"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVFFv2zgM/isEX7YBRpxl2R785lvXIrgtt2tT3EMXDKzFxLrakirRbYPA//0g2cm1WDtgb8tLJJE0v4/8yD1ax55EW7NQWOCWpXT6MrD/Y7dQF+zv2AfMUHGovHbRDwtc1ToAG+WsNgKexWu+4wBSM4QhBsio4/m2446BQrCVJmEF91pqIAiOK73RFXSBPSxOJrCq+XABHcBRCKyAAhA48tSysAdtUqbL888TzNBzcNYEDljscTadxr/KGmEj8UjONbpKDPN/Q4S/R36g1jVDROiqikM63lHTcXoTki58tIqxmE2nGbYcAm0ZCxxLAhvbGYUZjhSxuBqP37X6/vZoiLcZro9+f8dKROdUkoPv8TLDdZ9+Gc6n819kYqycJlQvUZlP5xmy99ZjgUsrRxL/04udB3M0HcC8//WyJr6fhmQv4Hn/tLQLI+wNNaNsICHNoKq5ukkNVyykmxCbfmDxbEzSa3LFAhOEQ+hIqM/wqKbYuj2GquaWIkDZuQgmiNdmi32GOirekdSYoaE2GrVKurvttGeFhfiO+3WkIrUdpwizIabAnJzOo6bzvVZ9PgohTxKpOq9ldxGTD2WLfit7w6bsYvARTi3iYkTyxAKvmTz7ZwaTYTCBxK+A3QDB8q/zL+Xn/GJVnp7m5cmXxTLN2AT7RG9jUyItTRJ4TcrevwpwQqGG8uvihyT/lOfLxfKsgLQGlK26lo0kKcSZDaKb5jCjLd1os53AhW0ZYirfDo6t3tYC1/GxslE1wmA93HtrtpNv5ptJH9fDTim/LmBjPTzFpk0QMhUnQcSaDvDeTd5NZvMP8PpP60nexBY6G6SlpNGxg2csw54Jz6+4R1r/vbbdqAfhB8ldQ9pEfp1vIuRBcFdITmOWpIQZFvrxmsowLqPaBomO+/01Bb70Td/H59uO/Q6Lq3WGd+Q1XUdBXO1R6RDPCosNNYF/UqrX5+NQvIGXsI6PZHaxa8NaQMzwhnfDZPXrPsOaSbFP2QdDWVXs5FHIDwvoyQSefVph3/8Herdchg==
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get user servers"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/user/{id}/servers/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves the servers and servers queue associated with a specific user ID. The user ID is passed as a parameter in the URL.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"id","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Servers found","servers":["server_id_1","server_id_2"],"serversQueue":["queue_id_1","queue_id_2"]}}}}}},"404":{"content":{"application/json":{"examples":{"notFound":{"value":{"statusCode":404,"error":"Not found","message":"User not found"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error, check the details.","error":"Internal server error","details":"Error details"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: post-api-user-presence
+title: "Update user presence"
+description: "This endpoint updates the user's last seen time and the path they are currently visiting."
+sidebar_label: "Update user presence"
+hide_title: true
+hide_table_of_contents: true
+api: eJzlVk1v2zgQ/SvEXLoF1MhI0j3opu3Hwug2DWIHPbg+0NLYYiORzHDo1mvovy+Gkmt36wDbw57qiwh+DN+b9zjjPXhNukNGClAslhk4j6TZODutoQDvApfe3AekW8KAtkLIoMZQkfGyCwqYNyYotLV3xrKKvtaMQXGDKgakZ0G1OrAKiFax6VBpW6dVr7mRwU5pQlVFIrTc7tTWBMPGbi4gA8LgnQ0YoNjD5WQin8pZRssy1N63pkpw889B0OwBv+rOt8OJEKsKQxpudRsxzbHmGF65GqG4nEwy6DAEvUEo4EBxJFGr8fw6tu0O+vTL4Hpy9ZMwotWRG0fmb6yfxHI9uTrFMrVb3ZpasXtACxkgkSMo4P401gHSy5/PDNIW6c0Q9AlEL7/PztQyktWtGs6qAdER2fn1/oCR8DFi4D9cvfsPWEPVYKdlxDsvt7vVZ6wYMvAkFmUz8BATyfffljzaK7lQmfCEw8bwgcnYDfQZRFOfDxiteYyoTI2WzdogKbf+dsGZUCNnQyL6YkA6hF/KWhdbNl4T52tH3Ytas/41iDN+5dy32vwSQiepkRt3KKfCLHGBXHuTS8zcj4UnhwwCVpEM72aSmLF+BKS51IEyDkkYATTMXk6knVDACjUhnSnQqIaloZoIHa1uPty9L//KZ/Py7du8fP1+ejPyE8TyDO+OD/bNUDmOOhy4j1k8yaqxa5cgGpYDMGt07b48C+q1Do0qb6c/wPtY3t1Mb/4sVGoktatih5ZTORA1A5u2VcYmBTr9IHKqmetQyVXUDRs7s2lYrWSycoKVUTlSX8jZzcUn+8mm4GboS+XtVK0dqe+xGRtY2wqDSLxFCgO8q4uri8vr39Vv7xxpfi4cRcZOJ/tanTJ/nxrG4ED/RKM8qXn/a88czXHyzMTs1B7VW4D2RrQLyS0ngGGZQSMmLRaw3690wHtq+16mHyPSbviPsNVk9ErkXSz7DBrUNRIUiz084A4KeDXwfDEXJNmhuZyteH12OFRWFXo+2f5DW+iXJ0/p9sNsDhmsxnbSpY4FEjjFzY5DAdn3/wBgAxvx
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update user presence"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/user/presence/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint updates the user's last seen time and the path they are currently visiting.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"path":{"description":"The path the user is currently visiting.","type":"string"},"uid":{"description":"The unique identifier of the user.","type":"string"}},"required":["path","uid"]}},"multipart/form-data":{"schema":{"type":"object","properties":{"path":{"description":"The path the user is currently visiting.","type":"string"},"uid":{"description":"The unique identifier of the user.","type":"string"}},"required":["path","uid"]}},"text/plain":{"schema":{"type":"object","properties":{"path":{"description":"The path the user is currently visiting.","type":"string"},"uid":{"description":"The unique identifier of the user.","type":"string"}},"required":["path","uid"]}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Presence updated successfully"}}}}}},"403":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":403,"message":"Invalid token","error":"Unauthorized"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error","error":"Internal server error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

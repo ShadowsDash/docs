@@ -1,0 +1,63 @@
+---
+id: get-api-user-funds-history
+title: "Get user transaction history"
+description: "This endpoint retrieves the last 10 balance-related transactions for the authenticated user, sorted by date in descending order."
+sidebar_label: "Get user transaction history"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVFFv20YM/isEX7YBiiU7aR/0JqxNZmzNisZB0bnGcJZo6RbpTuNRTj1D/33gyVncdX3o2wwDkmke7+PH7+MRfU9sxHq3rDDHmqTo7X0gvh5cFX6yQTwfMMGKQsm210TMcdXYAOSq3lsnwCRsaU8BpCFoTRCYZ7A1rXElXTC1RqgCYeOCKbVCgJ3nmGwGaciJLWPKEIgTCJ71x/YAlREC60AvJ1dZV4PniniGCTKF3rtAAfMjLrJMH6V3Qk701fR9q1Wtd+kfQUEfkT6Zrm+nE2EoSwrxdW/agWJMjAzhR18R5ossS7CjEExN2vAzeGgmUmDnB1dhgsTsGXM3tG2C511ivj7i71Z5PQtrIEFtFfP4mAIdSeM19cQbJmg6P2g3c8WiXGCOi2xxeZHNL7L5Ksvy+J1lWfYbjpsxfhK8yubfSMbgdA6e7V9UfZWRq2x+zsgHP4BhAucFWl/XVIF1z2zg/XnNJ2gvvn1OxHvi11PRryB78fms7rxyqWJ5JCfwyN7VZ8CWToidaWEqDVN8fIL4zxxqEkywN9JgjqnpbarDSnfqi/SkgRQTDFQObOVwVzbUnfgMxCv/QK4Y9PQR5dArskak1xMxU0dNhon/w10E018gWgX8Dgzc/vruTfFLercqrq/T4tWb5W30ywwVtXU7Hy+y0kYOGlP5x+8CvDKhgeLt8otL3hfvbpe3NzlEL1e+HDpyEgcBNkAQ27bqPXVpZx6sq2egzIJexd2U2Nm6EdhqsPQ6MyHwPFE+++g+uljcTouheLuMvv8cm3VBVO9BTb0nDhO8y9nlbHH1Er7/2bORH3BMsPdBOhMV4kzk74YkcnC+W57s+e+Gz1T3f1hfJ0UIfZK0b4112uHArQKdNLdG09unTZFg1B0m+NwebhJsfBBNPR63JtA9t+Oo4T8H4gPm602Ce8PWbFUU682YYEOm0s2zPuIDHTDHoiypV6WfrPWlI8fNmStuXq9wHP8GyhomOQ==
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get user transaction history"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/user/funds/history/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves the last 10 balance-related transactions for the authenticated user, sorted by date in descending order.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Transaction history found","error":null,"transactions":[{"_id":"transaction_id","user":"user_id","method":"balance","amount":100,"date":"2023-01-01T00:00:00.000Z"}]}}}}}},"401":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":401,"message":"You are not logged in","error":"Unauthorized"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Something went wrong","error":"Internal server error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

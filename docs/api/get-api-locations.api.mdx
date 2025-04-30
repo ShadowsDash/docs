@@ -1,0 +1,63 @@
+---
+id: get-api-locations
+title: "Get all locations"
+description: "This endpoint retrieves all locations along with the count of servers in each location."
+sidebar_label: "Get all locations"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VE1v4zYQ/SvEXLoLEFbibHrgTYiTwGjWCWxviyJrFGNpbLGhSC4/nBiG/nsxkuMm3e6hh/pizZAzfJz3Hg/gPAVM2tlpDQq2lEqv71zVpyJIqClWQXsOQcGy0VGQrb3TNolAKWjaURRojDCvVQKNs1vxrFMjUkOictkm4TYiUthRiEJbQVg1p4oRSAgUvbORIqgDjM/O+K9yNpFN/IneGz3sLv6MjOUA9IKtN0NFzFVFsf/cocnU5xKmHK9cTaDGZ2cSWooRtwQKTjcUG5dtDRIoBBdA2WyMhNNVQD0e4A/No3nNcSTheBVQlxI8r5+PLyRYbN92FzOOJWwMbkHBFc8h7MUNhxJafDl1OWd4BhPZap+DAQVNSl4VxTE34iQP6VvWgeo52idQ59xD84jQVgRqgybS35sWeX2iji8CMa/PGXpej2EloXLazsnSM5p+wi3DYygSGpcZ1fhTJ8EbTBsXWlDwsLye30/Kq+Xvd8IF8et0vrz5spjezzhaTO7nk+u5+OCD3mGij9Ctuv4n4fK/89lP5nog5QecXr7ndGoTBYtGLPpaMRSfmP3BeveKsaXUuKMHQILH1ICCAr0uTnIoeuarHHTaL6qG2gFsjhSW7olsmbnoAGnv6cghV/Q7QcGaMFD4F1ORGJZE4i5sFRSz+/nn8q5YLMubm6KcfJ7OBJ8zAgar7cb1B+lkuPOiwdo9/xTFBGMjyofpd4f8Vs5n09mtEr2Fa1fllmwaZKqjiEkbw8Zkw7b4pO12JBauJcFHhXbY2Optk8Sak5VjrhIx9c/B2e3oq/1q++Y69l3Kh6nYsDDeYdM2JpZrZNOz+Ad4F6OL0fjTz+LDLy5g+ggsPBdTi70yjr66pfT+pfnnLd9I7H98qo7sJnpJhTeoLaPtXXs4yuYR0Gt4+45IYMs1LiZePRzWGOlLMF3H6W+Zwh7U40rCDoPGNXP6uOokNIQ1hf4VeqI9KCirijzr8+iI743Urd5o+fZ6CV33Fz/GBh4=
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get all locations"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/locations/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves all locations along with the count of servers in each location.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Locations found","error":null,"locations":[{"_id":"location_id","servers":5,"pid":123,"name":"Location Name","flag":"Country Flag","maxservers":100,"latencyurl":"http://latency.url","requiredRank":1,"maintenance":false,"requiredSubscriptions":["sub1","sub2"],"coinRenewal":{"amount":10,"hours":24},"platform":"PTERODACTYL or VIRTFUSION or SDORDER (private)"}]}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal Server Error","error":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

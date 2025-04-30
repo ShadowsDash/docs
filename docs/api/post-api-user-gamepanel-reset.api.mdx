@@ -1,0 +1,65 @@
+---
+id: post-api-user-gamepanel-reset
+title: "Reset game panel password"
+description: "This endpoint allows a user to reset their game panel password. The new password is generated and updated in the Pterodactyl panel."
+sidebar_label: "Reset game panel password"
+hide_title: true
+hide_table_of_contents: true
+api: eJzlVcFu2zgQ/ZXBXLYFBMtNgh50EzZIYLR1g9hBUbhBMZbGFhuJZMlhXK+hfy9I2a6TbBfoeX0xTc28eZp5b7xDY9mRKKMnNRZojZfSqjvP7po6tqS5vWXPghnW7CunbIzFAueN8sC6tkZpAWpbs/FAEDw7EAMuJoE0rBysqWNIUGDJ+41x9QjmDYPmzfEGlIc160iGayBdQ7B1OisdceBG2JmaKtm2A9joi/6iP5W308n0uoDER3W25Y61pDeKkN5ypVaqipxOEWKBTq0bgaohveZDlVWQ4DhG+2CtcQJGGnZgW5KVcZ0fYYaOvTXas8dih2fjcfyqjBbWEo9kbauqRCH/5mO3dsg/KHJLGT5UFft0fKQ2cLoTkuD/NjVjcTYeZ9ix97RmLPD6ZfsOvcEM2TnjsNChbTPUvDmEYBF/fT229OvxQZ8+GV6M3/wh8aApSGOc+ofr37K/GL85ZT81cEgahtIw1ex+Mce7U9Rf5M7/kNzKuKWqa9b/wez8lNlnE4AcgzZ7/XId505pOCBRT469Ca7iE7ZXxzL9gWvH0piDezBDS9JggTlZlUc/5OuDlfJkixwz9FwFp2Q7qxru9t317ObmgXUZYv4OZWsjz0bExowUiQUumVxq4HNDMgyPQCIKmBUQTD/efijf57N5eXWVl5cfJtNk0RFG4kqvTCqkpI3Is4Zqs/nLwyX5BsqbyYsiT+1Wmyo8dZuotj1YqaMHpdcjmJku2iu6ZwgcfLeMl5WJ8xMG42DjjF4nUw9e9gmlvJnAyjh4yk1pL6QrTnZ8ZOcHeuej89HZxVt49c44ktfYZ2kmHSVRaEr9S/vs35bS87c9kd//et3tdSj8Q3LbktKxr8G1sUOD1hdIVmGWJIwZHvU+7Mr074H3GTbRH8UCd7sleb5zbd/H6++B3RaLxX2Gj+QULaMYF/d9hvtdUSx2+MBbLLCsKrYRbm/wl1uhvz8x5M3H2Rz7/icb3W1/
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Reset game panel password"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/user/gamepanel/reset/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows a user to reset their game panel password. The new password is generated and updated in the Pterodactyl panel.
+
+WARNING: This implementation is specific to Pterodactyl and might change in the future to support other platforms.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Game panel password updated","error":null,"newpassword":"new_generated_password"}}}}}},"401":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":401,"message":"No authorization header","error":"Unauthorized"}}}}}},"403":{"content":{"application/json":{"examples":{"forbidden":{"value":{"statusCode":403,"message":"You are not allowed to access this resource","error":"Forbidden"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

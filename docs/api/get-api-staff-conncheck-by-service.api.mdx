@@ -1,0 +1,71 @@
+---
+id: get-api-staff-conncheck-by-service
+title: "Test service connection"
+description: "This endpoint tests the connection to a specified service platform. It requires an admin token for authorization."
+sidebar_label: "Test service connection"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVE1v2zgQ/SuDubQFBMtI0h50Uz9SGNumRexisUhzGFNjixuJZIcjp15D/31BSXHddrPYnlYXEeR8PM57jwf0gYXUereosMAtaxnsUmmzeeWdMzWbu5f7JcvOGsYMK45GbEjxWOCqthHYVcFbp6AcNYLWDMY7xyYFgXogiIGN3ViuII6VIDSkGy/tDBYKwl86KxyBHFDV2pR1xw42XoA6rb3YvwaIM8xQOAbvIkcsDng2n6ef8U7ZaVpSCI01Q3T+Z0woD8hfqQ3NmBE7YzgOyx01HQ97StrFV75iLM7m8wxZxAsWrmuafvgyvJif/2Knzj1g5+rRdhfz82M7/HSakWHLMdKWscCF21Fjq3EsmOBsvKxtVbH7b5Uvj+GnZf/wHZAwOK9ATePvuRr4GiYEmsgVjr4Tw/gwh+e/PnGWHcubEckjYJ+fTB3H0P6hYyChlpUlYnFzwGhqbikV0H1It4gq1m2xz9AmTQbSGjN01A6HR+VOIquwUOm4v02D0NpPosdsTCwwp2DzmAyQmwcH5IepTp9jhpFNJ1b3y4Rk4jqyrBI5ZZeKHLHVqiFlDJFY4JpJWP7BRwzj0aR8vwGCqw/X78t3+XJVXl7m5ev3iytIfWaDAKzb+KGR1SZVXtZU+fsnEV5TrKH8uPipye/l9dXi6m0Bg2srb7qWnQ68gY0Q1TYNJO/VDC3dWbedwdK3DKmVtGNga7e1wjptGp8oVgYvcC/ebWef3Wc3FLfjM1B+XAwe/h6bdVHJGY7JzTuWOMI7n53Pzi5ewNPfvJA+S3wGH7WlQVATnSuOenxDvr0yP971RJ//yxs1sa/8VfPQkHXpNp00CdkosxukYJMyktAww6PUMMPim2jxNsPaR00Jh8OaIn+Spu/T9peOZY/FzW2GOxJL6ySDmwNWNqZ1hcWGmsj/Mpmn15MlnsFjmKdNcvvE1ehcxAzveH9irv62z7BmqlgGCONpaQwHPcn76aH4zoRv36yw7/8GJb5HHQ==
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Test service connection"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/staff/conncheck/{service}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint tests the connection to a specified service platform. It requires an admin token for authorization.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"service","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"error":null}}}}}},"403":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":403,"error":"Unauthorized","message":"Invalid token"}},"forbidden":{"value":{"statusCode":403,"error":"Forbidden","message":"You are not allowed to access this resource"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"error":"Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

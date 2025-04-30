@@ -1,0 +1,77 @@
+---
+id: get-api-user-discord-by-did
+title: "Fetch user by Discord ID"
+description: "This endpoint fetches a user from the database using their Discord ID."
+sidebar_label: "Fetch user by Discord ID"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVE1v2zgQ/SvEXNoGgmWkbg+6aWunMLZ1g8TBHtJgQ5NjixuJZMlRWkPQf18M6TRJ0xTotbqIGHLevPl4M4DzGCQZZ5caKtgh1d5cRAxzE5UL+q/93GgoQGNUwXh+CBWsGxMFWu2dsSS2SKrBKKToIwaxDa4T1KDQkuRGRhR9NHbHJhPEAVcs55PP9rM9OpovTs8W7+r1Yn50VInHyCYKjT6gkoR6Ik5bzHCY8K9L6U0ZSW63ZUQZVFMOyrUtKqYZx+t7IGm1iB6V2e7FNbOM10LGhHLvMUl53oWDikKPBQSM3tmIEaoBjqdT/ilnCS3xUXrfGpUqWP4XuToD4DfZ+TZ7xF4pjOl4K9sek40k9fGd0wjV8XRaQIcxyh1CBRepgq63XHQMwQWobN+2BTBrwz3iw79Gw5i+AmbT2W9yso5OUojnSM2msyekrKMficHqu+2OzJvfLxCGWwyLjPgMnzePi7S0hMHKVmRfkenc0/r5/XjH0csgOyQMEarLAaJqsJMckvae4SMFY3cwFmB42L2kBgqwsuNLneQQ8Etvwt2QjFfMjhp3kBAU2amCNKHcsFLnuS8HbfRYQgERVR8M7c85fC4FP1y7G7R1z97fCTVEnj3SS6hggzJg+IkqUeQrQYwi3FZIsfp09rH+UJ6v65OTsp5/XK6STCcwpgS3LgUy1DLyeSO1+/oiirmMjahPl0+C/FOfrZar9welaqf6Di2l9rJcI5m2FcYmaXXyxtjdRJy7DgWHCl1+2JldQ2LDRuV4EgiFC+JrcHaX1kICN1mg9elSbF0Qj7kZG0lahZFVe4shZnqvJ68nx7O34uXfLkh6xU30LlIn09wdenjCCysvq83+wUb6MdkHc/wHr7zDkBF+o9K30lguWh9azj+P8SVIbyCvIK5RzgcKqLIa4KqAxkXil8PA+V+EdhzZ/KXHsIfq8qqAWxmM3PCYXQ6MwWcN1Va2EX9R+JdnB629Es+RPRil3fMs5AUCUMAN7g+KHa/GAhqUGkMKn29qpdDTA58nu+qRst8v1jCO/wObvHtm
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Fetch user by Discord ID"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/user/discord/{did}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+:::caution deprecated
+
+This endpoint has been deprecated and may be replaced or removed in future versions of the API.
+
+:::
+
+This endpoint fetches a user from the database using their Discord ID.
+
+**DEPRECATED**: This endpoint is deprecated. Please use the `/api/staff/search/{collections}` endpoint and specify `users` as the collection.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"did","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"User found","error":null,"userid":"user_id"}}}}}},"404":{"content":{"application/json":{"examples":{"notFound":{"value":{"statusCode":404,"message":"User not found","error":"Not found"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error","error":"Internal server error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

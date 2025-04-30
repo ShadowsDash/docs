@@ -1,0 +1,71 @@
+---
+id: post-api-auth-pwreset-send
+title: "Send a one-time reset password code"
+description: "This endpoint sends a one-time code to the user's email adress. This endpoint will always return 200 no matter what, to avoid email discovery."
+sidebar_label: "Send a one-time reset password code"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVU2P2zgM/SsCL90FPHEwXezBp7pfi6DtNJik2EOaA2MzsTq2pIp00iDwfy8oJ9t02sMeJ5cQskQ9ku89nSBgxI6EIkOxWmfgA0UU692shgKCZymDLXtp5odITLIgV0MGNXEVbdCNUMCysWzI1cFbJ4bJ1WzQeEc3Yjsyla/JiDfSkOmZ4jM21KFtDdaRmCfm5/MH27YG2wMe2USSPjpzO50a502HIhTNoUHJNCHuva3PuWrLld9TPE4gg0gcvGNiKE5wO53qX+WdkBMNMYTWVqnM/AtrCSegb9iFdjyxQbaVBntse9KABaXnV74mKG6n0ww6YsYdQQFzZD74WJvUnzMaJm1EX1XEvO3bNqGiGH2EwvVtO4w/Rfq1J5aXvj7+D5BcNdShRnIMernffKFKIIMQdXJixwISCA22PnYoUJxXHg/uzXkMaQ7Gb/8bEWSXG1iidTu4YLWRaihW53xrXe76VmzAKLnedlOj4JPFKvRN8tCifartTA0lafxFfgoGpYECcgw2x16aPIxazFVpOWTAVPXRynGh9YyQ9dalfyCn2r2qsBEJeiLthAI2hDHhe6xoMuMnI5pFi0Fz9/H+Q/k+XyzLt2/z8vWH2V2qbpLKUY7e/2Dzm1FPV+1LmF6cdTapfAdDBtZtfYJnRTfDosHaH56xeY3cmHI++wXav+X93ezun2J0jdpXfUdOkk6MZcOi9mFd6n2HD9btJmbhOzJ6lY5PN3Z214jZ6GLlFY+Q8dEcone7yWf32aXkllOWcj4zWx/Nz9isY0FXEau09xR5hPd88nxy+9ff5o93PqL8qTXqGDtMjHOYuq4ueu2Qo3WEi5OoYT6u+8obnp7fnsl1pa4hgz4mzYzsXQEGCxkof5XSI4MTd9ODAusMGqV7sYLTaYNMn2I7DLr8tad4HF+nPUaLGyXKaj1k0BDWFKFYneCBjlDAq7FFN0vFk13s+7cONWSXQ2VVUZCr7b8477C+EuX842IJGWzOjt2lNyE5Q8qb/QgV5DB8B/ZbkKo=
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Send a one-time reset password code"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/auth/pwreset/send/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint sends a one-time code to the user's email adress. This endpoint will always return 200 no matter what, to avoid email discovery.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"email":{"format":"email","description":"Email address of the user","type":"string"}},"required":["email"]}},"multipart/form-data":{"schema":{"type":"object","properties":{"email":{"format":"email","description":"Email address of the user","type":"string"}},"required":["email"]}},"text/plain":{"schema":{"type":"object","properties":{"email":{"format":"email","description":"Email address of the user","type":"string"}},"required":["email"]}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"basic":{"value":{"statusCode":200,"message":"Password reset email sent successfully.","error":null}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,63 @@
+---
+id: get-api-earn-jfr-listing
+title: "Fetch JFR listing"
+description: "This endpoint retrieves the JFR listing and refreshes guild data if necessary. Requires a valid authorization token."
+sidebar_label: "Fetch JFR listing"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFlN9v20YMx/8Vgi/bAMFW/CPp9GYsSeGuzQonxR5SY6B1lHWJdKfyKLeeof99OMldvP4YlqfpRYc78vgh+T0e0DcspNa7pcEMt6yLxl6RuFeFvLZBrdtigoZDLraJZpjhXWkDsDONt05BWMXyjgNoyfDqegXV4AfkDAgXwqHkANvWVgYMKYEtwHHOIZDsR7DiD60VDkCwo8oaoFZLL/bPHgvUP7IbYYLCofEucMDsgJM0jb/cO2WncUlNU9m89xk/hAh6QP5EdVMNHqHNY8i43FHVcr+npG34xRvGbJKmCR7RMbs/4B82VuT8gmecT5iKnCbzqTHFnGfpxQwTbHuDNrCANaAlKYR2U1tVNn0xHgrBBPvEMUNjQ+7FHAthDSZo3c4qn5wdNxKsud6wBMzO0siVe+sCZrO4tq7wmB26BCsKeklKq6HImJ1dzOYvJrM0fXF+/nO37vovwVl69sxite5zE9h8t2Kz9CxBFvGCGb479Yj8IdA2pnbjv2hoyWRY8Alu+ky4wsvGGsPuX8im/4Fs6Qa99Qr7m2f+fGWx7FiuhnDfIZrHzp2GVhZHFQy+MLA+MX/7vPvMWLOW/vheMcGGtMQMx9TYMZO48UMh46OUx5hg4LwVq/vbvOT62ODAchfzXrTR94C6byJYqdpEj94SM9wwCcs3RgDDcDRUD3wBBDe/rd4sXo9v7xbX1+PF5ZvlDcQ4I4zMR9miWq3izbclGf/xhwCXFEpYvF1+FeT3xepmefMyg37gGJ+3NTsdRGQDBLVVBdb1T62mR+u2I7j1NUMMJfVgWNttqbCJm7mPLVMGL/BRvNuO3rv3rr/cDtNr8XYJhRf4J5t1QcnlHOIU2rGEAW86mo4ms3P48VcvpD9hl2Djg9bUC8RRX79r1rw8nYpfZnmitP9rsB5br/xJx01F1sVUWqki3CCte6TGRnmSOExwmGtPCeE6wdIHjYaHw4YCv5Oq6+L2h5Zlj9n9OsEdiaVN7P39ukvwOAbipH3kPWa4yHNuopyPD+jrd9etT6T/8uoOu+4v8QxTTQ==
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Fetch JFR listing"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/earn/jfr/listing/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves the JFR listing and refreshes guild data if necessary. Requires a valid authorization token.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"listing":[{"_id":"67e4ec2eafca253ddf5e4074","uid":"user id that submitted the jfr","guild":"discord guild id","invite":"discord invite","members":1000,"coins":400,"info":{},"lastDataRefresh":1745824008669}]}}}}}},"401":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":401,"error":"Unauthorized","message":"No authorization header"}}}}}},"403":{"content":{"application/json":{"examples":{"forbidden":{"value":{"statusCode":403,"error":"Unauthorized","message":"Invalid token"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error","error":"Internal server error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

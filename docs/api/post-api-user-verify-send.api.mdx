@@ -1,0 +1,71 @@
+---
+id: post-api-user-verify-send
+title: "Send verification email"
+description: "This endpoint allows a user to request a verification email to verify their account. The user must provide a valid authorization token."
+sidebar_label: "Send verification email"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVU1v4zYQ/SuDubQFtFaQjx50034VRrvZIHa2KLw5jKVxxI1Ecsmhs1pD/70gZSdO4y3qW3URQXLevJl5M9ygJUcdCzuPxeI2Q2PZkSijpzUWaI2X0qobz+4TO7XqZ6xrzLBmXzll4z0scN4oD6xra5QWoLY1Dx4IgmcHYsDx18BegGAdMVSV8IE7Um08T7s9SMPKAVWVCVomMG94ROiCF7DOrFXNEYNaVQMFaYxT30coMfesJ5ihY2+N9uyx2ODpyUn8VUYLa4lLsrbdus+/+Mh9g/yNOtuOFj5UFfu0XFMbOO0JSfBvTM1YnJ6cZNix93THWOCnl+F41gJbmFVo2z6yYueMw0KHth3Sl+H50dyWVF+PifwhvfPn9F5TDTuTRxL4lwnQ0JqBWsdU97vycH24QErHykBLXuACOqWDsJ/gUyBnRwYS9K54XP9LKGf7oUz1WPZU6L1gbvaxdpQujq87uzW7dyPoDxhdPE/uVAs7TS3Mki2Mxk/MDp8PO47bpL82df8fuPqq4Y7iSnobvZvlF65iVa2LDSsqxZGQu9CKsuQkXxnXvapJ6FgI4W+S25bUkc6Te5bG7EZHvEPSYIE5WZXHds7Hbs896zrHDD1XwSnpZ9HLViCe3TwWugzR9tFvI2KjRbqJBS6ZHLsD04hhPBrlAmYFBJcfrz+Uf+Szefn+fV6+/TC9TNMlCjnDmOfrp4q8G6URg8pQ6ZVJJJTELZw1VJuHnzy8Jd9AeTV9QeDP8vpyevlbAWku1qYKHWsZe0p58KLax7bq6F7puwnMTMcQXbluvNipu0ZgGTcrE9kIg3Hw4Iy+m3zWn3UCVz6hlFdTWBkHz7kp7YV0Fbs1wzU7P9I7m5xNTs9/hZ9/N47kFxyyVKuOUrU1pdzGOX9gGvwz1j3l/o9ega1e9mQ8ZBhcG/mOelwgWYVZktqYHLXqkxrT84a3GTZRv8UCN5sleb5x7TDE7a+BXT8+lWtyipZRFIvbIcOGqWaHxWKD99xjgW/G1LyaRzrZbqocbNAh2xmVVcVW9q6/mAfD7V6XXX2czTHD5XaOdGlUYQROuNnTMpIchr8BNc7IuQ==
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Send verification email"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/user/verify/send/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows a user to request a verification email to verify their account. The user must provide a valid authorization token.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{}}},"multipart/form-data":{"schema":{"type":"object","properties":{}}},"text/plain":{"schema":{"type":"object","properties":{}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Verification email sent successfully.","error":null}}}}}},"400":{"content":{"application/json":{"examples":{"badRequest":{"value":{"statusCode":400,"message":"Bad Request","error":"You have already requested a verification email in the last 5 minutes."}}}}}},"403":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":403,"message":"Invalid token","error":"Unauthorized"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal Server Error","error":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

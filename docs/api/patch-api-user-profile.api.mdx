@@ -1,0 +1,71 @@
+---
+id: patch-api-user-profile
+title: "Update user profile"
+description: "This endpoint allows a user to update their profile information, including username, email, and avatar URL. The request must include a valid authorization token."
+sidebar_label: "Update user profile"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV8FyGzcM/RUML2ln1pJrOTnsTbGdVlPb9cjS9OD4AC1hLWMuyZBcOYpm/71Dcldax3Jqz/TSTHQRRRHAAx4Aghtm0GJFnqxj+c1txrQhi15oNeEsZwZ9UY6NmDuyV1bfCUksY5xcYYUJp1jOZqVwQIobLZQHlFI/OECoHVnwGmrD0RP4koQFk3SAUHfaVtFOBkIVsuZCLaOMwooyoAqFzAAVB1yhRwvz6fkAZiWBpc81OQ9V7XwrS4CwQik4YO1LbcXXqBq8vic1YBmz5IxWjhzLN+zo8DB8FVp5Uj4s0Rgpiigz/OSCVxtGX7AyMkm4uijIxeUKZU1xz6Ov3YnmxPKjw8OMVeQcLonlrI0UEBeeOLTSd7WU6wCGrNWW5aqWsomfjB2/GlIlnBNqedWj7xlwx4/BXSRB6BG/hcTeI4dpii8LuISKYZ23vLzURnc+cbQgQA+S0HkYQVGixSLYBanVMlIc/EahQCu5BqkfyBboCCT5cC4DVVeLuDBkheYuCtWKk3WFtuQG/+7CWUiol+KfJJmUhd9TzoUz2uFC0qv0n27FkglAzi05Rw7QEijd1hHx5413iTN6ZeLUqqsR4t/BO9oXj1hPPUTzvq4O0tvXlxfZFdmzpPQZRG+/ZciHFJNwHWUhCe+Q7f+/6TC2PeS95usXYHVFSRWGlV+bYF0vPlHhWcaMDf3Siza0vTL5tkcScHLCEt82ObjTNrTFuDGAi7ZURge/vftPiiTbVyWtA85boZasyRh1efsU8KPUfAZt13fT2dTU99pJXXxun7E1n56DvtsaeOO6ti8qXNIejS2JIaIsv9mFvvOob/E2nK5q6YVB64cB5QFHjz+5/UG49fTFD41E8bNcfwxKY8GSL/V2CA3soS9ZzoZoxDAoGLbT5JBlzFFRW+HX14H7Hb2zcGGN6yC3zYbSexMk4kmWswWhJbtnrCVIf6VrL/iLcPnX9GJ8PryejT98GI5PLyaXKcLRw3BfTHc3y1m64h6nWheRLZW7jV7Me0yEUTmiFz7oYtclcv3wxsEpuhLGV5MnyP8eTy8nl7/nECdzrou6IuXTRCwcOC+kBKEiexXeC7UcwLWuHk3lUIllGVNGqEIHNzyBtvBgtVoOPqqPKioXLmoZX01iwj3GJpTzqIqUySuyLsEbDUaDo+N38Muf2qL/NfhotPMVxuJtozRPr4b4iDD7Hx69a/t/8QZp06/Xq5qM1anCUmrfMDSCZTFbUrdq/Wa3GSu18+HIZrNAR3MrmyZsf67JrtPTbYVWhJky/GoyVhJysiy/2bB7WrOcnaRwHcwCkKwbs/ZejE3WCY2LgozvHX8yIDW3vVq9Gs9O/mAZW7STVRWHNxY0R8XZbhlQNs0/A4oSlg==
+sidebar_class_name: "patch api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update user profile"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"patch"}
+  path={"/api/user/profile/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows a user to update their profile information, including username, email, and avatar URL. The request must include a valid authorization token.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"username":{"description":"The desired username for the user. Must be 3-16 characters long and contain only lowercase letters, numbers, periods, and underscores.","type":"string"},"email":{"description":"The email address for the user. Must be a valid email format.","type":"string"},"avatarUrl":{"description":"The URL of the user's avatar image.","type":"string"}},"required":["username","email","avatarUrl"]}},"multipart/form-data":{"schema":{"type":"object","properties":{"username":{"description":"The desired username for the user. Must be 3-16 characters long and contain only lowercase letters, numbers, periods, and underscores.","type":"string"},"email":{"description":"The email address for the user. Must be a valid email format.","type":"string"},"avatarUrl":{"description":"The URL of the user's avatar image.","type":"string"}},"required":["username","email","avatarUrl"]}},"text/plain":{"schema":{"type":"object","properties":{"username":{"description":"The desired username for the user. Must be 3-16 characters long and contain only lowercase letters, numbers, periods, and underscores.","type":"string"},"email":{"description":"The email address for the user. Must be a valid email format.","type":"string"},"avatarUrl":{"description":"The URL of the user's avatar image.","type":"string"}},"required":["username","email","avatarUrl"]}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Profile edited successfully.","error":null}}}}}},"400":{"content":{"application/json":{"examples":{"missingParameters":{"value":{"statusCode":400,"message":"Missing parameters","error":"Bad Request"}},"invalidUsername":{"value":{"statusCode":400,"message":"Username must be at least 3 characters long and contain only lowercase letters, numbers, periods and underscores.","error":"Bad Request"}},"invalidEmail":{"value":{"statusCode":400,"message":"Invalid email.","error":"Bad Request"}},"disposableEmail":{"value":{"statusCode":400,"message":"Disposable email addresses are not allowed.","error":"Bad Request"}}}}}},"403":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":403,"message":"Invalid token","error":"Unauthorized"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal Server Error","error":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,63 @@
+---
+id: post-api-staff-force-loc-delete
+title: "Force delete a location"
+description: "This endpoint allows an admin to forcefully delete a location and all associated servers. Only users with the ADMIN rank can access this resource."
+sidebar_label: "Force delete a location"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVU1vIkcQ/SuluiSRRmDZbA5zI3GIUGxsGa+iiPWh6CmYXma6x9019hLEf4+qBwys7Si+hQuj7vp4VfX61QZ9w4HEejcuMMfGRxk2diq0WIx8MHzlzSVXLIwZFhxNsI0aY473pY3Armi8dQJUVf45AjmgorYOxMNC/RdtVa2hSCGAoPImJQNyhfoAxeiNJeECIocnDrEHN65aQxs5RHi2UoKUDMPL6/EEArkVGE1iDMcIohgCR98Gwz3McO6LNeYblHXDmKOff2UjmGETtE6xHPV2j0K/vy+KYXwJfpGSvqAVvytBc+xiRwnWLXG7zTDwY2sDF5jPDrEf0kVsvItd1vOzM/0z3gk70U9qmsp25v2vscPD36huqs4jtqlM/XyiquV0JiRt/NUXjPn52VmGNcdIS0U07cyPW16c1vF+13GbfhkOPoyytjFat7ylQDWLxnoP70Dxcgg+YI6/UAF3/Nhy1AEdqrjuwkFziHfAdvFBbK2jVkof7N86nXdhXRxgfT72OMY1dk9U2QLEr9ilsS98mNuiYPffIo9ezI/D/uVboMDg/O4R6cz8mwQ/6sPgg31wXka+df/Wg8EB6cQLdObHSK/2LFKoi3S9B/Tp49ROtPutS/gOpk+n9B474eCo2lEWEtoMTMlmlWhesJCtor7RfSVv+uxgbzW4lH6veyoTJCXm2KfG9qNqYH9xIoJ9zDCyaYOV9dSUXO9YFjncKy2Grfq/yE8p0qhHssQc50yBwxtKytBddeRS+SGY3NxdD6/60/vhaNTv5E/z9BL1rFv4lMhKlZ5+SYV//iHCJcUShrfjV0n+HN5NxpPfc0i6XXjT1uykG6iNEMVWFahwlww1raxb9mDqawZNFerOsLbLUmCuh8brLIXBB3gO3i17X9wXl4Lb2En27Vh3AJxisy4KOcNpTKo8HbyL3kXvfPAz/PiHDyQ/4TZLM6kpMcdR6l/aSK+Xyfe1HhHx/7mldvQQ/ib9piLrtNw2VAq9o+AMqbFKHSUhJqk53cX4kGGppM1nuNnMKfLnUG23evzYclhjPnvI8ImCpbkyZKbrqGQqOGA+2+CK15jj0BhulPi79/f62W4fjl7J7c30HrfbfwCaAdxK
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Force delete a location"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/staff/forceLocDelete/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows an admin to forcefully delete a location and all associated servers. Only users with the ADMIN rank can access this resource.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Successfully deleted the location and all associated servers"}}}}}},"400":{"content":{"application/json":{"examples":{"missingParameters":{"value":{"statusCode":400,"error":"Bad Request","message":"Missing parameters"}}}}}},"403":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":403,"error":"Unauthorized","message":"Invalid token"}},"forbidden":{"value":{"statusCode":403,"error":"Forbidden","message":"You are not allowed to access this resource"}}}}}},"404":{"content":{"application/json":{"examples":{"notFound":{"value":{"statusCode":404,"error":"Not Found","message":"Location not found"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error, check the details.","error":"Internal server error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

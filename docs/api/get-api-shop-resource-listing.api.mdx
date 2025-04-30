@@ -1,0 +1,63 @@
+---
+id: get-api-shop-resource-listing
+title: "Get Coin Shop Listing"
+description: "This endpoint retrieves a list of coin shop items. Items can be filtered to exclude hidden items by default unless the `showhidden` query parameter is set to `true`."
+sidebar_label: "Get Coin Shop Listing"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVE1v20YQ/SuDubQBCEn1V13eiCQ2hCaqYTnIwRHi1XIkbkzubmeHsgWB/72YpZK6SHPosbzsYDk7H2/emwOGSGzEBT+vscQtSRXdsgnxllLo2dI7l8T5LRZYU7LsovpiiXeNS0C+jsF5ASZhRztKYKB1SSBswAbnITUhghPq0gTmeoA1HtYEG9cKMdUgAejZtn1N0Li6Jj+6w3oPNW1M3wr0vqWUQBqCh9SEp9HvAf7sifcQDZuOhBhcgkSiER+Ee3qYYIFMKQafKGF5wJPZTA8bvJAXNU2MrbMZgOmXpJ0dkJ5NF9vxReqtpZTNnWl7yndipE+vQ01YnsxmBbZHjMr7A352iuPF2fpyc0qXmxNzRuf1hf3VXK5/szMs0JuOsEQFAxZqFxjZWcLyF42V7avAWKICmLQF83Tz7TY78XE4WH4zNW+B635v1i1hqf0XmGtROMe/zubR6fG55xaH1ZC/As//OzDEO+K3zFrUD8A511o7Sslsc8teiL1pYXwLlB8XOJ4lVh56T8+RrFA9/oVgbc9MNQ5fS+1ImnDkqmJnpMESpya6qZJt+hWQ6XEqUywwke3ZyX5pG+rG+vtEfBceyVe9Bjig7KMW2YhEfZE9scQ1GSb+F/oTjL9ANIoS3sDij9v31bvp8q66uppWb97PF6B5JqiFO78JOZETnRAuG1OHp58SvDGpgepm/l2Sj9XtYr64LiGLrQ6278hLnknmuri2BeezMDrz6Px2AsvQEWgq7kbHzm0bUcU5b4OOTwgCwxMHv5188p98Du5GeVU3c9gEhn/W5nwS4y0lFdSOOI3lnU5OJydnF/Dz74GNvMKhwBiSdCaT5cjzaxJ4rZtAlwr8YJu8YN7/ZrEc+SL0LNPYGue1f1VVeTiS8h5NdMqlJkR8Idq/F0aBuCqwCUnU+3BYm0QfuB0Gvc5FYHm/KnBn2I26vl8NBTZkauK8bh5pr8qxlqKq4SjD79U7rF4o5/rtHQ7DX5MaERE=
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Coin Shop Listing"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/shop/resource/listing/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves a list of coin shop items. Items can be filtered to exclude hidden items by default unless the `showhidden` query parameter is set to `true`.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"listing":[{"_id":"64b8f3e8f2a4e5d6c7a8b9c0","name":"Item Name","price":100,"priceFor":"coins","rawPriceFor":100,"resource":"resource_id","buyable":true,"id":"item_id","icon":"icon_url"}]}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error","error":"An unexpected error occurred"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,63 @@
+---
+id: post-api-staff-reset-instance
+title: "Reset instance"
+description: "This endpoint resets the entire instance by deleting all servers, clearing required collections, and reinitializing test collections. Only accessible to users with ADMIN rank."
+sidebar_label: "Reset instance"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVU1v20YQ/SuDubQFCEmwnR54I5K6EJrYhuUgCBQjWC1H4kbLXWZ2aEcR+N+DWUqJ3CRAcywvJHbn+7033GPsiI24GOY1ltjFJFXnFmLW61tKJPOQxARLWGBNybLr1BZLvGtcAgp1F10QYLVNIA0BBXFM4A6OsNpBTZ7EhQ0Y7yERPxCnAqwnw3rK9LF3TDXY6D1ZTZAKMKEGJhecOOPdZzUUSnJqNIHr4HdgrKWU3MoTSIQ+ESd4dNJA9eLV/ArYhO0EC2RKXQyJEpZ7PJvN9GVjEAqin6brvLN5FNMPSXvcI30ybedHj9TnNPr5YHxP+UyM9Ol5rAnLs9ms0Hhrt+nHiY7nxyDvn9y9t3o55KfAi9n5L1bTB9NLE9l9pvqnJV3Mzgsk5shY4utTjwJbSslstL55eDDe1SBxSwG1nHXklatrCv8t8uVX89Owb2MPhglCFMU9PpKmOIAFovRhSrFn+20Oz34dlcymv8ZKflLsM0XmtF8hDubIRMhtFGAbstvM4JrEOJ+UM8cWf+iTNZFNscRcwtH10NCgaaWJR2VhgZ2RBkucms5Nk6psyqcym2KBiWzPTnYL21B7QDsR3yk8Va/ue5Rdp600Ip16ZEsscUWGiX+gVYLxagQZ4hoMXF3fvqpeThd31eXldJSK5plkCriwjjmRE6+RF42p4+NvCV6Y1EB1M/8uyZvq9mp+9XcJeTPU0fYtBcnIgUuQxHkPLuQJt2brwmYCi9jqplhHbkfD1m0agZUe2qggC0FkeOQYNpN34V3Iwd24aaqbOawjw9Pajosn46ebZizvfHI+Obv4E37/J7KRP3AoMiStyZQKJs8vr7yvEf7d4gkx/4fr70AZoU8y7bxxQUfQs9e+RlYu0XRO6aS8HBfmkx8A3hfYKI3LJe73K5PoNfth0OOPPfEOy+V9gQ+GnVkpaZb3Q4ENmZoYy+Uet7TDEitrqVMpHLT6vcSH+xPd3Fwv7nAYvgAbula8
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Reset instance"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/staff/resetInstance/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint resets the entire instance by deleting all servers, clearing required collections, and reinitializing test collections. Only accessible to users with ADMIN rank.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"configurationCode":"example_configuration_code"}}}}}},"403":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":403,"error":"Unauthorized","message":"Invalid token"}},"forbidden":{"value":{"statusCode":403,"error":"Forbidden","message":"You are not allowed to access this resource"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error, check the details.","error":"Internal server error","details":"Error details"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

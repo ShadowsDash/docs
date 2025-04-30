@@ -1,0 +1,73 @@
+---
+id: post-api-server-by-id-renew
+title: "Renew a server"
+description: "This endpoint allows a user to renew a server by spending coins. The user must pass the Cloudflare Turnstile challenge."
+sidebar_label: "Renew a server"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV8Fu2zgQ/ZUBL9sCqp0m6R50c9JmYew2DRIXi4WbAy2OLDYSqZLDpKqhf18MKcd2EgebQy+L+mJZ5HAeZx4fn1eilU42SOi8yOcr4YsKGynylaCuRZELT06bpegzoY3IRSupEpkwsuFBrUQmHH4L2qESObmA/XUmbItOkrZmqjjEepq0+grdLbqTbqou0eCdyIRCXzjd8kSRi1mlPaBRrdWGQNa1vfMgIXh0QBYcB4EEH5eBRQe+RaO0WUJhtfEjmFWYZjfBE7TSe6AK4bS2QZW1dAiz4IwnXSMUlaxrNEscfTFfzLQEaWDy/uP0HE5QupjxBg1ozyuqjBfqoJBmDcN0ayB3miobCOydYSyaRrEkvrXGo+dCHh4c8FdhDaEhfpRtW+siVmj81fPuVwK/y6atU4QPRYE+Pt7KOmB8R5KCP7UKRX54cJCJBr2XS+5CqmyChtwRdM46kZtQ1338ZOL44O0LQQQjA1XW6R/c2j1Ijg/ebiM5t7AOigtDhVKh20ASn7dX3YA7eiG40rqFVgrNM8iOtpH9YwMwBYwduIWKWSVjoYGYew69Da7ALbRn92n6eAB8KEtdaDR0ypx7SXJlY+5K3iKgsWFZJd5uuB1BJFbthVDIlopKnkldP9uVnfSnNtQqZr9Fp0smclxltCdNasq7l9M2Yv+QVtwD7d0udaeG0BlZw8DhFLyB9fR4v8bI0oOeTqzq/gPWR9pmF1+xIJGJ1rFkkU77oLVM8I+HIrVHUNYnfhCO0rp1lVPRBywjmJbQDVwMnhWDlUc12sBiS3mi4sA9kI0c3XdRsywtAiXalBprxeM8vYa1JGegDVAlCQrpMYuZWcVqZBpqAmxa6sA6aAOBBBWapkvJmBwProB+W+vnW2W65qEm1KRb6WhcWte8UZLkr6L/7KITfqdxW0v9i+A/udaR4kiVXVsariqboVyMZavHSfzGK636cdTzsciExyI4Td0VN2a4Vj26GeefBA6+b1VF1HJEnClykYr1hEvCnTqCLUHC+afLj5O/xlezydnZOPkYzjOKW2L5u9wI5Yek2A94sOPzShtHNcWRq0oqe/ebh/fSVzC5mD4C9ffk8nx6/kcO0cMpW4QGDSUHcN+y2CiERt5osxzBlW0QOJVr0sRGLyuCBb8sLCMk5L7dOWuW0aXFxXUydZOLaaTgLjZtPElToOfe3qLzCd7R6Gh0ePw7vPrTOkmveY/cwEbGQzNY2csdf/lwi1t3y//KqA7k25KRPhPB1bzjxO65kK2OVB7qkg+mP3l4cZ2Jik9DPher1UJ6/OzqvufX3wK6TuTz60zcSqflgtk0XwmlPT8rkZey9vhMpV9dDqfxNezDOryUpuOWJ8chRCZusEv/T/rrPhODDeXsaeA05Xgz4/BN4FN3WJ+tgyZFgS1tTX9kMvjPz71IXHy6molMLAZz0kT/w861ietmm8d8zgLzLzNQwlQ=
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Renew a server"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/server/{id}/renew/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows a user to renew a server by spending coins. The user must pass the Cloudflare Turnstile challenge.
+
+If an ADMIN Bearer token is used, they can renew any server without owning it.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"id","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"turnstile":{"description":"The Cloudflare Turnstile response token for captcha verification. If you are using an Admin bearer token, the turnstile token is not verified, but this field is still required, in that case, you can leave it empty or put a dummy token.","type":"string"}},"required":["turnstile"]}},"multipart/form-data":{"schema":{"type":"object","properties":{"turnstile":{"description":"The Cloudflare Turnstile response token for captcha verification. If you are using an Admin bearer token, the turnstile token is not verified, but this field is still required, in that case, you can leave it empty or put a dummy token.","type":"string"}},"required":["turnstile"]}},"text/plain":{"schema":{"type":"object","properties":{"turnstile":{"description":"The Cloudflare Turnstile response token for captcha verification. If you are using an Admin bearer token, the turnstile token is not verified, but this field is still required, in that case, you can leave it empty or put a dummy token.","type":"string"}},"required":["turnstile"]}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Server renewed","error":null}}}}}},"401":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":401,"message":"No authorization header","error":"Unauthorized"}}}}}},"403":{"content":{"application/json":{"examples":{"forbidden":{"value":{"statusCode":403,"message":"You are not allowed to access this resource","error":"Forbidden"}},"insufficientCoins":{"value":{"statusCode":403,"message":"You do not have enough coins to renew this server","error":"Forbidden"}},"captchaFailed":{"value":{"statusCode":403,"message":"Could not verify captcha.","error":"Forbidden"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal Server Error","error":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

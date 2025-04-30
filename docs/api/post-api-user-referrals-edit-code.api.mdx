@@ -1,0 +1,71 @@
+---
+id: post-api-user-referrals-edit-code
+title: "Update referral code"
+description: "This endpoint allows a user to update their referral code. The user must have a valid token, meet the minimum referral requirements, and provide a unique referral code."
+sidebar_label: "Update referral code"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdlktvIzcMgP8KwUtbYNbOJkEPc/M+UhhtsoHjoC28OdAj2qPNjKRQkrOu4f9eSOPHJGkXzbHriwUNSX2k+NAGHQm1HFg8lrO7Aq1joaCtGSss0VkfRk7fepYJL1iEGv9R6fDeKsYCFftKtEviWOK01h7YKGe1CUBNYx89EETPAsFCdIoCQ6hZC8jOGlRW8QCmNXdybfQBaloxEKyo0QqCvWdTQMscki602ug2tkcLwg9RC7dsgi+AjAIndqVVMhGNfoj87DQsUNg7azx7LDd4enKS/iprApuQluRco6schuEXn5zbIH+l1jWdho9VxT4vV9REznuBQvQ5MOXpyUmBLXtPS8YSJ/3jd3FQWCCLWMHSxKbZ5l+B569m0SbHaWxcDP8KdP4UaNzpgKN1Y0mBzsoHIHxHCib8ENkHPJK9fSVZNBRDbUX/xeobZG/7ZFcW9krZMNRMiqXHdtu3eoQ7eyXcwspcK8XmG2RnfbI/bQTDrIACNEw+wB+HvPIpv6uazJJhbePz9O7RXxyO3e7ZpQv0O6vW/8EHX9XcUlqFtUtcdv6Fq3R5TlLtBt35V2UfNi9KlMHw4/Pyu0xVN2c4e3N6kvwQqlJHgMaaZa6oBEXagDXNGqhxNZnYsuiqJ53c3DH5INosce+dlpQAs47pLu22sQnakYThwkr7RlGg78e5wF/D0DWkv5sLy1fGobb7mZDoKdRY4pCcHqbWPTwUw5B3E2KIBXquouiwvklh2PUFzzJNXX0Uk4lDYOoQXNLIkljinEly6b8MSfepmw1gF0Bw9WlyOfpteDMdXVwMRx8ux1d5oAyyT6l4Jscy+9j1gWPUD/4XqM3CZiYdkgTe1KTs4w8ePpCvYXQ9fsHz+2hyNb76pYQ8/5StYhpFXffSHnzQTQPadMOL7rVZDuDGtgzpKGk7wVYv63yj2lQ2wQUGK/Ao1iwHn81nk41rn62MrsewsAJP2bTxgUzF+V5XLL7DOxucDU7Pf4Yff7VC4afkY7rBlnJ2Gsqhvu1m85Mse+5orzX9n0b9Lrl6RbktMEqTHOpyeIbkNBY5L/PbYJfHqW0f3zp4V2CdUr+c4WYzJ8+30my3afshsqy759OKRNM8Zc7sblvgbnqVsw3e8xpLfN+F8M00URX7wfOP/XBb7JVGVcUu9MRfDIbtXa9Arz/dTLHA+W6gtF2KJ8PZbnFcJsjt9m/9s4Ds
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update referral code"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/user/referrals/editCode/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows a user to update their referral code. The user must have a valid token, meet the minimum referral requirements, and provide a unique referral code.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"code":{"description":"The new referral code. Must be 3-20 characters long and contain only alphanumeric characters.","type":"string"}},"required":["code"]}},"multipart/form-data":{"schema":{"type":"object","properties":{"code":{"description":"The new referral code. Must be 3-20 characters long and contain only alphanumeric characters.","type":"string"}},"required":["code"]}},"text/plain":{"schema":{"type":"object","properties":{"code":{"description":"The new referral code. Must be 3-20 characters long and contain only alphanumeric characters.","type":"string"}},"required":["code"]}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Referral code updated","error":null}}}}}},"400":{"content":{"application/json":{"examples":{"invalidInput":{"value":{"statusCode":400,"message":"Invalid payload input","error":"Bad Request"}}}}}},"401":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":401,"message":"No authorization header","error":"Unauthorized"}}}}}},"403":{"content":{"application/json":{"examples":{"forbidden":{"value":{"statusCode":403,"message":"You need at least X referrals to change your referral code.","error":"Forbidden"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

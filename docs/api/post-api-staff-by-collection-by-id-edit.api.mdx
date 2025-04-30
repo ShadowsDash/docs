@@ -1,0 +1,71 @@
+---
+id: post-api-staff-by-collection-by-id-edit
+title: "Edit a document in a collection"
+description: "This endpoint allows authorized users to edit a document in a specified collection. Staff users have limited access to certain collections, while admin users have full access."
+sidebar_label: "Edit a document in a collection"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVt9v2zYQ/lcO97IWUC0jSfegNydNBm+rU8QphsHNw1k8RWwoUiWppK6h/304yontJimWl6HziymSd/fdr++4xpY8NRzZBywWawxlzQ1hsca4ahkLDNFre419htpigS3FGjO01Mhh6YzhMmpnMUPPXzrtWWERfcd99lJlWj1WcpWha9mTmJgqEXEhTlo9j1RVx6uTB/vHq6k6VTpihopD6XWbUBV4WesAbFXrtI1Axri7ANTF2nn9jRV0gX2A6ICVjkCgXNk1bCNoCwSh5VJXmhVsXR1Bsr6RrOmWwehGR1ZAZckhaSvZR9J2RyxkcFdrw0Cq0XZXuuqM2YiOUghC62zgIIE7GI/lr3Q2so2ypLY1ukwRyT8H8XGN/JWa1gwSoUuaZHlLpuO0Fyl24cQpxuJgPM6w4RDoWqJ+ptmo5Dwrsc7eO4+F7YzJsJJDLPBjq0j8S9+gOJI2Afv0y/BofPhCjJXzS60U22dRHo0Pd1H+7Togz2DdJoesJMr38ZYcew6u8yVvfcCzBzNbqEcvhGpdPHOdVT9AevQ4noKzSmJbNDMXYVB1j+bty5PL/pb96aDxGUBv9xM8tZG9JQPzJAuD8BbW0+f9PUZpSA7x2KnVv8D6qOPd8jOX0pWtl0aOevBjuVH3fa8y/D4/n8HAEyDGSFtZxpqH6kvd1aV6lHL9jlj6XQZZDGauZLfpTNQt+ZhXzjdvFEX6qfFG/hrz1pD+mcOaAsuxdvfMLICE0wvMqdV5EJ7M11sO7PO1Vn0ubJNjhoHLzuu4mot7gwdCi5fuhu2kEz0PDtcxtiKRbmKBSybP/gm2ZxiOIIoWcBUQzM4v3k/+zOeXk7OzfPLu/XSW6HeUHJPSvdgW+enQbdto7g2tyiVMOsoNnNek3N0vAd5RqGHyYfoIz1+Ti9l09lsBaQzdz5bUM6ADhKiNkUkjeWjoRtvrEcxdwyCmfDNcbPR1HWEpm6UTcJHBebjzzl6PPtlPNinXIWmZfJhC5TzsY9M2RLIlpwFzyz4M8A5Hh6ODo1/h1R/OU3wtPkoaG0pVt5nLp08Nxr3Jv+fzDkf8D4fvptx22q/PsPNG/BpKe4HUailFwYEZFnuhKNIrhoeXCF5lWEtbFAtcr5cU+KM3fS/bXzr2KywWVxnekte0lIJarFHpIGuFRUUm8A9i++pi05Gv4Tncm02yK8n6MCsQM7zh1f7jTR5r/6FlrbC/6jOsmRT75PdwcDLYeHMp4lvBp8hbIA9Ck7LkNu5cfzSY5Bn5wFMfzueXmD1QZZNmprxImqQ32y6LhXDcP+sZ3Xk=
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Edit a document in a collection"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/staff/{collection}/{id}/edit/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows authorized users to edit a document in a specified collection. Staff users have limited access to certain collections, while admin users have full access.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"collection","required":true},{"schema":{"type":"string"},"in":"path","name":"id","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"body":{"description":"The JSON string containing the fields to update.","type":"string"}},"required":["body"]}},"multipart/form-data":{"schema":{"type":"object","properties":{"body":{"description":"The JSON string containing the fields to update.","type":"string"}},"required":["body"]}},"text/plain":{"schema":{"type":"object","properties":{"body":{"description":"The JSON string containing the fields to update.","type":"string"}},"required":["body"]}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Field edited.","error":null,"field":"Updated field details"}}}}}},"403":{"content":{"application/json":{"examples":{"forbidden":{"value":{"statusCode":403,"message":"You are not allowed to access this resource","error":"Forbidden"}}}}}},"404":{"content":{"application/json":{"examples":{"notFound":{"value":{"statusCode":404,"message":"Field not found","error":"Not Found"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal Server Error","error":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

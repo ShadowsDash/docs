@@ -1,0 +1,71 @@
+---
+id: get-api-staff-by-collection-list
+title: "List items in a collection"
+description: "This endpoint retrieves a paginated list of items from a specified collection. The user must have STAFF or ADMIN rank to access this resource."
+sidebar_label: "List items in a collection"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVU1v2zgQ/SuDuaQFBNv52oNu3qQpjG2zRexisUhzGEtjixuKVMmRU9fQf18MpTpxmxTorbqIGHLePM7H4w59w4HEeDcrMcc1y7Qxc6HV6s/thbeWC917Z6JghiXHIphGLZjjojIR2JWNN04gsATDG45A0NDaOBIuwZoo4FdghOsIq+BrIIgNF2ZluIRiH2EEi4qhjRygbqNARRuG+WJ6dQU+wPTy/ewaArl7EA9UFBwjiMYPHH0bCh5hhp9bDlvMd9jQmvX/PV9WZgyurZccFOkb6RFc8opaK1Gtxwom24YxxyjBuDV2WQKdm68vAA+Y+6s2HFKwQ+STybPQPpQcnsdNWworFffQI/gYGY4oFkew8gEoFuxK49aaqCNF6O266jcOOSTPZ2h0GQaOjXeRo3I5mUz0V3gn7ESX1DTWFKlZxv9FpbhD/kJ1Y3uP2KbC6HJDtk2ZikLSxgtfMuYnk0mGHIIPmLvW2hSwtYL57a67y7BmoZKE1E+8kL3wrUY+Vr++psdP63AymIdj513/ZXg2Of1F6isflqYs2b1I/mxyqgxjTDzwX98CBQbnBcha/8DlS62J+0vj1T7MN6rnv55lDhsOb3rEF8iea8Yeyc6ccHBkofeFns4jref39+lsKFDNwiFqpTAWFdd9kb5vZKNt25BUmKGjWjcfRxy13p9bE7jEXELLQ80rPygPZr1vjmNqzDiqCo13jwDdWOVkjBlGLtpgZDtXKn1aVDoW/p7dtFWIPblKpFGPdBJzXDIFDs+IGUO/BaIoOnIE13/fvJ++GycdGvcipHFGaVqMW/kUyIhV5HlFpX84inBJsYLph9kPQf6Z3lzPrt/mkKSz9EVbs5NUajARohhrwbg06zXdp9Gd+5pBQ4W6P1ibdSWwVGPhtStEVQIegnfr0Sf3ySVwExPK9MMsicEhN+OikCs4qgxsOMSe3unodHRy9ge8+ssHktdJ9HyUmlIPDvXUp2DQOOOA4KC+B9d90tW/31sxdIfwFxk3lozT27bB9s+HdtAtUmO0c7QNMcP84Ka2fxHxLsPKR5Uw3O2WFPljsF2n5uE1ur3LcEPB0FKb5HaHpYm6LjFfkY38k6S9uhnG5TW8xHgwkttqJXspQMzwnreHs9fddRlWTOmhud0NB6ZFwY08cf1BfA5m9O2bBXbd/0jz0tY=
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"List items in a collection"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/staff/{collection}/list/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves a paginated list of items from a specified collection. The user must have STAFF or ADMIN rank to access this resource.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"collection","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"error":null,"result":[{}],"metadata":{"totalCount":100,"page":1,"pageSize":20,"pageCount":5}}}}}}},"403":{"content":{"application/json":{"examples":{"forbidden":{"value":{"statusCode":403,"message":"You are not allowed to access this resource","error":"Forbidden"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error","error":"Internal server error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

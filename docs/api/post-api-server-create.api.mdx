@@ -1,0 +1,71 @@
+---
+id: post-api-server-create
+title: "Create a new server"
+description: "This endpoint allows users to create a new server with specified configurations. It validates user permissions, resource limits, and optional per-server plans."
+sidebar_label: "Create a new server"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWd9PGzkQ/ldGfjmQtkkE7UnNWwrtKbpCEaR3OlEeHHuSdfHaxj9II5T//TTeXbKB5Ch9Oym8sInH4++b/ebbZXhgjnteYUQf2PD6pmDWoedRWTOWbMicDXHk1BX6e/QnHnlEVjCJQXjlKIoN2aRUAdBIZ5WJwLW2iwApoA8QLYi8CTgYXEDIeWChYgnBoVAzhRKENTM1T/WxoQfjCPdcK8kj1onAoa9UCLRcgMdgkxcIWlUqhgK4kWAzGq4p9E1zjNPchB4rmMfgrAkY2PCBHQ0G9EtYE9FEuuTOaSXy6f3vgTg9MPzBK6frHSEJgSFf3nOdMH8XeUzhxEpkw6PBoGAVhsDnyIasLhZwKVFSBe4SJqoaem89G5qk9Sr/FOztq7Eok0szNi7FnYDebgIa13vA8aW2XIKizT34C72aLSGWPMLSJij5PdLtg1gieLxLyqOEmUItcxUb/OwDl3CJdwlDZGsix68kMrN+qqRE8x8sjrss/rEJpAVjY410AyXd6g21NRKwBiLJU9saSpfHp0cEjyyO3r+ShecRP5MMUe7mcfT+KQ/uEaaozBwogW4SrKFNrIUzbpZtncMjxHevV2+uxMc68w6I7zYFMzKQzK2xCwMZEVghkqc6L0qlsa4yoad7UOfvwYVGHhCiXwKfc2VA84i+W/CxieipR5sOqTGtWmq+5vrByuVPUAyixIrTVVw6Am2n31FEVjDnycOiqukbXmW6Tz0LgVbAzjokSEHThh5Kgt7kDtErM2erggU7iwvud6RsV/s4n8P4FGbWd2u0LaFwaXsuh16giXyeQZ5cfM3WKggZ4dya1qRqip7SShVut+fllU0mUk6KgeC4QDhQBs4+HL7qiAor65cvHVJH/dIBkkc+5Y1tb7l/OTATaQNflX7KxW1yLyZvwuoHGxnirnu6ztygoMfVS9k7oXDgrI/h8GdOaDdtT9+ukgQXJXrsanyhtH5J5WSnO1RJRjs+bTolhWcFgYP1o8P6Z4/jw63nTZXWysxPlkLv6KwmAgSF/PqRGw0iSKPbj2tXQViJDdnsQk+VBQdqBtwst/OKyZsQ1S5SJ9omOdP0NJi0kdC+rEC0t2i2pG2skviy4XVtcB1j6ojjhmKrpKNy3Mf+zPrqDfXK3j/3/rn3z71/7v3zJ/wz4o/Yd5qr/Wvn3jb3trm3zb1tvmyb+cUTY2nbISIZJI8lG7I+d6pfs+jXYuhTHhTJq7i8In+tW48mfxMCM0q08dFxyxgd7ciRbMimyD36LWNJmrHQUk0pyx7Ov1yejT73ryajT5/6o9Oz8XmeMPYyP5otXK6nEB/rKcrazttadP14/V221EHrgYO1Uw02PGXQsYDBk6YddFtsnbnui/XnTd0OuqpaB3VE0JGGMjOba6liXrkqubSL3wKc8lDC6GL8rI5/jy7Px+d/DCHPeaUVqaLnQ250FYCO0KBMFmfFb5WZ9+DKVgh0lK/qwErNy0hqVkZYKmpEsB4W3pp575v5ZnJyFXKW0cU4d9QmNmVC5EZgnkXeow81vOPece/o7e9w8Kf1PB5mG7EhVrWTNPft5PkQ+inPzsDpfzDRblqh826yKljymnjUfXbNuFO5sRq2op3es5uCldSSw2v28ECq/Or1akVf3yUkwdL/Ae65V3xKGrm+WRWsRC7Rs+H1A7vFJZW0rtabCSEp2rHi1r82V0W7aSQEutgJfzbZW910jOPiy9WE5N5MBKs8q6TJcZXzFutLArla/Qt9W6da
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create a new server"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/server/create/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows users to create a new server with specified configurations. It validates user permissions, resource limits, and optional per-server plans.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"name":{"description":"The name of the server to be created.","type":"string"},"software":{"description":"The software/egg ID for the server.","type":"string"},"cpu":{"description":"The percentage of CPU allocated to the server.","type":"number"},"disk":{"description":"The amount of disk space (in MB) allocated to the server.","type":"number"},"memory":{"description":"The amount of memory (in MB) allocated to the server.","type":"number"},"databases":{"description":"The number of databases allocated to the server.","type":"number"},"backups":{"description":"The number of backups allowed for the server.","type":"number"},"allocations":{"description":"The number of allocations (ports) for the server.","type":"number"},"location":{"description":"The location ID where the server will be created.","type":"string"},"plan":{"description":"The plan ID to be used for the server (required for per-server plans).","type":"string"},"billingCycle":{"description":"The billing cycle for the server (required for per-server plans).","type":"number"},"discount":{"description":"The discount code to be applied to the server (if any).","type":"string"},"turnstile":{"description":"The Cloudflare Turnstile response token.","type":"string"}},"required":["name","software","location"]}},"multipart/form-data":{"schema":{"type":"object","properties":{"name":{"description":"The name of the server to be created.","type":"string"},"software":{"description":"The software/egg ID for the server.","type":"string"},"cpu":{"description":"The percentage of CPU allocated to the server.","type":"number"},"disk":{"description":"The amount of disk space (in MB) allocated to the server.","type":"number"},"memory":{"description":"The amount of memory (in MB) allocated to the server.","type":"number"},"databases":{"description":"The number of databases allocated to the server.","type":"number"},"backups":{"description":"The number of backups allowed for the server.","type":"number"},"allocations":{"description":"The number of allocations (ports) for the server.","type":"number"},"location":{"description":"The location ID where the server will be created.","type":"string"},"plan":{"description":"The plan ID to be used for the server (required for per-server plans).","type":"string"},"billingCycle":{"description":"The billing cycle for the server (required for per-server plans).","type":"number"},"discount":{"description":"The discount code to be applied to the server (if any).","type":"string"},"turnstile":{"description":"The Cloudflare Turnstile response token.","type":"string"}},"required":["name","software","location"]}},"text/plain":{"schema":{"type":"object","properties":{"name":{"description":"The name of the server to be created.","type":"string"},"software":{"description":"The software/egg ID for the server.","type":"string"},"cpu":{"description":"The percentage of CPU allocated to the server.","type":"number"},"disk":{"description":"The amount of disk space (in MB) allocated to the server.","type":"number"},"memory":{"description":"The amount of memory (in MB) allocated to the server.","type":"number"},"databases":{"description":"The number of databases allocated to the server.","type":"number"},"backups":{"description":"The number of backups allowed for the server.","type":"number"},"allocations":{"description":"The number of allocations (ports) for the server.","type":"number"},"location":{"description":"The location ID where the server will be created.","type":"string"},"plan":{"description":"The plan ID to be used for the server (required for per-server plans).","type":"string"},"billingCycle":{"description":"The billing cycle for the server (required for per-server plans).","type":"number"},"discount":{"description":"The discount code to be applied to the server (if any).","type":"string"},"turnstile":{"description":"The Cloudflare Turnstile response token.","type":"string"}},"required":["name","software","location"]}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Server added to queue","error":null}}}}}},"400":{"content":{"application/json":{"examples":{"invalidInput":{"value":{"statusCode":400,"message":"Invalid payload input. Verify that you have all the required fields.","error":"Bad Request"}}}}}},"403":{"content":{"application/json":{"examples":{"forbidden":{"value":{"statusCode":403,"message":"You do not have the required plan to create a server on this location.","error":"Forbidden"}}}}}},"429":{"content":{"application/json":{"examples":{"rateLimited":{"value":{"statusCode":429,"message":"You are being ratelimited","error":"Too Many Requests"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"An unknown error occurred while creating the server. Please try again later.","error":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

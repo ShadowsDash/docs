@@ -1,0 +1,71 @@
+---
+id: get-api-staff-by-collection-share-by-key
+title: "Get shared collection data"
+description: "This endpoint retrieves all collection data that contains the specified key. Only accessible by users with STAFF or ADMIN rank. This endpoint is used to generate Pie charts on the staff dashboard."
+sidebar_label: "Get shared collection data"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVE1v20gM/SsEL9sCgu3mYw+6uR8JjG7TIE6xWKQ50BJtzXo0o85QTlVD/31BjTex06ZoLntYH+zBjEk+ku+9LfqGA4nxblZijiuWaWPmQsvl6+6Nt5YLfZtXFPh19547zLDkWATT6D3meF2ZCOzKxhsnEFiC4Q1HIGuhuE8AJQmBVCRQeCdkXASpGGLDhVkaLmHN3Qg+OtsBFQXHaBaWYdFBGzlEuDNSwfx6enYGPsD07YfZBQRy6xEc1jdRA0oQDyt22hnDpWEoKgoSwbtUVfuDkmK18BTKEWYYODbeRY6Yb/FoMtEfRcpO9EhNY00xzGn8d9TGt8hfqW5siojtAFqPG7ItD3dC0sY3vmTMjyaTDGuOkVaMOQ7zhKVvXYkZcgg+YO5aawcgrR1qrrl7hfmrSaanI8xP+/TJ8GRy/Ex8raNWKh/MNy6fBHkyOd4HOXMbskZnuWb3ABM/7edSOEsfFqYs2f1q5r98CzoA50V54u/SxtLiQXSjgaNvQ8F7dc/uy/w7h9Pn74nDhsO7lPEJsKeHu5o54eDIQoqFBOcB1o/f73fVUKCahUPE/GaLsai4Ji0pXaPpowTjVthnaFRODUmFGTqq9fFBQANFv7Qm6P4ktNxnz022HtT7KMuttiqV34kfsxSU45gaMx6EMt4+wOjHUak73q6568eYYeSiDUa6uULZcS1yuFbOTFvNdA+uEmk0Yvgn5rhgChx+YCgM6SkxD/wSCC4+Xn2Y/jEeLGCc9K91RgMBjVv6oZARu5NX6e9+i/CWYgXTy9l3Rf6cXl3MLs7zZB+lL9qanQy8UQ+JYqwFk9yiprVxqxHMfc2gpUKd/libVSWw0MvCK8WE1Z3ugner0Wf32Q3JTXK66eUMlj7AITbjopArOKoHbTjEBO94dDw6OvkdXrz3geSlLrTxUWoaCL3b5zkLDNsoHxvt43b3JPJ/8esdp4S/yrixZJzOqA1Wm00MvkFqjPJNgzHD/EBMw+D0NqkCbzOsfBQN224XFPlTsH2v119aDh3mN7cZbigYWijFbrZYmqjnEvMl2cg/GfmLq53mXsJTyHeX5BTMzpUQB+c/tAGV/X9YWb/72z7DiqnkMDSeXqZFwY3sxXxnvQfecv7uGvv+Hyr16Hc=
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get shared collection data"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/staff/{collection}/share/{key}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves all collection data that contains the specified key. Only accessible by users with STAFF or ADMIN rank. This endpoint is used to generate Pie charts on the staff dashboard.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"collection","required":true},{"schema":{"type":"string"},"in":"path","name":"key","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Share found","error":null,"result":{"key1":10,"key2":5}}}}}}},"403":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":403,"message":"Invalid token","error":"Unauthorized"}},"forbidden":{"value":{"statusCode":403,"message":"You are not allowed to access this resource","error":"Forbidden"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error","error":"Internal server error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

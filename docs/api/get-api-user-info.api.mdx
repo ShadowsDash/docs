@@ -1,0 +1,63 @@
+---
+id: get-api-user-info
+title: "Get user information (from token)"
+description: "This endpoint retrieves user information based on the provided authorization token."
+sidebar_label: "Get user information (from token)"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VE1v2zAM/SsCL2sBIw6adAefZqwfMLZmRZNghzQYFJuJtdqSRtFpM8P/fZDttmnTHnqYLyYoknrk41MNxiJJVkYnGUSwQY6tmjukRK8NBJChS0lZHwARzHLlBOrMGqVZEDIp3KITlUMSSq8NlW0tsZIOM2G04ByFJbNVGWZCVpwbUn+7GDZ3qAcQAKGzRjt0ENVwMhz6X2o0o2ZvSmsLlbY54W/ncdSAD7K0RZfhqjRF15pbWVTY+lhy5b6aDCE6GQ4DKNE5uUGIwDcn1qbSGQSARIYg0lVRBJBJlj5Z+Un4ln4pH+MtLUvsna0ZAJZSFb3rSw9nkJoSmu4LYDwcfbCTSj9OCLN32xkPR/vtJHorC5V103zuCOb7tZ4hjT8ISRu+aGf1PpzxwXS14dcThsmT7xHM6ceZRtoinXcV38Fz+pLtRLOnrBBdrujgPMN6+/yJwxI5N70wIAArOYcIQmlV6IkP/c6HEIDDtCLFu2maY9mT6ZBmnpS48kk18M56RDmz9RltJESwQklIb0gNRXfUUSvMWkgx+XFzFX8Pp7P44iKMz66SSau9AXiwHkx7keLCV57mMjP3n5w4ky4X8XVycMnP+GaSTC4j0Qo7M2lVouZOnsoJx6oohOpUXMo7pTcDMTUlvtB6qTY5i5V3psZzxSgMiXsyejO41be6La5cWyW+TsTakHiJTWnHUqfo/HOwRXIdvNFgNDgZfxZH3wxJPoYmAGscl7LdjF6Tl8iH78/RmkzZDe74ddd7K/efHrSeacYHDm0hlfbIKyr83d0KLUBa1b8t0DMXACwDyI1jf17X/so5FU3j3X8qpB1Ei2UAW0lKrjzDi2UTQI4yQ4JoUcMd7iCCOE3R+m3t9XEoq2a5t9mX5zNomn9CnhhJ
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get user information (from token)"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/user/info/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves user information based on the provided authorization token.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"User found","error":null,"data":{"id":"user_id","username":"username","email":"user@example.com"}}}}}}},"403":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":403,"message":"Invalid token","error":"Unauthorized"}}}}}},"404":{"content":{"application/json":{"examples":{"notFound":{"value":{"statusCode":404,"message":"User not found","error":"Not found"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error","error":"Internal server error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

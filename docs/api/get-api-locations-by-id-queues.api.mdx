@@ -1,0 +1,71 @@
+---
+id: get-api-locations-by-id-queues
+title: "Get queue information by location ID"
+description: "This endpoint retrieves the queue information for a specific location ID, including the total number of servers and the breakdown of queues by priority levels."
+sidebar_label: "Get queue information by location ID"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVMFuGzkM/RWCl20BweO67h7mNt00gbGtt5tksYc0B3nE8WitkRSJ43RgzL8X0thpsk0W6HF98YAUyUfy8R3QeQqStbMrhSVuiSuvP7o6m+L7YaX+7KmniAIVxTponxxY4nWrI5BV3mnLEIiDpj1F4JbgLoWAto0LXU4EjQsgIXqqdaNrMMcCsDoToG1teqXtNseyY2nA9t2GArgGIoU9hQjSquzfBJI75e5tcuZCETYD+KBd0DyAoT2ZOEOBgaJ3NlLE8oCL+Tz91c4yWU6f0nujJxjFPzH1dED6KjtvpojY1zXF/LmXpqdsY8l9/M0pwnIxnwukEFzA0vbGCMzQsVwuBE7ANsMJ1jG4abB8MxfoA3W671ISgU0gwvLNYpx+Apfz5U9itY7PXW/Vi2CX8+UDWFw7hiY/F9hRjHJLT6wnHO9+fmZ5WR+mOi9AeZfm9r3syjIFK81x0ZBBCqhbqnd54YpY6mmjpwaejckMzU+xxAzhFIoPk/UyyI6YQsTy5oCxbqmTCSAPPoGJHLTd4ihQJ457yS0KtLJLTq0yqe56HUhhyaGn8Ta1wq073g6KKabEQnpdnGgei4NWYzGRokCBkeo+0eIqAZhG10cK125HtupTggdILbNPEfkllrghGSg8c44Ekws4ZUnXIWH9x+Wn6mNxdV2dnxfV2afVGlKdGY65xcblQppNynzVSuXuf4lwJmML1efVD0X+ri7Xq/VFCfn4lav7jixPl6wjRNbGgLZ5bZ3cabudwZXrnkpBp7ctwyYZa5eYwwQuwH1wdjv7Yr/YnFxPSlJ9XmXteIpN28jS1pRJkdRhgvd29na2WP4Kr353QfLrtEbvIncy8/S4xQviZ/RpMzzWpH83/ugG/ge6dyQO01cuvJHapkH0waQ+JnbeoPQaBT7wEwWWmd53J7HHW4Gti5weHw4bGemvYMYxme96CgOWN7cC9zJouUnsuTmg0jF9KywbaSL9xwxfXR6v6DW8hPdolHZIK550BFHgjobpFMfbUWBLUlHI1SdHVdfk+VHID4r15GQvPlzjOH4D4IBuSg==
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get queue information by location ID"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/locations/{id}/queues/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves the queue information for a specific location ID, including the total number of servers and the breakdown of queues by priority levels.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"id","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"error":null,"total":42,"queuesbypriority":{"staff":10,"premium":20,"free":12}}}}}}},"404":{"content":{"application/json":{"examples":{"notFound":{"value":{"statusCode":404,"error":"Not found","message":"Not found"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error, check the details.","error":"Internal server error","details":"Error details"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

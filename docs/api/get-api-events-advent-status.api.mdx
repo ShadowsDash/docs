@@ -1,0 +1,63 @@
+---
+id: get-api-events-advent-status
+title: "Get Advent Calendar Status"
+description: "This endpoint retrieves the status of the advent calendar, including whether it is open, the current day, and the status of each day if requested."
+sidebar_label: "Get Advent Calendar Status"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVU1v2zgQ/SvEXLYFCNt1PrbVTUjSwNg2W8QOekiDYkKNLa4pUiVHTlzD/31BUondJj0EvVQXSiMO582bN8MNuJY8snZ2UkEBC+Ky1WcrshzKKi5TRu4CSKgoKK/buBUKmNU6CLJV67Rl4Ym9phUFwTWJkFyEm6cvTMcIhYZshV4KbZXpKm0X4q4mrskLzUIH4VqyMrmozvvoU+FaCrTVT6cSqjr+E3ouPH3rKDBVA5DgKbTOBgpQbGA8GsVFOctkOb5i2xqtUrLD/0JMYwN0j01rskfolKKQXldoOkq2FPXEVQTFeDSSQN47D4XtjJGRPAsF+44kVLiG4iitoSetuN6AMqgbqqCYowkkgTUbggJOcS3ePKH1ku7QV2LfKEE3uIguaf3aeQPbm3hQQ1C8Of579PjICNdztB6/e3s0fttbLd1zv/Xdo/EW1XLhXWdj3XcfX3dRcozvzsbgV7MT2KZHwuHo4IXUdhY7rp3X3yMVv+D3cHTwyC9c7XtIaCiEzMLErtDoSrBbkt1BGr8UknFqmcH8rOwnmo3q7DVp1sI6TlrNmns+k/FeJh9yoAe19DpIcskqenEls9tvFPDo5b1BfkX+LKf0i/odRYT7hWLyFo3IviLzsePl+f/bB4wNce36mQQSWuQaChhiq4eU5tMwV2mYIQxBQiDVec3rqaqp6YUXyM+iUsou+m+A120EVzO30SPtjPwRevLPjDkS+VfWWxw/KC7+vfxYfhhOZ+X798Py9OPkQsQ4A4i4tZ27FKhv9GmNlbv7K4hTDLUoP02eBPlcXl5MLs4LkYZq5VTXkOVUi6i8wNoYoW2agg0utV0MxNQ1JGIo3+SNjV7ULG6jUblYNibhvLjzzi4GX+wXmw7XeUKXnyZi7rz4EZu2gdEqCknX5EOGdzA4GIwPj8Wrf5xHfg1bCa0L3GASicXE3zmxyBeGOHnomuevjj3Z/Zm3SK8Qpnsetga1jRnHdio2vQqvAVsdlZx0CBIyOpB9O4AEuJFQu8Bx82Zzi4GuvNluo/lbR34NxfVNHB5e422UyfXNVkJNWJFP18aS1lBAqRS1vJsyT9s03gSPnXJ+NoPt9n9Ir60l
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Advent Calendar Status"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/events/advent/status/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves the status of the advent calendar, including whether it is open, the current day, and the status of each day if requested.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"error":null,"open":true,"day":5,"daysStatus":[{"claimed":false,"title":"Day 1","description":"Reward description","image":"image_url"}],"time":1670000000000,"start":1669852800000,"next":1670092800000,"background":"background_image_url","timezone":"UTC"}}}}}},"403":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":403,"error":"Unauthorized","message":"Invalid token"}}}}}},"423":{"content":{"application/json":{"examples":{"locked":{"description":"The advent calendar is currently not opened.","value":{"statusCode":423,"error":"Locked","open":false,"day":null,"time":1670000000000,"start":1669852800000,"next":null,"background":"background_image_url","timezone":"UTC"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error","error":"Internal server error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

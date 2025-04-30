@@ -1,0 +1,71 @@
+---
+id: delete-api-user-passkeys-by-id-delete
+title: "Delete a user's passkey"
+description: "This endpoint allows a user to delete a specific passkey by its ID. The user must be authenticated and authorized to perform this action."
+sidebar_label: "Delete a user's passkey"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVE1v2zgQ/SuDubQFBMtN3T3o5q2ThdHWGyQOikWaw1gaW2wkkuWMkrqG/ntByqndjxTIbXURweG8eeS8eTt0ngOpcXZeYYEVN6w89eZKOJyTyC1v5e/tvJqlAGZYsZTB+JiBBS5rI8C28s5YBWoady9A0AkHUAcDHBCI59KsTQl+wITVFowKzGcjWNY8JLSdKKwYqNOarZqSlCsgW6UdF8xXriKq57B2oQWNxamMVEaYYWDxzgoLFjs8GY/jr3RW2WpckvdNhDTO5p8kst8hf6HWN0OGdGXJkpZ31HSc9pS0kzeuYixOxuM+fRlOxi+fCN7ZwxUerTAZv8yQQ3ABC7w6zsiwZRHaMBb4n+uAAoN1Co3bbLgCY/FAbfJEatbpmevsn2hNDrQWTmGdjh9z2islcRqiD3xeP70PHO44nA71HqH0ejw+Lj+3ysFSA0MuDGQPpH8f7x84egrUsnIQLK53KGXNLcWSuvURXjQYu8E+QxM170lrzNBSG4OmStL73JkQW6uh4/4mktPaHSYKsyGtwJy8yaPc8/0oSL4zVZ8P53LMULjsgtHtZeSxl49wWLpbttMugnxnVqv6mJFOYoErpsDhN1PKMIRAIwq4NRAs/r14P32XXy6nZ2f5dPZ+vkhjOMI+3XTtUiGjTUS+rKly988EZiQ1TM/nvxT5ML1YzBf/FJA8oXJl17LV1GcwAqKmacBY0JqhpVtjNyO4dC1DLBXa4WBrNnXyAGNLFyWhDC7AfXB2M/poP9oEbiShTM/nsHYBfuRmrCjZkiV6wh0HGei9Gr0anUz+gudvXSB9EbvpnWhLSYD7Zs4e/Co+xDN5cKuf73qk5/+VA+5VofxFc99QtIUMu9BExoP8rpG8wSwJKmlykCBmWCQhf1cr3mRYO9GYstutSPgqNH0ftz93HLZYXN9keEfB0CoK5HqHlZG4rrBYUyP8hzd7frGflxfwGOv9Jtn4+HsPQMwwdiMNXX/TZ1gzVRxS9SEwLUv2epTyi9v8MJyz03eny1Ps+29vbW43
+sidebar_class_name: "delete api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete a user's passkey"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/api/user/passkeys/{id}/delete/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows a user to delete a specific passkey by its ID. The user must be authenticated and authorized to perform this action.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"id","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200}}}}}},"401":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":401,"error":"Unauthorized","message":"You are not logged in"}}}}}},"404":{"content":{"application/json":{"examples":{"notFound":{"value":{"statusCode":404,"error":"Not found","message":"Passkey not found"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error","error":"Internal server error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

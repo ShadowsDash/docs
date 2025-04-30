@@ -1,0 +1,71 @@
+---
+id: post-api-shop-plans-by-id-purchase
+title: "Purchase a plan"
+description: "This endpoint allows a user to purchase a plan by creating an invoice. The user must be authenticated and provide a valid plan ID."
+sidebar_label: "Purchase a plan"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV8FuGzkM/RWBl7bA1E6TdA9zc5NmYew2DeIUi0UaLOQR7VGjkVSJcuoa8+8LauzYjpNsjV720FwylkTykXwiqQV4GWSDhCFCeb2AWNXYSCgXQHOPUEKkoO0U2gK0hRK8pBoKsLLhTa2ggIBfkw6ooKSQsL0pwHkMkrSzQ8UiLtLA61Ht/IWRNr6bD9VFClUtI0IBCmMVtOfjUMJVraNAq7zTloQ0xt1FIUWKGAQ54ZdyQgpvpBXjuagCStJ2KqQV2s6crrAnrmrsZJoUSYxRyEQ1WtKVJFRCWiV8cDOtWNNMGq06fcPTXvYoemcjRo7D4cEB/6ucJbTEn9J7w4q0s/0vkWEvAL/JxptOIqaqwpg/Z9IkzGskKcUTpxDKw4ODAhqMUU45iCfsAKoVeCgAQ3ABSpuM4bB3y+Xq6x+toM1/BRzvDU7b7O7Q+kRPIjzeRjjsZITOQvf44J1U4hK/JowEjMYl+jgZkatuf1QzE0LoKFwi4SYiZtmnDVhHg5nURo4N7mvCOhJyJSzm+Jwj+M13jN7XhDDOTjGsDT1pZJW/N3vmL1mmsgv6+7P43mzi+9slIQPmEBg3nWaybSD7tKlzDe1oT2gTF8ZaKbTP4DraxJUve753lbQMbpxvrRJ3mmpBvDvWxvDlruaVwd4G5rN7Y2vAx3sCto7OXLLPxfF4J8+Mc5Kl1mDO79cYiNKxcsnS+Z7qT5dy/2mi8/ft/oUJwwzD+07jE5jePrz6hMFKIzpZ0cFZw3p8v11hDB3f3zk1/wGsO83Hjb9gxRfVB+4ppDs/lqQ4YU7w74ctBLdpIyYuCKoxU60nPqxawrLw29SMMYjKha7uKxYkdy/xIm7UjS3FkQm50ydX6X8c2WpXVE4hm+FAzDft7SLcknnEZg51kwxpLwP1Jy40r5Uk+SumPxlTwm/U90bqX/T8uVBmgiLVbjUQctB4lCyhL73ux9p5DrSN/YVWbX815/WhgIhVCprmIw7/sglGDFfuFu0gsY77hNREniXySShhjDJgeGTIRNFtCWItPHpIcf7x8sPgz/7oanB21h+cfhie5xGyl2s6l6jLdTF731XV3WyvnN6M89YMPXEZr6Z8elRL5e5eRHEqYy0GF8MdrH8NLs+H57+XIjdL5arUoKVcN3nkiKSNEdrm9DTyVttpT4xcg4JNhaY72OhpnVOmbeUYOKFwQdwFZ6e9z/azzcp1zFoGF8NMyW1s2kaStupINcMQO3hHvaPe4fFv4uUfLkh6xT5yehuZb8zymXCxPbU/9HGjL/w/5v8lmzZuf1tACoahdqy9Buk1M612TLjMXCigzA8iv37cwE0BNdO9vIbFYiwjfgqmbXn5a8Iwh/L6poCZDLobaa8XzBv+VlBOpIn4TKxeXi5fXq/EU6CXi9LOOWtdvwco4Bbn3fOtvWkLqFEqDNl6t3HS2Xh9xeJrwcdaTFushAZVhZ42ju+0eH4b3leBi4+jKyhgvBwNmjx98AzZZL3F+rO8vmnb9l8dnRlG
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Purchase a plan"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/shop/plans/{id}/purchase/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows a user to purchase a plan by creating an invoice. The user must be authenticated and provide a valid plan ID.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"id","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"billingCycle":{"description":"The billing cycle for the plan. Must be a valid number corresponding to the plan's available billing cycles.","type":"string"},"discount":{"description":"The discount code to apply to the plan. Must be a valid discount code.","type":"string"}}}},"multipart/form-data":{"schema":{"type":"object","properties":{"billingCycle":{"description":"The billing cycle for the plan. Must be a valid number corresponding to the plan's available billing cycles.","type":"string"},"discount":{"description":"The discount code to apply to the plan. Must be a valid discount code.","type":"string"}}}},"text/plain":{"schema":{"type":"object","properties":{"billingCycle":{"description":"The billing cycle for the plan. Must be a valid number corresponding to the plan's available billing cycles.","type":"string"},"discount":{"description":"The discount code to apply to the plan. Must be a valid discount code.","type":"string"}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Created invoice","error":null,"invoice":"invoice_id"}}}}}},"400":{"content":{"application/json":{"examples":{"invalidInput":{"value":{"statusCode":400,"message":"Invalid input","error":"Bad Request"}},"outOfStock":{"value":{"statusCode":400,"message":"Plan is out of stock","error":"Bad Request"}},"notAvailable":{"value":{"statusCode":400,"message":"Plan is not available yet","error":"Bad Request"}},"expired":{"value":{"statusCode":400,"message":"Plan is no longer available","error":"Bad Request"}}}}}},"401":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":401,"message":"You are not logged in","error":"Unauthorized"}}}}}},"403":{"content":{"application/json":{"examples":{"forbidden":{"value":{"statusCode":403,"message":"This plan cannot be used with this billing cycle.","error":"Forbidden"}}}}}},"404":{"content":{"application/json":{"examples":{"notFound":{"value":{"statusCode":404,"message":"Plan not found","error":"Not found"}},"discountNotFound":{"value":{"statusCode":404,"message":"Discount not found","error":"Not found"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error","error":"Internal server error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

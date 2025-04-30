@@ -1,0 +1,71 @@
+---
+id: post-api-staff-settings-testemail
+title: "Send a test email"
+description: "This endpoint allows an admin user to send a test email to verify email settings."
+sidebar_label: "Send a test email"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdlktv20YQgP/KYC5tAUY0bKcH3pSHC6G1Y1gKikLRYUSOxI3JXWZ3KEUR+N+LWUo2HTtBfMglumi53Jn95s09NuSpZmEfMJsvEnQNexLj7KTADBsXZNyYqdBqNWURY9dhxkG4JlNhggWH3JtGz2OGs9IEYFs0zlgBqiq3DUAWqKiNhTawB3EQ2BZAIBwEoh7d3LA3q93hORxuGmGCnkPjbOCA2R5PT070L3dW2IouqWkqk0fg9GNQij3yZ6qbqpcIbZ5ziMsNVS3HPSFpw2tXMGanJycJ1hwCrRkznPbHV21V7RRUBphKw947j5ltq6qLvwTPn81UmxCMXV8PPP8NuvOHdJe9IAxidoeEr6iAG/7UchC8Zzt7JltrqZXSefOFi+9gnQ2xJnZDlSlA3C3bAdH7oS7FWTm/NEXB9kc1/+daIM9g3SGdWG8BikEC0XTzHFzrcx7ce3F3zdEPL5+fN+w37N/2Gr8B+/JhdCZW2FuqYBploRe+x3r6fXdk9H3sXrli9wOsIS+5Jl3JrtHb3fIj54IJNl5LWExvR1+o2f5RpfKh1qgofHSmg21p8hKk5GFtbk1VwZJjMYzgsg2iTwR9yPszK+drEq2PA0wQb+waj2YZr8k0P8AsdLtuKzENeUlV+EVBQr+CWcKfJW0qMr9AkGKYWEp3HATKTVJihik1Jg06FNJjr07lOBZSTDBw3noju6l64NBZAvuZdohxqzrufFKKNCoRT2KGSybP/onZwtC/6vsMuBUQXL27uRz/k05n44uLdPzmcnIVx8woWqW1cnNfVW/78h44/M4FCRq7chHKSBUHQUmF2/4W4A2FEsbXk0dA/45vriZXf2UQp17h8rZmK7FKwQQIojExNoaqpltj1yOYuppBr9JQ6MHarMsYK2Nzp3TC4DxsvbPr0Qf7wUblJkQt4+uJRhEeshkbhGzOcVpu2Ice72x0Njo9/xN+/9t5kj/URo1hTTEzLUVfT78exV9bOehDP2W6H3JgUDZdgq2PxdDn2hypMZofmm0xs3ppFR58iOAiwVJzNJvjfr+kwO991XW6/allv+s/bjbkDS01wPNFl2DJVLDHbL7HW95hhq97Y1/MFCs5dv0nm1WXHIXGec6NDI4/6tfdYlBJ1++mM0xweejzdRwlOhrrqDe5Xypk1/0PtlZcCg==
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Send a test email"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/staff/settings/testemail/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows an admin user to send a test email to verify email settings.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"email":{"description":"The email address to which the test email will be sent. Must be a valid email format.","type":"string"}},"required":["email"]}},"multipart/form-data":{"schema":{"type":"object","properties":{"email":{"description":"The email address to which the test email will be sent. Must be a valid email format.","type":"string"}},"required":["email"]}},"text/plain":{"schema":{"type":"object","properties":{"email":{"description":"The email address to which the test email will be sent. Must be a valid email format.","type":"string"}},"required":["email"]}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Successfully sent test email.","error":null}}}}}},"400":{"content":{"application/json":{"examples":{"missingParameters":{"value":{"statusCode":400,"message":"Missing parameters","error":"Bad Request"}}}}}},"403":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":403,"message":"Invalid token","error":"Unauthorized"}},"forbidden":{"value":{"statusCode":403,"message":"You are not allowed to access this resource","error":"Forbidden"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal Server Error","error":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

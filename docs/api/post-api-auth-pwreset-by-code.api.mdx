@@ -1,0 +1,72 @@
+---
+id: post-api-auth-pwreset-by-code
+title: "Reset password with a one-time code"
+description: "This endpoint allows an user to reset their password from a one-time code sent by email upon request. See /api/auth/pwreset/send for more details. No need to specify an user here, as the one-time code is already linked to their account."
+sidebar_label: "Reset password with a one-time code"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVktv2zgQ/iuDubQFVDtot4tCN/e1CLZNgzjFHtwcxtLYYkORLDmKKxj674uhnNhJmu3ubQ/xRTTJ4Xzz+ma2GChSy8IxYbnYYqoabgnLLUofGEtMEo1b41CgcVhiIGmwQEetHla+Ziww8vfORK6xlNjxcFGgDxxJjHfHtQr5JLNgZp00p5vIieVN/3YUrTlV0QS9iiWeNyYBuzp44wTIWr9JQA66xBHEQ5YFadhECJTSxscaVtG3QOAdPxfTMigoSOwElj1wS8ZCF7wDRclJJjBnhikFM6VOmmkYEU0TuxpWPkLrI0PNQsamCZx4cMy1ak+BK7PqbwA1HLkASgrojnqTgGxkqnuwxl2O8iNuqirfOZl8daeWKTE4LwzSkIARFXReIPiUzNLy3mhyXhqOWfOTtLe+S8atFdLs3afjE/AR5uezDx/gkvsDS5PQajXdVt5artTZw3Rr6mHKtRHVkb87uyY5oil4lzhpJrw4OtJP5Z2wE11SCNZUOcDTb0lDt0X+QW2wo8SSkql0cUW2Y10kIelSDnr54uiowJZTorUm0byrKk5p1VnbQxdqEq6h990+xFggx+gjlq6zdsi/Al+NsG5n0LETjo4szDlecYT3Wa74L+C/aGw1CCvfufpBK16pFTtYD6gdrqHuUu+Nr/t/4cl7NeiX37gSLDBELSwxI9Ab95RbbI37yG4tDZav71bV6e5egrZLAksGEtDcE3gNVUORKq1/sN6tJ3DntnGV7eoDEe8YuhA4Vpq8lkU4FnnX+s1PdmuzNlIAuTr/zUVEdq9X0+0O1wyHlLLY23mhJ21nxQSKMl352D6vSejRab9ymvAPmQZL5jHBfuGrnGIsjb9uXOoVbXol3u8ZWyX7YYoFJq66aKSfq2tH7ymXnvtLdtr3DpzdiASVyDexxCVT5PiTXsgwHoHoK+BXQHDy+ezT7OM0c/x0pPyRsxW3EsjZnmrej6R2O5K3GvrKZ1xGbCbihmq/eZLgHaUGZqfH9zD9NTs7OT75o4TcqGtfdS07yeylnSuJsRaMyw2xpUuj4Z77lkFVxXa82Jp1k5PEuMorQGFtW5uo2fHVfXX5cTO21dnpcW7Kt7EZl4RcxUlje8UxjfBeTl5OXvz2Ozz900eSZ2qjRrClnPW7meUst9Ob/rkx0tydHu7afcDYjyPK/2VE2VXTAbMNBXbRjumuFbdACgYLVB9qFY9exALLXZDxosBGS7xc4Ha7pMRfoh0G3f7eceyxXFwUeEXR0FIrZLHF2iRd11iuyCb+h0R5erZjmGfwENrdJrle03gcMhALvOT+ergeLoYCG6aaY9Y/Hr0dtTw/1wf2oj9rjUNxLTSrKg5ycP3e7KGT+w33nX6en2OBy93M0uahB/Xh/G6xX5YL5c2/Acj8UkI=
+sidebar_class_name: "post api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Reset password with a one-time code"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/auth/pwreset/{code}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows an user to reset their password from a one-time code sent by email upon request. See /api/auth/pwreset/send for more details. No need to specify an user here, as the one-time code is already linked to their account.
+Please note that it is not possible to reset another user's password using an ADMIN or STAFF key. See /api/staff/\{collection\}/\{id\}/edit to edit an user.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"code","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"password":{"minLength":8,"description":"Passwords must be at least 8 characters long. Passwords must include at least one uppercase letter, one lowercase letter, one digit, and one special character.","type":"string"}},"required":["password"]}},"multipart/form-data":{"schema":{"type":"object","properties":{"password":{"minLength":8,"description":"Passwords must be at least 8 characters long. Passwords must include at least one uppercase letter, one lowercase letter, one digit, and one special character.","type":"string"}},"required":["password"]}},"text/plain":{"schema":{"type":"object","properties":{"password":{"minLength":8,"description":"Passwords must be at least 8 characters long. Passwords must include at least one uppercase letter, one lowercase letter, one digit, and one special character.","type":"string"}},"required":["password"]}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"basic":{"value":{"statusCode":200,"message":"Successfully updated your password","error":null}}}}}},"500":{"description":"Internal Server Error","content":{"application/json":{"examples":{"User not found":{"value":{"statusCode":500,"error":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

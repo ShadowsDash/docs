@@ -1,0 +1,71 @@
+---
+id: get-api-user-by-id-referrals-user-rules
+title: "Get minimum referrals needed for custom link"
+description: "This endpoint retrieves the minimum number of referrals required for a user to obtain a custom link, based on their subscription plan."
+sidebar_label: "Get minimum referrals needed for custom link"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVE2P20YM/SsEL00AwTL2owfd1CS7MJpsA3sXPWz2QEu0NbU0o3A4TlxD/z2YkdbdbbIFcqsuGnCG5CP5Ho/oehZS4+yixgK3rGVv7jzLb4dFveQNi1Dro2EZWvaYYc2+EtNHFyzwtjEe2Na9M1ZBWMXwnj1ow9AZa7rQgQ3dmgXcBuQxIAh/Dka4ho0TIAieBdSBWysZCwRV8Oo6aI3dZbAmzzU4G6MaAR/WJwjQt2RnmKGw75317LE44tl8Hn+Vs8pW45H6vjVVKjT/y0foR+Sv1PXt6OFDVbFPxz21gZNNSYN/42rG4mw+z1DC9Hqq7NSfKydvEuD3xu6wuBzGL8OL+flPAgmWgjZOzN9cv4jmYn6eIYs4wQLvnnpk2LH3tGUscGH31Joa1O3Y4iOky5/vDcue5d2Y7gVEl7E/j4gWVlkstbBKnjC6Pof2oxentvUk1LGyeCzuj+irhjuKKfXQR3evYuwWhwxNJGFP2mCGlrp4aepEh5FfWKgEHh5icm3cxHHMRp8Cc+pNHtmXH0095CeCJluifI4Zeq6CGD2sIpBpTp7lNja2DDHQCVqj2keP9BILXDMJyw90wzBejeOJ6iC4+WP5oXyfr27Lq6u8fPthcZOUMcMhlbpxKZHRNkZeNVS7L794eEu+gfLj4rskf5bLm8XNdQFJpbWrQsdW06DBePBq2haMHcVKO2O3M1i5jiGmkm582Jlto7COxspFTiiDE/gizm5nn+wnm4KbUfLlx0VS9HNsxnolW7GPQt2z+BHe+ex8dnbxK7z63Qnp6zjO3nntKDFwmuY162mR/LM+LHM9LY8nm+LfDXjC8v/Popp4ovxV874lY2PdQdoIdyTlPVJvMEsUwwyLidATounicR3jQ4aN8xrdjscI4E7aYYjmz4HlgMX9Q4Z7EkPrSJv7I9bGx3ONxYZaz//RtFfLqfrX8BLyyUj2EGc7rgbEDHd8GLU4PAwZNkw1S8o+XpRVxb0+cfluCT3T7PW7WxyGb9krUzY=
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get minimum referrals needed for custom link"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/user/{id}/referrals/userRules/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves the minimum number of referrals required for a user to obtain a custom link, based on their subscription plan.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"id","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"rules":{"minimumReferralsForCustomLink":5}}}}}}},"403":{"content":{"application/json":{"examples":{"unauthorized":{"value":{"statusCode":403,"error":"Unauthorized","message":"Invalid token"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"error":"Internal Server Error","message":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

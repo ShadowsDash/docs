@@ -1,0 +1,71 @@
+---
+id: get-api-invoices-by-id
+title: "Get an invoice by ID"
+description: "This endpoint retrieves an invoice by its ID. Only accessible by the invoice owner, ADMIN, or STAFF users."
+sidebar_label: "Get an invoice by ID"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vd9v2zYQ/leIe1kLCLbjOOmgN21pAmOrU8QZhsENirN0trhQpEqenBqG/vfhKMV20/ghL/OLydP9+Mj77uMOXE0eWTs7LSCFNXFW66ndOJ1T+G07LSCBgkLudS1OkMJ9qYMiW9ROW1ae2GvaUFBole7i1HKrNAc1vRqoW2u2CvOcQtBLEz9xSXtP92TJJyq7+jSdJcp5Nb/Prq9VE8iHASTgKdTOBgqQ7mA8Gslf7iyTZVliXRudR/jDf4PA2wF9x6o2XURoYmVZbtA0FG2M3ITfXUGQjkejBCoKAdcEKfTnVivXWDk4ee88pLYxJoEesqT4quWueoNsEmiiSXB3e4vVccaZbBOoUdzYN5RA0VCBTJCeXX4YX5yfRSzicLBenn24FGvuCZmKzjiZTH4VI1aukVs4k41mqqQcU6WO2yUZtzWaW1+Qh7TffXWy7YBiznrTEeD5gD0+HfKuwn7ZRXjKSW8inGfINXrWaCBdoQmUgPN6rS2a7BnjWAAzY15SMSe/iWBCXEjStvslMBmdv7HFK+eXuijInmzyZHR+3OR/XKPQk7KOFRrjnqhQ7HqOKhZ2ewqu8TkdKADX+zIHqJM3QrWOryOzTiOdvEZHQfqCkjDb257xXLx9OuL9f+wynoB08XJCmLxFo7omqi74AOv17/v21uixIiYfIF3sIOQlVSgleVtL+sBe2zW0Mm2RrVweZqkn37dGe+qnqH0QcFy6Xrsi37mEFIZY62E/oWG400U7hAQC5Y3XvJ1L4e4SZGTv3SPZrJHAPZSSuZaI6AkpLAk9+VfUkFT3SbFkUW6lUM1u7z5lfw6jmA2juEVJG0Abj7ZysZBmI5nnJRbu6ZegrjCUKvs8/anI39ndbDq7SVXU3sLlTUWWY2OVDiqwNkZpG5W1wkdt1wM1d5XI7Mr5qnOs9LpktRRj7oQDTCK4T97Z9eCL/WJjch1iluzzVK1Ejn/Apm1gtDlFad6QDx2888H5YDy5VO/+cB75vbSvdoErjIzru3dD/OKJmF69POgRe//fZ6bvOdN3HtYGtZUzNN4IpI5QC8Baw/4VCJBAGgkJDwmULrC47HZLDPSXN20r5m8N+S2ki4cENug1LqXdi53IqayLvVyevIR3dz3d36tTKHsj2q30pBthgAQeadvNTPvQJlASxgdgses/ZHlONR+F/CQWP8zWzcd7aNv/AO38x2g=
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get an invoice by ID"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/invoices/{id}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves an invoice by its ID. Only accessible by the invoice owner, ADMIN, or STAFF users.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"id","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Invoice found","error":null,"invoice":{"_id":"invoice_id","uid":"user_id","name":"Invoice Name","paid":true,"duedate":1672531200,"paiddate":1672617600,"created":1672444800,"amount":100,"item":"Item description","paypalOrder":"paypal_order_id","activationInvoice":true,"discount":"discount_id","received":100,"paidpartial":false,"originalAmount":120,"attachedServer":"server_id"}}}}}}},"403":{"content":{"application/json":{"examples":{"forbidden":{"value":{"statusCode":403,"message":"You are not allowed to access this resource","error":"Forbidden"}}}}}},"404":{"content":{"application/json":{"examples":{"notFound":{"value":{"statusCode":404,"message":"Invoice not found","error":"Not found"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal Server Error","error":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,63 @@
+---
+id: get-api-staff-transactions-share
+title: "Get transaction statistics"
+description: "This endpoint retrieves transaction statistics grouped by method and month. It requires an admin token for access."
+sidebar_label: "Get transaction statistics"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVU1v40YM/SsDXtoCgq3YcQ+6Gd1NYLRJg9hFUWSDgpZoaxppRsvhODEM/fcFR17H+5HDnuqLZY4e+Th8fD6A74hRrHeLCgrYksw7uxTcbFaMLmCpR2FZIxNkUFEo2XYagwJWtQ2GXNV568QwCVvaUTDyijRBUGwQWwazZR87qsx6b1qS2lcGXWVa76QemYUm+BgtUzDoDFatdUb8Ezmz8WywLCmEEWTAFDrvAgUoDjDJc/0qvRNyoo/YdY0tU0Pj/4LSPAC9YNs1AyLElEkfd9hESjFBieE3XxEUkzzPoKUQcEva4tklmI2ProIMiNkzFC42TeITm1R6aCpl9k1sCYqLXLOVPiq3izyDjrgkJyl3Ppr1fQbiBZtz0OwcNMv7DNb7G70kKB4O8K9NFdohcJHBnpCV9mTaZ6cck/McEy2M+07LDIyCsO2GUvqWdVsUgmKafmKoN0yfr6KxQh3uoUgw3GyuPJd0d4xs2T8rj/OWX7n3/WMGFMS2KFTd045c1ClczPK8T58MLvPpD05w43ltq4rcmzO8zKfnM7w6AU6jg398NMhknBeDTeOfqTLijzIzosJmCj5ySfCZ6uzHxUa8I34/1HyD7OxLwS2cEDtszIA1A+FX4nNnoqOXjkqhajg1viwjM1VHpn12kqLuM+j0dUgwxs6O0xDHZysaxkG3ewwZBCojW9kvy5raoYUYiFe6hvM4DFr2qhyoRTpFpDehgDUhE3/HIsgMR8dl9huD5vbP+5v5H+Plan51NZ6/u1ncGq0zAuVu3canQlYazbyssfLPPwXzDkNt5neLb4r8Pb+/XdxeFyYZUuXL2OqSJf+xwQSxTWPUTmoyLT5Ztx2ZpW/JaCluhxdbu63FrDVYep2gkPFsntm77eiD++BSchtSlvndItnSl9ysC4KupORTO+Iw0JuOpqPJ5a/m5989o/wCfQadD9Ji0ovDdH/XJG/45tftninw/3HgowKEXmTcNWiddhQ5mdigtAfAzsLRMBRxpjYNH/9N4DGD2gdRwOGwxkB/cdP3Gv4YifdQPDxmsEO2uFYpPDz2GdSEFXHywifa60aUJXWq8uN6fbuVakOnjbh+v4K+/wQ3jmUd
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get transaction statistics"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/staff/transactions/share/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves transaction statistics grouped by method and month. It requires an admin token for access.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Transactions found","error":null,"result":{"method":{"volume":1000,"count":10,"percentage":0.5}},"total":{"volume":5000,"count":50},"byMonth":[{"_id":{"month":1,"year":2023},"volume":2000,"count":20,"paypal":1000,"stripe":500,"coingate":300,"cashfree":200,"litepay":0,"staffForcePay":0,"growth":{"volume":10,"count":5}}],"estimatedRevenues":1500}}}}}},"403":{"content":{"application/json":{"examples":{"forbidden":{"value":{"statusCode":403,"message":"Forbidden","error":"You are not allowed to access this resource"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error","error":"An unexpected error occurred"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

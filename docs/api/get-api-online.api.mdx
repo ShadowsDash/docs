@@ -1,0 +1,63 @@
+---
+id: get-api-online
+title: "Get online users"
+description: "This endpoint retrieves all users who have been active within the last 5 minutes, along with a count of online users per path."
+sidebar_label: "Get online users"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVEtv1DAQ/iujuQCS2d0WWoncIh7VCmhRt4hDu6pmk+nGrGMbe7LtapX/juykQCkcOJGLnXk/vs97dJ4DiXZ2XmOBa5bS6zNrtGVUWHOsgvZJjQVeNDoC29o7bQUCS9C85QhkDHSRQ4TbxkFDW4YVswWqRG8ZbrU02oI0DIaiwBG02nbCUQEZZ9fZAAgq11kBdwMupx9Deg7gSZoJKgwcvbORIxZ7PJzN0lE5K2wlXcl7o6vczPRrTCXvke+o9WbwiF1VcczXLZmOs0xIuvja1YzF4WymsOUYac1Y4NkvZaDC4Swu96jTpNLvta5HhaWWR2G+KqQtCYXPwWAx3q+7YFBhmsGC2WJxcPzq59cvFYoTMlgcKPQcUtM53XXONx07eZ7lCvO0sDjol33+FB79+0A4bDm8DcGFvw7l6OFQ5lZSiwYGX+DkrKBquNrkFdcspE1M6+Ih8J99MrqyKRaYS7h3xf6+o5alcSMsUeEwEZyS19MBI1NUGLnqgpbdomq4HfpKa7hwG7Zllzz2KDufim9EfPLIlljgiilw+APOE4CTCiRFSZgkOD07/1h+mC4uynfvpuWbj/PTDI0Jpkq1vXE5kRaTIi8aqt3tkwhvKDZQfpo/SvKlPD+dn54UkFlVu6pr2UreFegIUbQxMNKmpY226wksXMuQUoV2MGz1uhFYJWHl0lqFwQW4Dc6uJ1f2yubgOuYo5ac53LgAD2vTNgrZivPGthziUN6LyYvJ4ctjePreBZJn2Cv0LkpLGUQj3E9YHpD19yZ/AeP/fzxGDAjfydQb0jb1lChZ7EdkXSJ5jQrd/fOHS4WNi5JU+/2KIn8Opu+T+FvHYYfF5VLhloKmVVr75bJX2DDVHDJzN7zDAsuqYp/wO/LrMS0T939g/eTtBfb9d+bw7LU=
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get online users"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/online/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves all users who have been active within the last 5 minutes, along with a count of online users per path.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Online users","users":[{"id":"user_id","username":"username","avatarUrl":"avatar_url","lastSeen":1699999999999}],"total":1,"perpath":[{"_id":"/example-path","count":1}]}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error, check the details.","error":"Internal server error","details":"Error details"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

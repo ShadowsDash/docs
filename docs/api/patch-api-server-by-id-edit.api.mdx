@@ -1,0 +1,71 @@
+---
+id: patch-api-server-by-id-edit
+title: "Edit server resources"
+description: "This endpoint allows a user to edit the resources of an existing server. The user must provide valid authorization and ensure the requested resources are within their account limits."
+sidebar_label: "Edit server resources"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWEtPI0cQ/iulvgSkWdsCNoe5GRYSK1mCgFUUsRzK02VPLzPdTT8wXsv/Paru8YPlEThmhS8ezVRVf1X1VXk+L4RFhy0Fcl6UVwvhq5paFOVChLklUQofnNJTsSyE0qIUFkMtCqGx5YdKikI4uo3KkRRlcJGW14UwlhwGZfRIZpeqHlp1Qe6O3OF8JI+lCqIQknzllGVDUYrLWnkgLa1ROgA2jZl5QIieHAQDJFWAUBM48ia6ijyYCaAGulc+KD0Fn+L34LKm7NVGH8A6c6ckwR02SgLGUBunvid0gFoCaR8ddZFvI/lAcusMdAQzFWql2UQ5wKoyUQdoVKuC76X8vTXak+eq7Q0G/FUZHUgHvkRrG1WlA/vfPKe6EHSPrW2yh49VRT5d3mETKd0LGKI/MpJEuTcYFKIl73HKJc9VhGglMtLOexKbZi4KQc4ZJ0odm2aZPoU4eDMipVOxRtrG8Cysg4ewRtkHLM4bgxJUcl4DEoco4TzXV2yQ7b8R2cS4sZKS9Auw9rdh/WNiaqE2HaVIMpkwFQ0CU27V6y2wJ+tjVlA/vr2tqU/HOeIzYD8+rOFQQ9Q32sw0JCRgqio6RxJmtWoIKkeYmM5kXbH9rCH0BMHNAaeoNDQYyPW2shnpQE5jAx11MqblKrWO9YdGzl+R4qP9YMbfqOJOW8djH1ROPy+IxaMZJ9A0A34KE+O2MxHF45VT2fh0EEmeVw4cnX0BS64iHXD6Qkgd2zE5DtlSa9z85ajZBnaUhs+Hu6+JKpW/eTkmW4C3WNFb4jJncwf8y+GzS1qJG5dXIceAY+y212virx1eE32M1U20r47dmf935OX2z85VZlumy7rDXVMe1nA73w26a47XxiYoiy70J8a1H9junfDvhP95CR/oPvRtg+p9sb/z/KfleVrtFGqzliJMaVYxpeijVf0Mpb9QctlnkdEXhfBURafC/IKHIleQFcWluSE9jOy7HpM6BMseyVKUYkzoyD2hbgjyIwgcJTUUTv86/zz8s39xOTw56Q8/fR6dJuXSS3XgV67zzcvZcX653Mzgapy6aRpsRmCw4u3gB6INHtBisNXGQRJ4E5MyU6FJUqNGaWa/ePiEvobh2ehRVn8Pz09Hp7+VkMSbNFVseWCTuFIefFBNA1k6QYs3Sk97cGFaAj7KtdmwVdM6wJhvVoZTDATGwcwZPe191V91Cq58ijI8GyUSPcSmtA+oK0p67I6cz/D2e/u9vYNfYecP4zDsMm+t8aFFvVVFFqMdHze678dMt96L/79CtWPs1t5fFiK6htPLE3El0KrEf0YoClEmhU9Zr4vrQtTGB7ZbLJhEX1yzXPLt20hMvKvrQtyhUzhmAl0tmIZ8LUU5wcbTC1XdOe/Gfheeg9rdRM07oBNUQhTihub5v4jl9bIQNaEkl07PD47yGR8u2X3j+NT73rJYOQ2rimzYMn8khviPjvViORteHv3Oi6dTUW3Sd6xX2xS42FyWV7yV/gUWZBG6
+sidebar_class_name: "patch api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Edit server resources"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"patch"}
+  path={"/api/server/{id}/edit/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows a user to edit the resources of an existing server. The user must provide valid authorization and ensure the requested resources are within their account limits.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"id","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"name":{"description":"The new name for the server.","type":"string"},"cpu":{"description":"The desired CPU percentage for the server.","type":"number"},"memory":{"description":"The desired memory (in MB) for the server.","type":"number"},"disk":{"description":"The desired disk space (in MB) for the server.","type":"number"},"allocations":{"description":"The desired number of allocations for the server.","type":"number"},"databases":{"description":"The desired number of databases for the server.","type":"number"},"backups":{"description":"The desired number of backups for the server.","type":"number"}},"required":["name","cpu","memory","disk","allocations","databases","backups"]}},"multipart/form-data":{"schema":{"type":"object","properties":{"name":{"description":"The new name for the server.","type":"string"},"cpu":{"description":"The desired CPU percentage for the server.","type":"number"},"memory":{"description":"The desired memory (in MB) for the server.","type":"number"},"disk":{"description":"The desired disk space (in MB) for the server.","type":"number"},"allocations":{"description":"The desired number of allocations for the server.","type":"number"},"databases":{"description":"The desired number of databases for the server.","type":"number"},"backups":{"description":"The desired number of backups for the server.","type":"number"}},"required":["name","cpu","memory","disk","allocations","databases","backups"]}},"text/plain":{"schema":{"type":"object","properties":{"name":{"description":"The new name for the server.","type":"string"},"cpu":{"description":"The desired CPU percentage for the server.","type":"number"},"memory":{"description":"The desired memory (in MB) for the server.","type":"number"},"disk":{"description":"The desired disk space (in MB) for the server.","type":"number"},"allocations":{"description":"The desired number of allocations for the server.","type":"number"},"databases":{"description":"The desired number of databases for the server.","type":"number"},"backups":{"description":"The desired number of backups for the server.","type":"number"}},"required":["name","cpu","memory","disk","allocations","databases","backups"]}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Server updated successfully","error":null}}}}}},"400":{"content":{"application/json":{"examples":{"invalidInput":{"value":{"statusCode":400,"message":"Invalid payload input","error":"Bad Request"}}}}}},"403":{"content":{"application/json":{"examples":{"forbidden":{"value":{"statusCode":403,"message":"You are not allowed to access this resource","error":"Forbidden"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"An unknown error occurred while creating the server. Please try again later.","error":"Internal Server Error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

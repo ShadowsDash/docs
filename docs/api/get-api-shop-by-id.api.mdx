@@ -1,0 +1,71 @@
+---
+id: get-api-shop-by-id
+title: "Get shop item by ID"
+description: "This endpoint retrieves a shop item by its ID. The ID is passed as a parameter in the URL."
+sidebar_label: "Get shop item by ID"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VE1v2zgQ/SvEXLYFCEv+aHarmzduAmPbbBA76ME1FrQ0lrihSJYc2TUM/ffFSI7TtMmhh/XFAofD92bemzmC8xgUaWfnBWRQIk29XlTO/3mYFyChwJgH7fkCZLCsdBRoC++0JRGQgsYdRqFErJwXmrAWm4PQFMV8NhDLCsV8JnQUXsWIhVB81augaiQMQltBFYr7u48DkBAwemcjRsiOMEpT/sudJbTEn8p7o/OOavJvZDpHwG+q9qbPiE2eY+w+d8o02J2RoiZeugIhG6WphBpjVCVCBnPmunWN5SoxBBcgs40xEriKDrB2jaWpMW6PxS2GyyaSqzFANpTwj+Z2XUw2v2/H+Qgnm1SNi9H2D5zkw9EYJFhVM8yiIygY7eVu6q57/S1G5k74oHOEbJgO3r+XQAfPLxW61KQMSNB1X0JF5GOWJKcuDHJXJ11s4G0JEmpnqTIHyLbKRJSw0cZoW14e8q5lq6Ecy4s1N97iXm0MQkahQQmRXP7A+KkE34S8Up0qw1RCrghLFw5cmtvSXgVkwkbR1oUaMvisbeH2Edr+J2GSTn5RSevoqhPmNSkn6eSsGdw4Ouv4JO99xCDsOfRI5t2v2wrDDsOHHuwVPu9+sJYlDFYZ0eeKnukT45fj54ad54M1OkLMK6wVQ56MECloW0IrQbOLvKLqyW+66Cbpa6MDFr2e7ZrJUeVOA856cU4GifI64clNjrpoE5AQMW+CpsOCQfsGNBHD0j2gnTacdKbB7uOM7iZksEEVMLxgchR9SBC/ItxWKHHz992n6cdksZxeXSXT2af5jWCcAbRdWVvXAWky3QxVqnD736KYqViJ6e38J5DP07ub+c11JrqRKlze1GipE5UHLJI25nHb1OpB23IgFq5GwVCh7i/WuqxIbPgwd6w/oXBB7IOz5eCL/WIf55Vfmd7OxdYF8ZybtpGUzTHyFO8wxJ7eeDAejCYX4s1fLih6y9J5F6lWndtOyl0jPd+i89mPdX5n3P93FZ8kJvxGiTdKW6bcBMMUeu+sQHnN8leOXZB1voO1hMpF4vDxuFER74NpWz7+2iAvjdVawk4F3W+b1REKHfm7OC+pVwt+c3dy9VvxGsPTobIHbn8/qQASHvDQj0a7biVUqAre4qvjKTDNc/T0XcpPO+HZCF1/WELb/gdSi3EH
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get shop item by ID"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/shop/{id}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves a shop item by its ID. The ID is passed as a parameter in the URL.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"id","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Item found","error":null,"item":{"amountAllowedPerCustomer":1,"_id":"64b7f3c2e4b0a3d2f8e4c123","name":"Sample Item","description":"This is a sample item.","price":10.99,"type":"digital","image":"https://example.com/image.png","monthly":false,"billingCycles":[1,3,6],"renewable":true,"stock":100,"purchases":10,"category":"Software","platform":"Windows"}}}}}}},"404":{"content":{"application/json":{"examples":{"notFound":{"value":{"statusCode":404,"error":"Not found","message":"User not found"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error","error":"Internal server error"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

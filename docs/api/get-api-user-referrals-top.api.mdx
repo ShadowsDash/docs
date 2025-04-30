@@ -1,0 +1,63 @@
+---
+id: get-api-user-referrals-top
+title: "Get top referrals"
+description: "This endpoint retrieves the top 100 users with the most referrals. It aggregates referral data and returns user details such as username and avatar URL."
+sidebar_label: "Get top referrals"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVE1v1EAM/SuWL4AUJUspHHILX9UKKKjdisOyQu7EmwxNZoYZZ0sV5b+jmaSlfB24kUuSmWf72X72iNaxJ9HWrGsssWGpnL4I7M94z95TFzbWYYY1B+W1i0AscdPqAGxqZ7UR8Cxe84EDSMsg1sHj1QqGwD7AtZY2Hfc2ROTiNIe1ADWN54aEw90F1CQEZOrodPAmJDdQs5DuAoRBtUDzoaGeE5IOJOTh4uxtjhl6Ds6awAHLEY9Wq/hS1ggbiZ/kXKdVSrj4EmIyI/I36l03W4RBKQ7p80DdwOlMSIbwwtaM5dFqlWHPIVDDsRDW/UgK9nYwNWbI3luPpRm6LsNUByy3I37WscQznH38y1DZIRJ7vJqBMdxtcljeMov9wAznRC98hyW2Ii6URbEgcmX7Yr7Pv7gGp2k3pSfD43+ugTYH6nS9Nm6Qvxbi+OdCrGcb0MnorgT4nGIrvw4cBG8ZPf33rrA/sH81+/wLoae/EpJYxg5mW0iEMlAtq6skyEVT+T2yf7RJ4k9QLDFRuDVdEppiWGntMj+YoSNpscSCnC5iN4s7iRRiXYEZBlaD13Jzrlru5xwjcGOv2FRDtB5RbhwvnY4WCYklXjJ59n8YSYb5CiR6AbsHgtP3Z++qt8X5pnr9uqhevlufptnJMbLWZm9TIC1d9HzeUm2vHwR4SaGF6sP6tyAfq7PT9elJCWkB1FYNPRtJfQMdIIjuOtBmHni60qbJ4dz2DDGU72dgr5tW4DIeKhtbLAzWw7W3psk/mU8mOdfzNqk+rGFvPfzMTZsgZBSn7h3Yh5nek/xJfnT8DB6+sZ7kEU4ZOhukpySoZaZOWNKOuuvJr1neU+b/vOgWeQh/k8J1pE1Md4jLYVwEuEVyGpfFkuH9hCUtddxl2NogETqOlxT4wnfTFI+/DuxvsNzuMjyQ13QZFbLdTRm2THVcVNsRr/gGS6yUYhdlv4zl79M87e6NyMmrDU7Td2M0P2I=
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get top referrals"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/user/referrals/top/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves the top 100 users with the most referrals. It aggregates referral data and returns user details such as username and avatar URL.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Top referrals found","error":null,"users":[{"_id":"referrer_id","count":10,"user":{"username":"exampleUser","avatarUrl":"https://example.com/avatar.jpg"}}]}}}}}},"400":{"content":{"application/json":{"examples":{"invalidInput":{"value":{"statusCode":400,"message":"Invalid input","error":"Bad request"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error, check the details.","error":"Internal server error","details":"Error details"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-api-server-by-id
+title: "Get server details"
+description: "This endpoint retrieves detailed information about a server by its ID. It includes data from both the local database and the Pterodactyl API."
+sidebar_label: "Get server details"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVU1v40YM/SsDXpoAgi07tnejm5svGN3NBo6LosgGBS3R1jTSzOwM5cQw9N8Ljuw02U0K7K2+SCaHnEfy8WkH1pFH1tbMCshgTTx1+pb8hvyv21kBCRQUcq+dHIEMFqUOikzhrDasPLHXtKGgCmLUFRVKm5X1dcyocGkbVqhCzKeWW6U5qNl5T81YaZNXTSGhyKhW3tZqablUXJKqbI5VdCwxkEJTRPMNk7cF5ryt1PRm1oMEPAVnTaAA2Q6GaSqP3Bomw/KKzlU6j2j6fwepYAf0hLWruojQ5DmF+LrBqqFoY+QmnNmCIBumaQI1hYBrggy6xqiVbYy0hry3HjLTVFUCXZGS4C8trZyMVgMcLk/yUTGmyerDx9MUB8thDgk0/3VAErt4wEm5g+EJJKDFMBomIJ3Zj+KdeBJg6zVkUGtDuccVQwK5J2QqIBtMTj+kozSVwujJaS+NGExOTyejwUSMoQmOjNwxJ4wt29cX7YXkWGEVKAF8RM3arG9wW8d+7+3abKzO6RDoydAjVoe/hp74zGoT5q/tgb12dNssX9Ct8zjcOqze9FTIQjfI4GZxMf9yPj1b/PlJ+uUgg8HpsDeYfOwNeoNsOB5PxpBApWvNcd41PjWBfIBsnKZpm0TaoDbdDLUJjFUl1bJvqE3ARELs2sg52/g8MqhNwD52Me3+l8AoHf0kD43ly0iq94g4SkdvENFY/p6McP1sO8AZ//xaxPQXXcZ3EI1fr8bMMHmD1WHZI5xE5SXlD3F5O4UIvRdQ34yJkhOPQgZHL1c+uo+z7nnIB89dd+ixJo4jvdtByEuqUVDz1glCIZhZQysEle1CLiEBg7U4dRHF5Fuj/fPM76U+Lu1eGGUvJSaDPjrd7zD3d7po+yDrnzde8/ZWru26KPRa2Acy00bCnoGUzE4i4knIYEnoyb8htaQ6l2LJouxKobr+Mv88/dS/XUwvL/vT88+zayX39KCNha1svEhzFWlSYmEffwnqHEMpkvnDJX9M59ez66tMRWEvbN7IKnfyrYMKrKtKaRMnWOODNuueurU1vdL5Wq9LVksx5lZIxKSsV4/emnXvq/lqYnIdYpbpzUytrFevscV9MzlFfmzIhw7eSe+kNxxN1NFv1iMfy/CcDVxjpOx+dlfEBwYdSPFdmS/I/7/7gu1JwfTEfVehNlJk4ytB3fHtDtBpeP7CJJBFtsJ9AqUNLAd2O7nmd1+1rZi/NeS3kN3dJ7BBr3EpbLjbQaGDvP8r4e926Wi+34Vj9R7GvRHNVkbWSQRAAg+07RaqvW8TKAkLkce73d4xzXNy/CLkBzF6tXhXFwto238A8H/v+g==
+sidebar_class_name: "get api-method"
+info_path: docs/api/shadows-dash-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get server details"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/server/{id}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint retrieves detailed information about a server by its ID. It includes data from both the local database and the Pterodactyl API.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"schema":{"type":"string"},"in":"path","name":"id","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"examples":{"success":{"value":{"statusCode":200,"message":"Server found","error":null,"server":{"_id":"64f1a2b3c4d5e6f7890a1b2c","uid":"64f1a2b3c4d5e6f7890a1b2d","pid":"ptero123","iid":42,"location":"64f1a2b3c4d5e6f7890a1b2e","egg":"minecraft","created":1697040000,"expires":1699641600,"suspentionReason":null,"suspended":false,"awaitingPayment":false,"invoice":null,"renewal":null,"nextCoinsRenewal":null,"stripeSubscription":null,"paypalSubscription":null,"platform":"PTERODACTYL","ip":"192.168.1.1:25565","limits":{"maxusers":5000},"container":{"installed":true},"node":{},"resources":{},"owner":{}}}}}}}},"404":{"content":{"application/json":{"examples":{"notFound":{"value":{"statusCode":404,"message":"Server not found","error":"Not found"}}}}}},"500":{"content":{"application/json":{"examples":{"serverError":{"value":{"statusCode":500,"message":"Internal server error, check the details.","error":"Internal server error","details":"(Pterodactyl error): error details"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
