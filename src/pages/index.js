@@ -13,7 +13,7 @@ function HomepageHeader() {
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons} style={{gap: '20px'}}>
+        <div className={styles.buttons} style={{gap: '20px', display:'flex', flexWrap: 1}}>
           <Link
             className="button button--secondary button--lg"
             to="/blog">
@@ -21,7 +21,7 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--secondary button--lg"
-            to="/changelog">
+            to="/blog/tags/changelog">
               Changelog
           </Link>
           <Link

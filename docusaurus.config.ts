@@ -59,16 +59,11 @@ const config: Config = {
         },
         items: [
           { to: "/blog", label: "Blog", position: "left" },
-          { to: "/changelog", label: "Changelog", position: "left" },
+          { to: "/blog/tags/changelog", label: "Changelog", position: "left" },
           {
             label: "Docs",
             position: "left",
             to: "/docs/intro",
-          },
-          {
-            href: "https://github.com/shadowsdash",
-            label: "GitHub",
-            position: "right",
           },
         ],
       },
@@ -106,7 +101,7 @@ const config: Config = {
               },
               {
                 label: "Changelog",
-                to: "/changelog",
+                to: "/blog/tags/changelog",
               },
               {
                 label: "GitHub",

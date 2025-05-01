@@ -1,0 +1,29 @@
+---
+slug: changelog-v3.3.302
+title: "Changelog: v3.3.302 (Korat)"
+authors: [maxim]
+tags: [changelog]
+---
+
+## 🗎 API Docs are finally here!
+You were quite a few to ask where we can find API docs, for you to build custom integrations or scripts to help you in your every day life. Good news, they are finally here!
+
+While the "API platform" (API tokens, permission etc) are not quite there yet, you can find a list of the endpoints and how to use them in the [API Docs](/docs/api/getting-started/)
+
+If you have any questions, you can use your Discord support channel.
+
+## 🔗 Custom sidebar links
+
+![](https://i.ibb.co/JwQS0MhD/Screenshot-From-2025-05-01-15-56-31.png)
+
+You can finally create custom sidebar links that will be shown to your users. You can even use **placeholders** that will be replaced when the user loads the page. 
+
+To configure custom sidebar links, access the staff panel with an admin account, and click on "Sidebar configuration". You will find a list of placeholders you can use.
+
+## 🐛 Bug fixes
+- Fix: Staff panel showed 1 alt to every user, even though none were detected. (`e20cc4c`)
+- Fix: GSC crashed the instance when the corresponding location was not found. (`cdbd541`)
+- Fix: instance settings & other collection items not updating (`059889a` & `924bef0`)
+- Fix: Typo in the staff instance settings page (`4d094a4`)
+- Fix: User Pterodactyl ID was not shown in the user settings (`b5c3236`)
+- Fix: Some frontend API calls were not declaring Content-type correctly (`b5c3236`)
