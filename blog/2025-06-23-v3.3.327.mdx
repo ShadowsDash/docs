@@ -1,0 +1,29 @@
+---
+slug: changelog-v3.3.327
+title: "Changelog: v3.3.327 (Korat)"
+authors: [maxim]
+tags: [changelog]
+---
+
+## New internal authentication system
+This update makes tokens expire every 72 hours. Which means that every 72 hours, users will need to log back in. While this is more "annoying", this makes the user less exposed to info stealing attacks.
+
+## API keys
+API Keys are finally here!
+
+To create an API key, go to your staff panel, then click on "API access".
+Created keys can access every possible routes. They are the equivalent of the "ADMIN" keys that you might've used before.
+
+Learn more in the API docs.
+
+## Other changes
+- Added an internal "email queue" to prevent sending a lot of emails at the same time. This will also allow for new features linked to emails in the future.
+- A lot of internal work for a new authentication feature for developers.
+- When migrating your instance from Per Server Plans to Resources Sharing, backend will now try to determine an expiry date for servers automatically depending on if they have an active plan or not. That way, when you migrate your instance while you have servers with active plans running, their renewal time will become the expiry time, so no partial refund is needed from you. At the end of the billing period, the server will be deleted.
+
+## 🐛 Bug fixes
+- Fix: Stripe automatic billing was not being triggered when purchasing a subscription (`ea05fdc`)
+- Fix: Coin shop items were not being created correctly on some new instances, especially when resetting them. (`7399cf2`)
+- Fix: "500: Internal Server Error" when users asked to receive the verification email before the email queue was ready. (`284296a`)
+- Fix: Env variables for server software in staff panel were being formatted to uppercase all the time. (`f61167d`)
+- Fix: "New invoice created" contained a typo (`507c3e8`)
