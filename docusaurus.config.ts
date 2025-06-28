@@ -110,7 +110,7 @@ const config: Config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Shadow's Dash - Maxim Lucas.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Ctrl Alt Cat (944 012 988 00019) - Maxim Lucas E.I.`,
       },
       prism: {
         additionalLanguages: [
