@@ -239,6 +239,14 @@ const config: Config = {
         } satisfies Plugin.PluginOptions,
       },
     ],
+    [
+      "@dipakparmar/docusaurus-plugin-umami",
+      /** @type {import('@dipakparmar/docusaurus-plugin-umami').Options} */
+      {
+        websiteID: "e86719cd-c80a-4b3a-9f7d-5b525ff92548",
+        analyticsDomain: "umami.maximlucas.dev",
+      }
+    ]
   ],
 
   themes: ["docusaurus-theme-openapi-docs"],

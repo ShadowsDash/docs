@@ -1,0 +1,19 @@
+---
+slug: changelog-v3.3.386
+title: "Changelog: v3.3.386 (Korat)"
+authors: [maxim]
+tags: [changelog]
+---
+
+This is a small update, because something is in the making!
+
+## Other changes
+- Internal changes to welcome a future feature for authentication.
+- Made page loading faster by preloading necessary stylesheets.
+
+## 🐛 Bug fixes
+- Fix: When no Google Fonts font name was provided, the frontend would not load. (`58c08fd`)
+- Fix: Staff users not being able to delete users since the new JWT update. (`f1a69b`)
+- Fix: Verification email was not being sent on some instances (`4c4017a`)
+- Fix: The staff "shares" endpoint to calculate graphs was not working properly, causing glitched pie charts. (`f21cbfa` & `c8ec9a9`)
+- Fix: Passkeys were sometimes returning empty tokens, which caused errors upon login. (`d9c8d22`)
